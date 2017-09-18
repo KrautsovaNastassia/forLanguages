@@ -11,6 +11,7 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'BaseController@getIndex');
+
+//всегда последний
+Route::get('/{id}', 'BaseController@getOne');
