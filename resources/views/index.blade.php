@@ -4,8 +4,8 @@
       <div class="container">
         <div class="row">
           <div class="header-section text-center">
-            <h2>{{$obj->name}}</h2>
-            {{$obj->body}}
+            <h2>{{(isset($obj->name))?$obj->name:"Добро пожаловать на сайт"}}</h2>
+            {{(isset($obj->body))?$obj->body:"-"}}
             <hr class="bottom-line">
           </div>
           <div class="feature-info">
@@ -328,8 +328,8 @@
       <div class="container">
         <div class="row">
           <div class="header-section text-center">
-            <h2>Курсы</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem nesciunt vitae,<br> maiores, magni dolorum aliquam.</p>
+            <h2><B>КУРСЫ</B></h2>
+            <h1><B>Английский язык</B></h1>
             <hr class="bottom-line">
           </div>
         </div>
@@ -340,17 +340,15 @@
             <figure class="imghvr-fold-up">
               <img src="img/course01.jpg" class="img-responsive">
               <figcaption>
-                  <h3>Course Name</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam atque, nostrum veniam consequatur libero fugiat, similique quis.</p>
+                  <p><font size=5>Английский с нуля?<br>Освой первый уровень!</font><br> </p>
               </figcaption>
               <a href="#"></a>
             </figure>
           </div>
           <div class="col-md-4 col-sm-6 padleft-right">
             <figure class="imghvr-fold-up">
-              <img src="img/course02.jpg" class="img-responsive">
+              <img src="img/course06.jpg" class="img-responsive">
               <figcaption>
-                  <h3>Course Name</h3>
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam atque, nostrum veniam consequatur libero fugiat, similique quis.</p>
               </figcaption>
               <a href="#"></a>
@@ -396,6 +394,7 @@
               <a href="#"></a>
             </figure>
           </div>
+
         </div>
       </div>
     </section>
