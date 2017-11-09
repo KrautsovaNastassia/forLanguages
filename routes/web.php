@@ -15,3 +15,11 @@ Route::get('/', 'BaseController@getIndex');
 
 //всегда последний
 Route::get('/{id}', 'BaseController@getOne');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

@@ -35,7 +35,25 @@
         <ul class="nav navbar-nav navbar-right">
           <li><a href="#feature">Услуги</a></li>
           <li><a href="#organisations">Организации</a></li>
-          <li><a href="#courses">Курсы</a></li>
+          <li><!--<a href="#courses">Курсы</a>-->
+		  <!--<div class="dropdown">-->
+		    <a id="myNavbar" type="button" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+    Курсы
+    <span class="nav navbar-nav navbar-right"></span>
+  </a>
+		 <!-- <div class="nav navbar-nav navbar-right">-->
+
+
+  <ul class="dropdown-menu" aria-labelledby="myNavbar">
+    <li><a href="#english">Английский язык</a></li>
+	<li><a href="#spanish">Испанский язык</a></li>
+	<li><a href="#italian">Итальянский язык</a></li>
+	<li><a href="#polish">Польский язык</a></li>
+	<li><a href="#german">Немецкий язык</a></li>
+	<li><a href="#french">Французский язык</a></li>
+  </ul>
+<!--</div>-->
+		  </li>
           <li><a href="#pricing">Цены</a></li>
           <li><a href="#" data-target="#login" data-toggle="modal">Войти</a></li>
           <li class="btn-trial"><a href="#footer">Бесплатное занятие</a></li>
