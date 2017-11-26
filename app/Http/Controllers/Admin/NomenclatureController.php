@@ -113,5 +113,9 @@ class NomenclatureController extends Controller {
 
         return redirect()->route(config('quickadmin.route').'.nomenclature.index');
     }
+	public function getCourses()
+	{
+		$courses = Nomenclature::where('showhide','show')->paginate(3);
+	}
 
 }

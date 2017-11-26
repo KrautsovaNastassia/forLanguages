@@ -56,7 +56,7 @@
 		  </li>
           <li><a href="#pricing">Цены</a></li>
           <li><a href="#" data-target="#login" data-toggle="modal">Войти</a></li>
-          <li class="btn-trial"><a href="#footer">Бесплатное занятие</a></li>
+          <li class="btn-trial"><a href="{{asset('register')}}">Регистрация</a></li>
         </ul>
         </div>
       </div>
@@ -134,7 +134,7 @@
     @yield('content')
     <!--Footer-->
     <footer id="footer" class="footer">
-      <div class="container text-center">
+      <!--<div class="container text-center">
     
       <h3>Начните бесплатное занятие прямо сейчас!</h3>
     
@@ -143,28 +143,30 @@
           <div class=" controls">
             <input name="name" placeholder="Введите Ваше имя" class="form-control" type="text">
           </div>
-        </div><!-- End email input -->
+        </div><!-- End email input 
         <div class="form-group col-md-3 col-sm-4">
           <div class=" controls">
             <input name="EMAIL" placeholder="Введите адрес электронной почты" class="form-control" type="email">
           </div>
-        </div><!-- End email input -->
+        </div><!-- End email input 
         <div class="col-md-2 col-sm-4">
           <p>
             <button name="submit" type="submit" class="btn btn-block btn-submit">
             Submit <i class="fa fa-arrow-right"></i></button>
           </p>
         </div>
-      </form><!-- End newsletter-form -->
+      </form><!-- End newsletter-form 
       <ul class="social-links">
         <li><a href="#link"><i class="fa fa-twitter fa-fw"></i></a></li>
         <li><a href="#link"><i class="fa fa-facebook fa-fw"></i></a></li>
         <li><a href="#link"><i class="fa fa-google-plus fa-fw"></i></a></li>
         <li><a href="#link"><i class="fa fa-dribbble fa-fw"></i></a></li>
         <li><a href="#link"><i class="fa fa-linkedin fa-fw"></i></a></li>
-      </ul>
+      </ul> -->
+	  <div class="container text-center">
         220013, г. Минск, ул. П. Бровки, 6, 309 ауд.
 		Центр языковой подготовки
+		
         <div class="credits">
             <!-- 
                 All the links in the footer should remain intact. 

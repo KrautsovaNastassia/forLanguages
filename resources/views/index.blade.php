@@ -154,8 +154,7 @@
         <div class="row">
           <div class="header-section text-center">
             <h2>Преподаватели</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem nesciunt vitae,<br> maiores, magni dolorum aliquam.</p>
-            <hr class="bottom-line">
+            
           </div>
 		  <div class="col-lg-4 col-md-4 col-sm-4">
             <div class="pm-staff-profile-container" >
@@ -225,7 +224,7 @@
                 </div>   
               </div>                                
               <div class="pm-staff-profile-details text-center">  
-                <p class="pm-staff-profile-name">Белоус Татьяна Сергеевна </p>
+                <p class="pm-staff-profile-name">Белоус Татьяна<br> Сергеевна </p>
                 <p class="pm-staff-profile-title">Преподаватель</p>
                 
                 <p class="pm-staff-profile-bio">Ведет практические занятия в группах Beginner,Elementary </p>
@@ -328,7 +327,7 @@
       <div class="container">-->
         <div class="row">
           <div class="header-section text-center">
-            <h2><B>КУРСЫ</B></h2>
+            <h1><B>КУРСЫ</B></h1>
 			 </div>
         </div>
 	<section id ="english" class="section-padding">
@@ -382,7 +381,7 @@
           </div>
           <div class="col-md-4 col-sm-6 padleft-right">
             <figure class="imghvr-fold-up">
-              <img src="img/course05.jpg" class="img-responsive">
+              <img src="img/eng_upper.jpg" class="img-responsive">
               <figcaption>
                   <h3>Course Name</h3>
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam atque, nostrum veniam consequatur libero fugiat, similique quis.</p>
@@ -392,7 +391,7 @@
           </div>
           <div class="col-md-4 col-sm-6 padleft-right">
             <figure class="imghvr-fold-up">
-              <img src="img/course06.jpg" class="img-responsive">
+              <img src="img/course03.jpg" class="img-responsive">
               <figcaption>
                   <h3>Course Name</h3>
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam atque, nostrum veniam consequatur libero fugiat, similique quis.</p>
@@ -414,60 +413,20 @@
       </div>
       <div class="container">
         <div class="row">
-          <div class="col-md-4 col-sm-6 padleft-right">
+          <div class="col-md-6">
             <figure class="imghvr-fold-up">
-              <img src="img/course01.jpg" class="img-responsive">
+              <img src="img/spanish_beginer.jpg"  class="img-responsive" >
               <figcaption>
-                  <p><font size=5>Английский с нуля?<br>Освой первый уровень!</font><br> </p>
+                  <p><font size=5>Начинающий уровень<br>!!!</font><br> </p>
               </figcaption>
               <a href="#"></a>
             </figure>
           </div>
-          <div class="col-md-4 col-sm-6 padleft-right">
+          <div class="col-md-6">
             <figure class="imghvr-fold-up">
-              <img src="img/course06.jpg" class="img-responsive">
+              <img src="img/spanish_prod.jpg"  class="img-responsive" >
               <figcaption>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam atque, nostrum veniam consequatur libero fugiat, similique quis.</p>
-              </figcaption>
-              <a href="#"></a>
-            </figure>
-          </div>
-          <div class="col-md-4 col-sm-6 padleft-right">
-            <figure class="imghvr-fold-up">
-              <img src="img/course03.jpg" class="img-responsive">
-              <figcaption>
-                  <h3>Course Name</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam atque, nostrum veniam consequatur libero fugiat, similique quis.</p>
-              </figcaption>
-              <a href="#"></a>
-            </figure>
-          </div>
-          <div class="col-md-4 col-sm-6 padleft-right">
-            <figure class="imghvr-fold-up">
-              <img src="img/course04.jpg" class="img-responsive">
-              <figcaption>
-                  <h3>Course Name</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam atque, nostrum veniam consequatur libero fugiat, similique quis.</p>
-              </figcaption>
-              <a href="#"></a>
-            </figure>
-          </div>
-          <div class="col-md-4 col-sm-6 padleft-right">
-            <figure class="imghvr-fold-up">
-              <img src="img/course05.jpg" class="img-responsive">
-              <figcaption>
-                  <h3>Course Name</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam atque, nostrum veniam consequatur libero fugiat, similique quis.</p>
-              </figcaption>
-              <a href="#"></a>
-            </figure>
-          </div>
-          <div class="col-md-4 col-sm-6 padleft-right">
-            <figure class="imghvr-fold-up">
-              <img src="img/course06.jpg" class="img-responsive">
-              <figcaption>
-                  <h3>Course Name</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam atque, nostrum veniam consequatur libero fugiat, similique quis.</p>
+                  <p><font size=5>Продолжающий уровень<br>!!!</font><br> </p>
               </figcaption>
               <a href="#"></a>
             </figure>
@@ -487,60 +446,20 @@
       </div>
       <div class="container">
         <div class="row">
-          <div class="col-md-4 col-sm-6 padleft-right">
+          <div class="col-md-6">
             <figure class="imghvr-fold-up">
-              <img src="img/course01.jpg" class="img-responsive">
+              <img src="img/italian_beg.jpg"  class="img-responsive" >
               <figcaption>
-                  <p><font size=5>Английский с нуля?<br>Освой первый уровень!</font><br> </p>
+                  <p><font size=5>Начинающий уровень<br>!!!</font><br> </p>
               </figcaption>
               <a href="#"></a>
             </figure>
           </div>
-          <div class="col-md-4 col-sm-6 padleft-right">
+          <div class="col-md-6">
             <figure class="imghvr-fold-up">
-              <img src="img/course06.jpg" class="img-responsive">
+              <img src="img/course06.jpg"  class="img-responsive" >
               <figcaption>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam atque, nostrum veniam consequatur libero fugiat, similique quis.</p>
-              </figcaption>
-              <a href="#"></a>
-            </figure>
-          </div>
-          <div class="col-md-4 col-sm-6 padleft-right">
-            <figure class="imghvr-fold-up">
-              <img src="img/course03.jpg" class="img-responsive">
-              <figcaption>
-                  <h3>Course Name</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam atque, nostrum veniam consequatur libero fugiat, similique quis.</p>
-              </figcaption>
-              <a href="#"></a>
-            </figure>
-          </div>
-          <div class="col-md-4 col-sm-6 padleft-right">
-            <figure class="imghvr-fold-up">
-              <img src="img/course04.jpg" class="img-responsive">
-              <figcaption>
-                  <h3>Course Name</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam atque, nostrum veniam consequatur libero fugiat, similique quis.</p>
-              </figcaption>
-              <a href="#"></a>
-            </figure>
-          </div>
-          <div class="col-md-4 col-sm-6 padleft-right">
-            <figure class="imghvr-fold-up">
-              <img src="img/course05.jpg" class="img-responsive">
-              <figcaption>
-                  <h3>Course Name</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam atque, nostrum veniam consequatur libero fugiat, similique quis.</p>
-              </figcaption>
-              <a href="#"></a>
-            </figure>
-          </div>
-          <div class="col-md-4 col-sm-6 padleft-right">
-            <figure class="imghvr-fold-up">
-              <img src="img/course06.jpg" class="img-responsive">
-              <figcaption>
-                  <h3>Course Name</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam atque, nostrum veniam consequatur libero fugiat, similique quis.</p>
+                  <p><font size=5>Продолжающий уровень<br>!!!</font><br> </p>
               </figcaption>
               <a href="#"></a>
             </figure>
@@ -560,64 +479,26 @@
       </div>
       <div class="container">
         <div class="row">
-          <div class="col-md-4 col-sm-6 padleft-right">
+          <div class="col-md-6">
             <figure class="imghvr-fold-up">
               <img src="img/course01.jpg" class="img-responsive">
               <figcaption>
-                  <p><font size=5>Английский с нуля?<br>Освой первый уровень!</font><br> </p>
+                 <p><font size=5>Начинающий уровень<br>!!!</font><br> </p>
               </figcaption>
               <a href="#"></a>
             </figure>
           </div>
-          <div class="col-md-4 col-sm-6 padleft-right">
+          <div class="col-md-6">
             <figure class="imghvr-fold-up">
               <img src="img/course06.jpg" class="img-responsive">
               <figcaption>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam atque, nostrum veniam consequatur libero fugiat, similique quis.</p>
+                  <p><font size=5>Продолжающий уровень<br>!!!</font><br> </p>
               </figcaption>
               <a href="#"></a>
             </figure>
           </div>
-          <div class="col-md-4 col-sm-6 padleft-right">
-            <figure class="imghvr-fold-up">
-              <img src="img/course03.jpg" class="img-responsive">
-              <figcaption>
-                  <h3>Course Name</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam atque, nostrum veniam consequatur libero fugiat, similique quis.</p>
-              </figcaption>
-              <a href="#"></a>
-            </figure>
-          </div>
-          <div class="col-md-4 col-sm-6 padleft-right">
-            <figure class="imghvr-fold-up">
-              <img src="img/course04.jpg" class="img-responsive">
-              <figcaption>
-                  <h3>Course Name</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam atque, nostrum veniam consequatur libero fugiat, similique quis.</p>
-              </figcaption>
-              <a href="#"></a>
-            </figure>
-          </div>
-          <div class="col-md-4 col-sm-6 padleft-right">
-            <figure class="imghvr-fold-up">
-              <img src="img/course05.jpg" class="img-responsive">
-              <figcaption>
-                  <h3>Course Name</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam atque, nostrum veniam consequatur libero fugiat, similique quis.</p>
-              </figcaption>
-              <a href="#"></a>
-            </figure>
-          </div>
-          <div class="col-md-4 col-sm-6 padleft-right">
-            <figure class="imghvr-fold-up">
-              <img src="img/course06.jpg" class="img-responsive">
-              <figcaption>
-                  <h3>Course Name</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam atque, nostrum veniam consequatur libero fugiat, similique quis.</p>
-              </figcaption>
-              <a href="#"></a>
-            </figure>
-          </div>
+         
+   
 </div>
       </div>
     </section>
@@ -633,64 +514,28 @@
       </div>
       <div class="container">
         <div class="row">
-          <div class="col-md-4 col-sm-6 padleft-right">
+          <div class="col-md-6">
             <figure class="imghvr-fold-up">
-              <img src="img/course01.jpg" class="img-responsive">
+              <img src="img/french_beg.jpg" class="img-responsive">
               <figcaption>
-                  <p><font size=5>Английский с нуля?<br>Освой первый уровень!</font><br> </p>
+                 <p><font size=5>Начинающий уровень<br>!!!</font><br> </p>
               </figcaption>
               <a href="#"></a>
             </figure>
           </div>
-          <div class="col-md-4 col-sm-6 padleft-right">
+          <div class="col-md-6">
             <figure class="imghvr-fold-up">
-              <img src="img/course06.jpg" class="img-responsive">
+              <img src="img/french_adv.jpg" class="img-responsive">
               <figcaption>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam atque, nostrum veniam consequatur libero fugiat, similique quis.</p>
+                  <p><font size=5>Продолжающий уровень<br>!!!</font><br> </p>
               </figcaption>
               <a href="#"></a>
             </figure>
           </div>
-          <div class="col-md-4 col-sm-6 padleft-right">
-            <figure class="imghvr-fold-up">
-              <img src="img/course03.jpg" class="img-responsive">
-              <figcaption>
-                  <h3>Course Name</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam atque, nostrum veniam consequatur libero fugiat, similique quis.</p>
-              </figcaption>
-              <a href="#"></a>
-            </figure>
-          </div>
-          <div class="col-md-4 col-sm-6 padleft-right">
-            <figure class="imghvr-fold-up">
-              <img src="img/course04.jpg" class="img-responsive">
-              <figcaption>
-                  <h3>Course Name</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam atque, nostrum veniam consequatur libero fugiat, similique quis.</p>
-              </figcaption>
-              <a href="#"></a>
-            </figure>
-          </div>
-          <div class="col-md-4 col-sm-6 padleft-right">
-            <figure class="imghvr-fold-up">
-              <img src="img/course05.jpg" class="img-responsive">
-              <figcaption>
-                  <h3>Course Name</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam atque, nostrum veniam consequatur libero fugiat, similique quis.</p>
-              </figcaption>
-              <a href="#"></a>
-            </figure>
-          </div>
-          <div class="col-md-4 col-sm-6 padleft-right">
-            <figure class="imghvr-fold-up">
-              <img src="img/course06.jpg" class="img-responsive">
-              <figcaption>
-                  <h3>Course Name</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam atque, nostrum veniam consequatur libero fugiat, similique quis.</p>
-              </figcaption>
-              <a href="#"></a>
-            </figure>
-          </div>
+         
+         
+         
+         
 </div>
       </div>
     </section>
@@ -706,64 +551,27 @@
       </div>
       <div class="container">
         <div class="row">
-          <div class="col-md-4 col-sm-6 padleft-right">
+          <div class="col-md-6">
             <figure class="imghvr-fold-up">
-              <img src="img/course01.jpg" class="img-responsive">
+              <img src="img/german_beginner.jpg" class="img-responsive">
               <figcaption>
-                  <p><font size=5>Английский с нуля?<br>Освой первый уровень!</font><br> </p>
+                  <p><font size=5>Начинающий уровень<br>!!!</font><br> </p>
               </figcaption>
               <a href="#"></a>
             </figure>
           </div>
-          <div class="col-md-4 col-sm-6 padleft-right">
+          <div class="col-md-6">
             <figure class="imghvr-fold-up">
-              <img src="img/course06.jpg" class="img-responsive">
+              <img src="img/german_adv.jpg" class="img-responsive">
               <figcaption>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam atque, nostrum veniam consequatur libero fugiat, similique quis.</p>
+                  <p><font size=5>Продолжающий уровень<br>!!!</font><br> </p>
               </figcaption>
               <a href="#"></a>
             </figure>
           </div>
-          <div class="col-md-4 col-sm-6 padleft-right">
-            <figure class="imghvr-fold-up">
-              <img src="img/course03.jpg" class="img-responsive">
-              <figcaption>
-                  <h3>Course Name</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam atque, nostrum veniam consequatur libero fugiat, similique quis.</p>
-              </figcaption>
-              <a href="#"></a>
-            </figure>
-          </div>
-          <div class="col-md-4 col-sm-6 padleft-right">
-            <figure class="imghvr-fold-up">
-              <img src="img/course04.jpg" class="img-responsive">
-              <figcaption>
-                  <h3>Course Name</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam atque, nostrum veniam consequatur libero fugiat, similique quis.</p>
-              </figcaption>
-              <a href="#"></a>
-            </figure>
-          </div>
-          <div class="col-md-4 col-sm-6 padleft-right">
-            <figure class="imghvr-fold-up">
-              <img src="img/course05.jpg" class="img-responsive">
-              <figcaption>
-                  <h3>Course Name</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam atque, nostrum veniam consequatur libero fugiat, similique quis.</p>
-              </figcaption>
-              <a href="#"></a>
-            </figure>
-          </div>
-          <div class="col-md-4 col-sm-6 padleft-right">
-            <figure class="imghvr-fold-up">
-              <img src="img/course06.jpg" class="img-responsive">
-              <figcaption>
-                  <h3>Course Name</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam atque, nostrum veniam consequatur libero fugiat, similique quis.</p>
-              </figcaption>
-              <a href="#"></a>
-            </figure>
-          </div>
+          
+          
+       
 </div>
       </div>
     </section>
@@ -777,15 +585,140 @@
         <div class="row">
           <div class="header-section text-center">
             <h2>Наши цены</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem nesciunt vitae,<br> maiores, magni dolorum aliquam.</p>
-            <hr class="bottom-line">
+           
           </div>
           <div class="col-md-4 col-sm-4">
             <div class="price-table">
               <!-- Plan  -->
               <div class="pricing-head">
-                <h4>Monthly Plan</h4>
-                <span class="fa fa-usd curency"></span> <span class="amount">200</span> 
+                <h4>Английский язык</h4>
+                <span class="fa fa-usd curency"></span> <span class="amount">285</span> 
+              </div>
+          
+              <!-- Plean Detail -->
+              <div class="price-in mart-15">
+                <a href="#" class="btn btn-bg green btn-block">PURCHACE</a> 
+              </div>
+            </div>
+          </div>
+		  <div class="col-md-4 col-sm-4">
+            <div class="price-table">
+              <!-- Plan  -->
+              <div class="pricing-head">
+                <h4>Немецкий язык</h4>
+                <span class="fa fa-usd curency"></span> <span class="amount">285</span> 
+              </div>
+          
+              <!-- Plean Detail -->
+              <div class="price-in mart-15">
+                <a href="#" class="btn btn-bg green btn-block">PURCHACE</a> 
+              </div>
+            </div>
+          </div>
+		  <div class="col-md-4 col-sm-4">
+            <div class="price-table">
+              <!-- Plan  -->
+              <div class="pricing-head">
+                <h4>Французский язык</h4>
+                <span class="fa fa-usd curency"></span> <span class="amount">285</span> 
+              </div>
+          
+              <!-- Plean Detail -->
+              <div class="price-in mart-15">
+                <a href="#" class="btn btn-bg green btn-block">PURCHACE</a> 
+              </div>
+            </div>
+          </div>
+		  <div class="col-md-4 col-sm-4">
+            <div class="price-table">
+              <!-- Plan  -->
+              <div class="pricing-head">
+                <h4>Испанский язык</h4>
+                <span class="fa fa-usd curency"></span> <span class="amount">285</span> 
+              </div>
+          
+              <!-- Plean Detail -->
+              <div class="price-in mart-15">
+                <a href="#" class="btn btn-bg green btn-block">PURCHACE</a> 
+              </div>
+            </div>
+          </div>
+		  <div class="col-md-4 col-sm-4">
+            <div class="price-table">
+              <!-- Plan  -->
+              <div class="pricing-head">
+                <h4>Итальянский язык</h4>
+                <span class="fa fa-usd curency"></span> <span class="amount">285</span> 
+              </div>
+          
+              <!-- Plean Detail -->
+              <div class="price-in mart-15">
+                <a href="#" class="btn btn-bg green btn-block">PURCHACE</a> 
+              </div>
+            </div>
+          </div>
+		  <div class="col-md-4 col-sm-4">
+            <div class="price-table">
+              <!-- Plan  -->
+              <div class="pricing-head">
+                <h4>Польский язык</h4>
+                <span class="fa fa-usd curency"></span> <span class="amount">285</span> 
+              </div>
+          
+              <!-- Plean Detail -->
+              <div class="price-in mart-15">
+                <a href="#" class="btn btn-bg green btn-block">PURCHACE</a> 
+              </div>
+            </div>
+          </div>
+		  <div class="col-md-4 col-sm-4">
+            <div class="price-table">
+              <!-- Plan  -->
+              <div class="pricing-head">
+                <h4>IT-English</h4>
+                <span class="fa fa-usd curency"></span> <span class="amount">285</span> 
+              </div>
+          
+              <!-- Plean Detail -->
+              <div class="price-in mart-15">
+                <a href="#" class="btn btn-bg green btn-block">PURCHACE</a> 
+              </div>
+            </div>
+          </div>
+		  <div class="col-md-4 col-sm-4">
+            <div class="price-table">
+              <!-- Plan  -->
+              <div class="pricing-head">
+                <h4>Business English</h4>
+                <span class="fa fa-usd curency"></span> <span class="amount">285</span> 
+              </div>
+          
+              <!-- Plean Detail -->
+              <div class="price-in mart-15">
+                <a href="#" class="btn btn-bg green btn-block">PURCHACE</a> 
+              </div>
+            </div>
+          </div>
+		  <div class="col-md-4 col-sm-4">
+            <div class="price-table">
+              <!-- Plan  -->
+              <div class="pricing-head">
+                <h4>Express English</h4>
+                <span class="fa fa-usd curency"></span> <span class="amount">285</span> 
+              </div>
+          
+              <!-- Plean Detail -->
+              <div class="price-in mart-15">
+                <a href="#" class="btn btn-bg green btn-block">PURCHACE</a> 
+              </div>
+            </div>
+          </div>
+		  <div class="col-md-4 col-sm-4">
+            <div class="price-table">
+              <!-- Plan  -->
+              <div class="pricing-head">
+                <h4>Business Correspondence Language</h4>
+                <span class="fa fa-usd curency"></span> <span class="amount">152</span> 
               </div>
           
               <!-- Plean Detail -->
@@ -798,8 +731,8 @@
             <div class="price-table">
               <!-- Plan  -->
               <div class="pricing-head">
-                <h4>Quarterly Plan</h4>
-                <span class="fa fa-usd curency"></span> <span class="amount">800</span> 
+                <h4>Курс коммуникативной грамматики</h4>
+                <span class="fa fa-usd curency"></span> <span class="amount">152</span> 
               </div>
           
               <!-- Plean Detail -->
@@ -812,8 +745,8 @@
             <div class="price-table">
               <!-- Plan  -->
               <div class="pricing-head">
-                <h4>Year Plan</h4>
-                <span class="fa fa-usd curency"></span> <span class="amount">1200</span> 
+                <h4>Подготовка к ЦТ</h4>
+                <span class="fa fa-usd curency"></span> <span class="amount">285</span> 
               </div>
           
               <!-- Plean Detail -->
