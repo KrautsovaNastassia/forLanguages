@@ -447,6 +447,7 @@ Price Table
 .price-table {
     box-shadow: 0px 0px 1px 0px RGBA(0, 0, 0, 0.4);
     position: relative;
+	margin-bottom: 10px;
 }
 .price-table .pricing-head {
     background: #fff;
@@ -455,6 +456,22 @@ Price Table
 }
 .price-table .pricing-head h4 {
     font-size: 22px;
+    color: #232c3b;
+    margin-top: 0px;
+    letter-spacing: 1px;
+    border-bottom: 1px solid #232c3b;
+    padding-bottom: 20px;
+}
+.price-table .pricing-head h3 {
+    font-size: 26px;
+    color: #232c3b;
+    margin-top: 5px;
+    letter-spacing: 1px;
+    border-bottom: 1px solid #232c3b;
+    padding-bottom: 29px;
+}
+.price-table .pricing-head h5 {
+    font-size: 20px;
     color: #232c3b;
     margin-top: 0px;
     letter-spacing: 1px;
@@ -483,6 +500,11 @@ Price Table
     font-weight: bold !important;
     font-size: 14px;
     background-color: #5fcf80;
+}
+.fa-BYR{
+	background-image: url(../public/img/BYR_symbol.jpg);
+	width: 50px;
+	height: 23px;
 }
 /***********************************
 Contact Us

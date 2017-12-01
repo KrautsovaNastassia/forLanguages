@@ -5,7 +5,7 @@
         <div class="row">
           <div class="header-section text-center">
             <h2>{{(isset($obj->name))?$obj->name:"Добро пожаловать на сайт"}}</h2>
-            {{(isset($obj->body))?$obj->body:"-"}}
+            <!--{{(isset($obj->body))?$obj->body:"-"}}-->
             <hr class="bottom-line">
           </div>
           <div class="feature-info">
@@ -448,7 +448,7 @@
         <div class="row">
           <div class="col-md-6">
             <figure class="imghvr-fold-up">
-              <img src="img/italian_beg.jpg"  class="img-responsive" >
+              <img src="img/italy_beg.jpg"  class="img-responsive" >
               <figcaption>
                   <p><font size=5>Начинающий уровень<br>!!!</font><br> </p>
               </figcaption>
@@ -549,11 +549,11 @@
           </div>
         </div>
       </div>
-      <div class="container">
+      <div class="container" >
         <div class="row">
           <div class="col-md-6">
-            <figure class="imghvr-fold-up">
-              <img src="img/german_beginner.jpg" class="img-responsive">
+            <figure class="imghvr-fold-up margin-bottom: 10px" >
+              <img src="img/german_beg.jpg" class="img-responsive">
               <figcaption>
                   <p><font size=5>Начинающий уровень<br>!!!</font><br> </p>
               </figcaption>
@@ -592,7 +592,7 @@
               <!-- Plan  -->
               <div class="pricing-head">
                 <h4>Английский язык</h4>
-                <span class="fa fa-usd curency"></span> <span class="amount">285</span> 
+                <span class="fa fa-BYR curency"></span> <span class="amount">285</span> 
               </div>
           
               <!-- Plean Detail -->
@@ -606,7 +606,7 @@
               <!-- Plan  -->
               <div class="pricing-head">
                 <h4>Немецкий язык</h4>
-                <span class="fa fa-usd curency"></span> <span class="amount">285</span> 
+                <span class="fa fa-BYR curency"></span> <span class="amount">285</span> 
               </div>
           
               <!-- Plean Detail -->
@@ -620,7 +620,7 @@
               <!-- Plan  -->
               <div class="pricing-head">
                 <h4>Французский язык</h4>
-                <span class="fa fa-usd curency"></span> <span class="amount">285</span> 
+                <span class="fa fa-BYR curency"></span> <span class="amount">285</span> 
               </div>
           
               <!-- Plean Detail -->
@@ -634,7 +634,7 @@
               <!-- Plan  -->
               <div class="pricing-head">
                 <h4>Испанский язык</h4>
-                <span class="fa fa-usd curency"></span> <span class="amount">285</span> 
+                <span class="fa fa-BYR curency"></span> <span class="amount">285</span> 
               </div>
           
               <!-- Plean Detail -->
@@ -648,7 +648,7 @@
               <!-- Plan  -->
               <div class="pricing-head">
                 <h4>Итальянский язык</h4>
-                <span class="fa fa-usd curency"></span> <span class="amount">285</span> 
+                <span class="fa fa-BYR curency"></span> <span class="amount">285</span> 
               </div>
           
               <!-- Plean Detail -->
@@ -662,7 +662,7 @@
               <!-- Plan  -->
               <div class="pricing-head">
                 <h4>Польский язык</h4>
-                <span class="fa fa-usd curency"></span> <span class="amount">285</span> 
+                <span class="fa fa-BYR curency"></span> <span class="amount">285</span> 
               </div>
           
               <!-- Plean Detail -->
@@ -676,7 +676,7 @@
               <!-- Plan  -->
               <div class="pricing-head">
                 <h4>IT-English</h4>
-                <span class="fa fa-usd curency"></span> <span class="amount">285</span> 
+                <span class="fa fa-BYR curency"></span> <span class="amount">285</span> 
               </div>
           
               <!-- Plean Detail -->
@@ -690,7 +690,7 @@
               <!-- Plan  -->
               <div class="pricing-head">
                 <h4>Business English</h4>
-                <span class="fa fa-usd curency"></span> <span class="amount">285</span> 
+                <span class="fa fa-BYR curency"></span> <span class="amount">285</span> 
               </div>
           
               <!-- Plean Detail -->
@@ -704,7 +704,7 @@
               <!-- Plan  -->
               <div class="pricing-head">
                 <h4>Express English</h4>
-                <span class="fa fa-usd curency"></span> <span class="amount">285</span> 
+                <span class="fa fa-BYR curency"></span> <span class="amount">285</span> 
               </div>
           
               <!-- Plean Detail -->
@@ -717,8 +717,8 @@
             <div class="price-table">
               <!-- Plan  -->
               <div class="pricing-head">
-                <h4>Business Correspondence Language</h4>
-                <span class="fa fa-usd curency"></span> <span class="amount">152</span> 
+                <h5>Business Correspondence Language</h5>
+                <span class="fa fa-BYR curency"></span> <span class="amount">152</span> 
               </div>
           
               <!-- Plean Detail -->
@@ -731,8 +731,8 @@
             <div class="price-table">
               <!-- Plan  -->
               <div class="pricing-head">
-                <h4>Курс коммуникативной грамматики</h4>
-                <span class="fa fa-usd curency"></span> <span class="amount">152</span> 
+                <h5>Курс коммуникативной грамматики</h5>
+                <span class="fa fa-BYR curency"></span> <span class="amount">152</span> 
               </div>
           
               <!-- Plean Detail -->
@@ -745,8 +745,8 @@
             <div class="price-table">
               <!-- Plan  -->
               <div class="pricing-head">
-                <h4>Подготовка к ЦТ</h4>
-                <span class="fa fa-usd curency"></span> <span class="amount">285</span> 
+                <h3>Подготовка к ЦТ</h3>
+                <span class="fa fa-BYR curency"></span> <span class="amount">285</span> 
               </div>
           
               <!-- Plean Detail -->
