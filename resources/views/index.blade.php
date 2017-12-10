@@ -343,7 +343,7 @@
         <div class="row">
           <div class="col-md-4 col-sm-6 padleft-right">
             <figure class="imghvr-fold-up">
-              <img src="img/course01.jpg" class="img-responsive">
+              <img src="img/eng_beg.jpg" class="img-responsive">
               <figcaption>
                   <p><font size=5>Английский с нуля?<br>Освой первый уровень!</font><br> </p>
               </figcaption>
@@ -352,7 +352,7 @@
           </div>
           <div class="col-md-4 col-sm-6 padleft-right">
             <figure class="imghvr-fold-up">
-              <img src="img/course06.jpg" class="img-responsive">
+              <img src="img/eng_elem.jpg" class="img-responsive">
               <figcaption>
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam atque, nostrum veniam consequatur libero fugiat, similique quis.</p>
               </figcaption>
@@ -361,17 +361,7 @@
           </div>
           <div class="col-md-4 col-sm-6 padleft-right">
             <figure class="imghvr-fold-up">
-              <img src="img/course03.jpg" class="img-responsive">
-              <figcaption>
-                  <h3>Course Name</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam atque, nostrum veniam consequatur libero fugiat, similique quis.</p>
-              </figcaption>
-              <a href="#"></a>
-            </figure>
-          </div>
-          <div class="col-md-4 col-sm-6 padleft-right">
-            <figure class="imghvr-fold-up">
-              <img src="img/course04.jpg" class="img-responsive">
+              <img src="img/eng_pre_int.jpg" class="img-responsive">
               <figcaption>
                   <h3>Course Name</h3>
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam atque, nostrum veniam consequatur libero fugiat, similique quis.</p>
@@ -380,8 +370,8 @@
             </figure>
           </div>
           <div class="col-md-4 col-sm-6 padleft-right">
-            <figure class="imghvr-fold-up">
-              <img src="img/eng_upper.jpg" class="img-responsive">
+            <figure class="imghvr1-fold-up">
+              <img src="img/eng_int.jpg" class="img-responsive">
               <figcaption>
                   <h3>Course Name</h3>
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam atque, nostrum veniam consequatur libero fugiat, similique quis.</p>
@@ -390,8 +380,29 @@
             </figure>
           </div>
           <div class="col-md-4 col-sm-6 padleft-right">
+          <figure class="imghvr-fold-up margin-bottom: 30px">
+              <img src="img/eng_up_int.jpg" class="img-responsive">
+              <figcaption>
+                  <h3>Course Name</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam atque, nostrum veniam consequatur libero fugiat, similique quis.</p>
+              </figcaption>
+              <a href="#"></a>
+            </figure>
+          </div>
+          <div class="col-md-4 col-sm-6 padleft-right">
+          <figure class="imghvr-fold-up margin-bottom: 30px">
+              <img src="img/eng_adv.jpg" class="img-responsive">
+              <figcaption>
+                  <h3>Course Name</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam atque, nostrum veniam consequatur libero fugiat, similique quis.</p>
+              </figcaption>
+              <a href="#"></a>
+            </figure>
+          </div>
+		  
+		  <div class="col-md-4 col-sm-6 padleft-right">
             <figure class="imghvr-fold-up">
-              <img src="img/course03.jpg" class="img-responsive">
+              <img src="img/eng_adv.jpg" class="img-responsive">
               <figcaption>
                   <h3>Course Name</h3>
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam atque, nostrum veniam consequatur libero fugiat, similique quis.</p>
@@ -415,7 +426,7 @@
         <div class="row">
           <div class="col-md-6">
             <figure class="imghvr-fold-up">
-              <img src="img/spanish_beginer.jpg"  class="img-responsive" >
+              <img src="img/span_1.jpg"  class="img-responsive" >
               <figcaption>
                   <p><font size=5>Начинающий уровень<br>!!!</font><br> </p>
               </figcaption>
@@ -424,7 +435,7 @@
           </div>
           <div class="col-md-6">
             <figure class="imghvr-fold-up">
-              <img src="img/spanish_prod.jpg"  class="img-responsive" >
+              <img src="img/span_2.jpg"  class="img-responsive" >
               <figcaption>
                   <p><font size=5>Продолжающий уровень<br>!!!</font><br> </p>
               </figcaption>
@@ -448,7 +459,7 @@
         <div class="row">
           <div class="col-md-6">
             <figure class="imghvr-fold-up">
-              <img src="img/italy_beg.jpg"  class="img-responsive" >
+              <img src="img/ital_1.jpg"  class="img-responsive" >
               <figcaption>
                   <p><font size=5>Начинающий уровень<br>!!!</font><br> </p>
               </figcaption>
@@ -457,7 +468,7 @@
           </div>
           <div class="col-md-6">
             <figure class="imghvr-fold-up">
-              <img src="img/course06.jpg"  class="img-responsive" >
+              <img src="img/ital_2.jpg"  class="img-responsive" >
               <figcaption>
                   <p><font size=5>Продолжающий уровень<br>!!!</font><br> </p>
               </figcaption>
@@ -481,7 +492,7 @@
         <div class="row">
           <div class="col-md-6">
             <figure class="imghvr-fold-up">
-              <img src="img/course01.jpg" class="img-responsive">
+              <img src="img/pol_1.jpg" class="img-responsive">
               <figcaption>
                  <p><font size=5>Начинающий уровень<br>!!!</font><br> </p>
               </figcaption>
@@ -490,7 +501,7 @@
           </div>
           <div class="col-md-6">
             <figure class="imghvr-fold-up">
-              <img src="img/course06.jpg" class="img-responsive">
+              <img src="img/pol_2.jpg" class="img-responsive">
               <figcaption>
                   <p><font size=5>Продолжающий уровень<br>!!!</font><br> </p>
               </figcaption>
@@ -516,7 +527,7 @@
         <div class="row">
           <div class="col-md-6">
             <figure class="imghvr-fold-up">
-              <img src="img/french_beg.jpg" class="img-responsive">
+              <img src="img/french_1.jpg" class="img-responsive">
               <figcaption>
                  <p><font size=5>Начинающий уровень<br>!!!</font><br> </p>
               </figcaption>
@@ -525,7 +536,7 @@
           </div>
           <div class="col-md-6">
             <figure class="imghvr-fold-up">
-              <img src="img/french_adv.jpg" class="img-responsive">
+              <img src="img/french_2.jpg" class="img-responsive">
               <figcaption>
                   <p><font size=5>Продолжающий уровень<br>!!!</font><br> </p>
               </figcaption>
@@ -553,7 +564,7 @@
         <div class="row">
           <div class="col-md-6">
             <figure class="imghvr-fold-up margin-bottom: 10px" >
-              <img src="img/german_beg.jpg" class="img-responsive">
+              <img src="img/germ_1.jpg" class="img-responsive">
               <figcaption>
                   <p><font size=5>Начинающий уровень<br>!!!</font><br> </p>
               </figcaption>
@@ -562,7 +573,7 @@
           </div>
           <div class="col-md-6">
             <figure class="imghvr-fold-up">
-              <img src="img/german_adv.jpg" class="img-responsive">
+              <img src="img/germ_2.jpg" class="img-responsive">
               <figcaption>
                   <p><font size=5>Продолжающий уровень<br>!!!</font><br> </p>
               </figcaption>

@@ -440,6 +440,15 @@ Course
 [class*=" imghvr-"], [class^="imghvr-"] {
     background-color: #5FCF80;
     color: #fff;
+	margin-bottom: 5px;
+}
+[class*=" imghvr1-"] figcaption, [class^="imghvr1-"] figcaption {
+    background-color: #5FCF80;
+}
+[class*=" imghvr1-"], [class^="imghvr1-"] {
+    background-color: #5FCF80;
+    color: #fff;
+	margin-bottom: 15px;
 }
 /***********************************
 Price Table
