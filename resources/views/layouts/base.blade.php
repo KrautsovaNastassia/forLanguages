@@ -33,14 +33,11 @@
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="#feature">Услуги</a></li>
-          <li><a href="#organisations">Организации</a></li>
+        <!--  <li><a href="#feature">Услуги</a></li> -->
+          <li><a href="#news">Новости</a></li>
           <li><!--<a href="#courses">Курсы</a>-->
 		  <!--<div class="dropdown">-->
-		    <a id="myNavbar" type="button" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-    Курсы
-    <span class="nav navbar-nav navbar-right"></span>
-  </a>
+		  <a id="myNavbar" type="button" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Курсы <span class="nav navbar-nav navbar-right"></span> </a>
 		 <!-- <div class="nav navbar-nav navbar-right">-->
 
 

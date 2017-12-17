@@ -1,6 +1,6 @@
 @extends('layouts.base');
 @section('content')
-<section id ="feature" class="section-padding">
+<section id ="news" class="section-padding">
       <div class="container">
         <div class="row">
           <div class="header-section text-center">
@@ -47,7 +47,7 @@
       </div>
     </section>
     <!--/ feature-->
-    <!--Organisations-->
+    <!--Organisations
     <section id ="organisations" class="section-padding">
       <div class="container">
         <div class="row">
@@ -85,10 +85,10 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
     <!--/ Organisations-->
     <!--Cta-->
-    <section id="cta-2">
+   <!-- <section id="cta-2">
       <div class="container">
         <div class="row">
             <div class="col-lg-12">
@@ -106,7 +106,7 @@
     </section>
     <!--/ Cta-->
     <!--work-shop-->
-    <section id="work-shop" class="section-padding">
+    <!--<section id="work-shop" class="section-padding">
       <div class="container">
         <div class="row">
           <div class="header-section text-center">
@@ -370,7 +370,7 @@
             </figure>
           </div>
           <div class="col-md-4 col-sm-6 padleft-right">
-            <figure class="imghvr1-fold-up">
+            <figure class="imghvr-fold-up margin-bottom-15px">
               <img src="img/eng_int.jpg" class="img-responsive">
               <figcaption>
                   <h3>Course Name</h3>
