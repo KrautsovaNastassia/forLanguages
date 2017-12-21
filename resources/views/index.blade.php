@@ -298,7 +298,7 @@
     </section>
     <!--/ Faculity member-->
     <!--Testimonial-->
-    <section id="testimonial" class="section-padding">
+    <section id="aboutcenter" class="section-padding">
       <div class="container">
         <div class="row">
           <div class="header-section text-center">

@@ -14,6 +14,7 @@
 Route::get('/', 'BaseController@getIndex');
 
 //всегда последний
+Route::get('course/{id}','CourseController@getOne');
 Route::get('/{id}', 'BaseController@getOne');
 
 Auth::routes();

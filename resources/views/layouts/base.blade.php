@@ -29,7 +29,7 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href={{asset('about')}}>Men<span>tor</span></a>
+        <a class="navbar-brand" href={{asset('about')}}>ЦЯП <span><I>БГУИР</I></span></a>
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav navbar-right">
@@ -52,6 +52,7 @@
 <!--</div>-->
 		  </li>
           <li><a href="#pricing">Цены</a></li>
+		  <li><a href="#aboutcenter">О центре</a></li>
           <li><a href="#" data-target="#login" data-toggle="modal">Войти</a></li>
           <li class="btn-trial"><a href="{{asset('register')}}">Регистрация</a></li>
         </ul>
@@ -116,7 +117,7 @@
                 <h2 class="text-dec">Trust & Quality</h2>
               </div>
               <div class="intro-para text-center quote">
-                <p class="big-text">Learning Today . . . Leading Tomorrow.</p>
+                <p class="big-text">Центр языковой подготовки по иностранным языкам при БГУИР</p>
                 <p class="small-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium enim repellat sapiente quos architecto<br>Laudantium enim repellat sapiente quos architecto</p>
                 <a href="#footer" class="btn get-quote">GET A QUOTE</a>
               </div>
