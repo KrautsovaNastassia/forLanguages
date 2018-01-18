@@ -12,7 +12,11 @@ class BaseController extends Controller
 		$obj=Maintext::where('url', 'index')->first();
         return view('index')->with('obj', $obj);
     }
-    public function getOne($id=null){
-        return view('index')->with('id', $id);
+//<<<<<<< HEAD
+  
+//=======
+    public function getOne($id='print'){
+        return view('welcome')->with('id', $id);
+//>>>>>>> e780619a2a8f71c5c944961ede2aeff160457075
     }
 }
