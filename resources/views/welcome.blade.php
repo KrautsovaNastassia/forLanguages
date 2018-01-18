@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Mentor Education Bootstrap Theme</title>
+    <title>Центр языковой подготовки БГУИР</title>
     <meta name="description" content="Free Bootstrap Theme by BootstrapMade.com">
     <meta name="keywords" content="free website templates, free bootstrap themes, free template, free bootstrap, free website template">
     
@@ -12,6 +12,7 @@
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/imagehover.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/print.css">
     <!-- =======================================================
         Theme Name: Mentor
         Theme URL: https://bootstrapmade.com/mentor-free-education-bootstrap-theme/
@@ -29,16 +30,32 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="index.html">Men<span>tor</span></a>
+        <a class="navbar-brand" href={{asset('about')}}>Men<span>tor</span></a>
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="#feature">Features</a></li>
-          <li><a href="#organisations">Organisations</a></li>
-          <li><a href="#courses">Courses</a></li>
-          <li><a href="#pricing">Pricing</a></li>
-          <li><a href="#" data-target="#login" data-toggle="modal">Sign in</a></li>
-          <li class="btn-trial"><a href="#footer">Free Trail</a></li>
+		
+        <li><a href="print.css">Печать</a></li>
+          <li><a href="#news">Новости</a></li>
+          <li><!--<a href="#courses">Курсы</a>-->
+		  <!--<div class="dropdown">-->
+		  <a id="myNavbar" type="button" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Курсы <span class="nav navbar-nav navbar-right"></span> </a>
+		 <!-- <div class="nav navbar-nav navbar-right">-->
+
+
+  <ul class="dropdown-menu" aria-labelledby="myNavbar">
+    <li><a href="#english">Английский язык</a></li>
+	<li><a href="#spanish">Испанский язык</a></li>
+	<li><a href="#italian">Итальянский язык</a></li>
+	<li><a href="#polish">Польский язык</a></li>
+	<li><a href="#german">Немецкий язык</a></li>
+	<li><a href="#french">Французский язык</a></li>
+  </ul>
+<!--</div>-->
+		  </li>
+          <li><a href="#pricing">Цены</a></li>
+          <li><a href="#" data-target="#login" data-toggle="modal">Войти</a></li>
+          <li class="btn-trial"><a href="{{asset('register')}}">Регистрация</a></li>
         </ul>
         </div>
       </div>
@@ -52,21 +69,21 @@
         <div class="modal-content">
           <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal">&times;</button>
-            <h4 class="modal-title text-center form-title">Login</h4>
+            <h4 class="modal-title text-center form-title">Логин</h4>
           </div>
           <div class="modal-body padtrbl">
 
             <div class="login-box-body">
-              <p class="login-box-msg">Sign in to start your session</p>
+              <p class="login-box-msg">Войдите, чтобы начать обучение</p>
               <div class="form-group">
                 <form name="" id="loginForm">
                  <div class="form-group has-feedback"> <!----- username -------------->
-                      <input class="form-control" placeholder="Username"  id="loginid" type="text" autocomplete="off" /> 
+                      <input class="form-control" placeholder="Имя пользователя"  id="loginid" type="text" autocomplete="off" /> 
             <span style="display:none;font-weight:bold; position:absolute;color: red;position: absolute;padding:4px;font-size: 11px;background-color:rgba(128, 128, 128, 0.26);z-index: 17;  right: 27px; top: 5px;" id="span_loginid"></span><!---Alredy exists  ! -->
                       <span class="glyphicon glyphicon-user form-control-feedback"></span>
                   </div>
                   <div class="form-group has-feedback"><!----- password -------------->
-                      <input class="form-control" placeholder="Password" id="loginpsw" type="password" autocomplete="off" />
+                      <input class="form-control" placeholder="Пароль" id="loginpsw" type="password" autocomplete="off" />
             <span style="display:none;font-weight:bold; position:absolute;color: grey;position: absolute;padding:4px;font-size: 11px;background-color:rgba(128, 128, 128, 0.26);z-index: 17;  right: 27px; top: 5px;" id="span_loginpsw"></span><!---Alredy exists  ! -->
                       <span class="glyphicon glyphicon-lock form-control-feedback"></span>
                   </div>
@@ -74,12 +91,12 @@
                       <div class="col-xs-12">
                           <div class="checkbox icheck">
                               <label>
-                                <input type="checkbox" id="loginrem" > Remember Me
+                                <input type="checkbox" id="loginrem" > Запомнить меня
                               </label>
                           </div>
                       </div>
                       <div class="col-xs-12">
-                          <button type="button" class="btn btn-green btn-block btn-flat" onclick="userlogin()">Sign In</button>
+                          <button type="button" class="btn btn-green btn-block btn-flat" onclick="userlogin()">Войти</button>
                       </div>
                   </div>
                 </form>
@@ -90,68 +107,37 @@
 
       </div>
     </div>
-    <!--/ Modal box-->
-    <!--Banner-->
-    <div class="banner">
-      <div class="bg-color">
-        <div class="container">
-          <div class="row">
-            <div class="banner-text text-center">
-              <div class="text-border">
-                <h2 class="text-dec">Trust & Quality</h2>
-              </div>
-              <div class="intro-para text-center quote">
-                <p class="big-text">Learning Today . . . Leading Tomorrow.</p>
-                <p class="small-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium enim repellat sapiente quos architecto<br>Laudantium enim repellat sapiente quos architecto</p>
-                <a href="#footer" class="btn get-quote">GET A QUOTE</a>
-              </div>
-              <a href="#feature" class="mouse-hover"><div class="mouse"></div></a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!--/ Banner-->
-    <!--Feature-->
-    <section id ="feature" class="section-padding">
+@extends('layouts.base')
+@section('content')
+<section id ="news" class="section-padding">
       <div class="container">
         <div class="row">
           <div class="header-section text-center">
-            <h2>Features</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem nesciunt vitae,<br> maiores, magni dolorum aliquam.</p>
-            <hr class="bottom-line">
+            <h2>{{(isset($obj->name))?$obj->name:"Добро пожаловать на сайт"}}</h2>
+            <!--{{(isset($obj->body))?$obj->body:"-"}}-->
           </div>
           <div class="feature-info">
             <div class="fea">
               <div class="col-md-4">
                 <div class="heading pull-right">
-                  <h4>Latest Technologies</h4>
-                  <p>Donec et lectus bibendum dolor dictum auctor in ac erat. Vestibulum egestas sollicitudin metus non urna in eros tincidunt convallis id id nisi in interdum.</p>
-                </div>
-                <div class="fea-img pull-left">
-                  <i class="fa fa-css3"></i>
+                  <h4> <center>Учи английский смотря фильмы</center></h4>
+                  <a href="https://english-films.com/" ><img src="img/abc.png" class="img-responsive"></a>
                 </div>
               </div>
             </div>
             <div class="fea">
               <div class="col-md-4">
                 <div class="heading pull-right">
-                  <h4>Toons Background</h4>
-                  <p>Donec et lectus bibendum dolor dictum auctor in ac erat. Vestibulum egestas sollicitudin metus non urna in eros tincidunt convallis id id nisi in interdum.</p>
-                </div>
-                <div class="fea-img pull-left">
-                  <i class="fa fa-drupal"></i>
+                  <h4> <center>Мы уже в VK, присоединяйся!</center></h4>
+                  <a href="https://vk.com/club113964950" ><img src="img/vk.png" class="img-responsive"></a>
                 </div>
               </div>
             </div>
             <div class="fea">
               <div class="col-md-4">
                 <div class="heading pull-right">
-                  <h4>Award Winning Design</h4>
-                  <p>Donec et lectus bibendum dolor dictum auctor in ac erat. Vestibulum egestas sollicitudin metus non urna in eros tincidunt convallis id id nisi in interdum.</p>
-                </div>
-                <div class="fea-img pull-left">
-                  <i class="fa fa-trophy"></i>
+                  <h4> <center>Стань профи с Лео</center></h4>
+                  <a href="http://lingualeo.com/ru" ><img src="img/leo.png" class="img-responsive"></a>
                 </div>
               </div>
             </div>
@@ -160,7 +146,7 @@
       </div>
     </section>
     <!--/ feature-->
-    <!--Organisations-->
+    <!--Organisations
     <section id ="organisations" class="section-padding">
       <div class="container">
         <div class="row">
@@ -198,10 +184,10 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
     <!--/ Organisations-->
     <!--Cta-->
-    <section id="cta-2">
+   <!-- <section id="cta-2">
       <div class="container">
         <div class="row">
             <div class="col-lg-12">
@@ -209,7 +195,7 @@
               <p class="cta-2-txt">Sign up for our free weekly software design courses, we’ll send them right to your inbox.</p>
              <div class="cta-2-form text-center">
               <form action="#" method="post" id="workshop-newsletter-form">
-                    <input name="" placeholder="Enter Your Email Address" type="email">
+                    <input name="" placeholder="Введите Ваш адрес электронной почты" type="email">
                     <input class="cta-2-form-submit-btn" value="Subscribe" type="submit">
                 </form>
              </div>   
@@ -219,7 +205,7 @@
     </section>
     <!--/ Cta-->
     <!--work-shop-->
-    <section id="work-shop" class="section-padding">
+    <!--<section id="work-shop" class="section-padding">
       <div class="container">
         <div class="row">
           <div class="header-section text-center">
@@ -266,22 +252,21 @@
       <div class="container">
         <div class="row">
           <div class="header-section text-center">
-            <h2>Meet Our Faculty Member</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem nesciunt vitae,<br> maiores, magni dolorum aliquam.</p>
-            <hr class="bottom-line">
+            <h2>Преподаватели</h2>
+            
           </div>
-          <div class="col-lg-4 col-md-4 col-sm-4">
+		  <div class="col-lg-4 col-md-4 col-sm-4">
             <div class="pm-staff-profile-container" >
               <div class="pm-staff-profile-image-wrapper text-center">
                 <div class="pm-staff-profile-image">
-                  <img src="img/mentor.jpg" alt="" class="img-thumbnail img-circle" />
+                  <img src="img/шелягова.jpg" alt="" class="img-thumbnail img-circle" />
                 </div>   
               </div>                                
               <div class="pm-staff-profile-details text-center">  
-                <p class="pm-staff-profile-name">Bryan Johnson</p>
-                <p class="pm-staff-profile-title">Lead Software Engineer</p>
+                <p class="pm-staff-profile-name">Шелягова Тамара Григорьевна</p>
+                <p class="pm-staff-profile-title">Заведующая кафедрой иностранных языков №1</p>
                 
-                <p class="pm-staff-profile-bio">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et placerat dui. In posuere metus et elit placerat tristique. Maecenas eu est in sem ullamcorper tincidunt. </p>
+                <p class="pm-staff-profile-bio"> </p>
               </div>     
             </div>
           </div>
@@ -289,32 +274,124 @@
             <div class="pm-staff-profile-container" >
               <div class="pm-staff-profile-image-wrapper text-center">
                 <div class="pm-staff-profile-image">
-                  <img src="img/mentor.jpg" alt="" class="img-thumbnail img-circle" />
+                  <img src="img/левкович.jpg" alt="" class="img-thumbnail img-circle" />
                 </div>   
               </div>                                
               <div class="pm-staff-profile-details text-center">  
-                <p class="pm-staff-profile-name">Bryan Johnson</p>
-                <p class="pm-staff-profile-title">Lead Software Engineer</p>
+                <p class="pm-staff-profile-name">Левкович Татьяна Викторовна </p>
+                <p class="pm-staff-profile-title">Начальник Центра</p>
                 
-                <p class="pm-staff-profile-bio">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et placerat dui. In posuere metus et elit placerat tristique. Maecenas eu est in sem ullamcorper tincidunt. </p>
+                <p class="pm-staff-profile-bio"> </p>
               </div>     
             </div>
           </div>
-          <div class="col-lg-4 col-md-4 col-sm-4">
+		  <div class="col-lg-4 col-md-4 col-sm-4">
             <div class="pm-staff-profile-container" >
               <div class="pm-staff-profile-image-wrapper text-center">
                 <div class="pm-staff-profile-image">
-                    <img src="img/mentor.jpg" alt="" class="img-thumbnail img-circle" />
+                    <img src="img/блюмер.jpg" alt="" class="img-thumbnail img-circle" />
                 </div>   
               </div>                                
               <div class="pm-staff-profile-details text-center">  
-                <p class="pm-staff-profile-name">Bryan Johnson</p>
-                <p class="pm-staff-profile-title">Lead Software Engineer</p>
+                <p class="pm-staff-profile-name">Блюмер Мария Александровна</p>
+                <p class="pm-staff-profile-title">Преподаватель</p>
                 
-                <p class="pm-staff-profile-bio">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et placerat dui. In posuere metus et elit placerat tristique. Maecenas eu est in sem ullamcorper tincidunt. </p>
+                <p class="pm-staff-profile-bio">Ведет практические занятия в группах Upper-Intermediate </p>
               </div>     
             </div>
           </div>
+		  <div class="col-lg-4 col-md-4 col-sm-4">
+            <div class="pm-staff-profile-container" >
+              <div class="pm-staff-profile-image-wrapper text-center">
+                <div class="pm-staff-profile-image">
+                  <img src="img/язбек.jpg" alt="" class="img-thumbnail img-circle" />
+                </div>   
+              </div>                                
+              <div class="pm-staff-profile-details text-center">  
+                <p class="pm-staff-profile-name">Язбек Елена Александровна </p>
+                <p class="pm-staff-profile-title">Преподаватель</p>
+                
+                <p class="pm-staff-profile-bio">Ведет практические занятия в группах Intermediate, Beginner </p>
+              </div>     
+            </div>
+          </div>
+		  <div class="col-lg-4 col-md-4 col-sm-4">
+            <div class="pm-staff-profile-container" >
+              <div class="pm-staff-profile-image-wrapper text-center">
+                <div class="pm-staff-profile-image">
+                  <img src="img/белоус.jpg" alt="" class="img-thumbnail img-circle" />
+                </div>   
+              </div>                                
+              <div class="pm-staff-profile-details text-center">  
+                <p class="pm-staff-profile-name">Белоус Татьяна<br> Сергеевна </p>
+                <p class="pm-staff-profile-title">Преподаватель</p>
+                
+                <p class="pm-staff-profile-bio">Ведет практические занятия в группах Beginner,Elementary </p>
+              </div>     
+            </div>
+          </div>
+		  <div class="col-lg-4 col-md-4 col-sm-4">
+            <div class="pm-staff-profile-container" >
+              <div class="pm-staff-profile-image-wrapper text-center">
+                <div class="pm-staff-profile-image">
+                  <img src="img/булгакова.jpg" alt="" class="img-thumbnail img-circle" />
+                </div>   
+              </div>                                
+              <div class="pm-staff-profile-details text-center">  
+                <p class="pm-staff-profile-name">Булгакова Диана Андреевна </p>
+                <p class="pm-staff-profile-title">Преподаватель</p>
+                
+                <p class="pm-staff-profile-bio">Ведет практические занятия в группах Intermediate, Pre-Intermediate </p>
+              </div>     
+            </div>
+          </div>
+		  <div class="col-lg-4 col-md-4 col-sm-4">
+            <div class="pm-staff-profile-container" >
+              <div class="pm-staff-profile-image-wrapper text-center">
+                <div class="pm-staff-profile-image">
+                  <img src="img/галецкая.jpg" alt="" class="img-thumbnail img-circle" />
+                </div>   
+              </div>                                
+              <div class="pm-staff-profile-details text-center">  
+                <p class="pm-staff-profile-name">Галецкая Ангелина Юрьевна </p>
+                <p class="pm-staff-profile-title">Преподаватель</p>
+                
+                <p class="pm-staff-profile-bio">Ведет практические занятия в группах IT-English, Upper-Intermediate, Intermediate  </p>
+              </div>     
+            </div>
+          </div>
+		  <div class="col-lg-4 col-md-4 col-sm-4">
+            <div class="pm-staff-profile-container" >
+              <div class="pm-staff-profile-image-wrapper text-center">
+                <div class="pm-staff-profile-image">
+                  <img src="img/гончарова.jpg" alt="" class="img-thumbnail img-circle" />
+                </div>   
+              </div>                                
+              <div class="pm-staff-profile-details text-center">  
+                <p class="pm-staff-profile-name">Гончарова Ирина Викторовна </p>
+                <p class="pm-staff-profile-title">Преподаватель</p>
+                
+                <p class="pm-staff-profile-bio">Ведет практические занятия в группах Beginner, Pre-Intermediate, Advanced, IT-Enlish </p>
+              </div>     
+            </div>
+          </div>
+		  <div class="col-lg-4 col-md-4 col-sm-4">
+            <div class="pm-staff-profile-container" >
+              <div class="pm-staff-profile-image-wrapper text-center">
+                <div class="pm-staff-profile-image">
+                  <img src="img/маликова.jpg" alt="" class="img-thumbnail img-circle" />
+                </div>   
+              </div>                                
+              <div class="pm-staff-profile-details text-center">  
+                <p class="pm-staff-profile-name">Маликова Ирина Гавриловна </p>
+                <p class="pm-staff-profile-title">Преподаватель</p>
+                
+                <p class="pm-staff-profile-bio">Ведет практические занятия в группах Upper-Intermediate </p>
+              </div>     
+            </div>
+          </div>
+          
+          
         </div>
       </div>
     </section>
@@ -345,12 +422,18 @@
     </section>
     <!--/ Testimonial-->
     <!--Courses-->
-    <section id ="courses" class="section-padding">
+    <!--<section id ="courses" class="section-padding">
+      <div class="container">-->
+        <div class="row">
+          <div class="header-section text-center">
+            <h1><B>КУРСЫ</B></h1>
+			 </div>
+        </div>
+	<section id ="english" class="section-padding">
       <div class="container">
         <div class="row">
           <div class="header-section text-center">
-            <h2>Courses</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem nesciunt vitae,<br> maiores, magni dolorum aliquam.</p>
+            <h1><B>Английский язык</B></h1>
             <hr class="bottom-line">
           </div>
         </div>
@@ -359,7 +442,25 @@
         <div class="row">
           <div class="col-md-4 col-sm-6 padleft-right">
             <figure class="imghvr-fold-up">
-              <img src="img/course01.jpg" class="img-responsive">
+              <img src="img/eng_beg.jpg" class="img-responsive">
+              <figcaption>
+                  <p><font size=5>Английский с нуля?<br>Освой первый уровень!</font><br> </p>
+              </figcaption>
+              <a href="#"></a>
+            </figure>
+          </div>
+          <div class="col-md-4 col-sm-6 padleft-right">
+            <figure class="imghvr-fold-up">
+              <img src="img/eng_elem.jpg" class="img-responsive">
+              <figcaption>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam atque, nostrum veniam consequatur libero fugiat, similique quis.</p>
+              </figcaption>
+              <a href="#"></a>
+            </figure>
+          </div>
+          <div class="col-md-4 col-sm-6 padleft-right">
+            <figure class="imghvr-fold-up">
+              <img src="img/eng_pre_int.jpg" class="img-responsive">
               <figcaption>
                   <h3>Course Name</h3>
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam atque, nostrum veniam consequatur libero fugiat, similique quis.</p>
@@ -368,8 +469,8 @@
             </figure>
           </div>
           <div class="col-md-4 col-sm-6 padleft-right">
-            <figure class="imghvr-fold-up">
-              <img src="img/course02.jpg" class="img-responsive">
+            <figure class="imghvr-fold-up margin-bottom-15px">
+              <img src="img/eng_int.jpg" class="img-responsive">
               <figcaption>
                   <h3>Course Name</h3>
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam atque, nostrum veniam consequatur libero fugiat, similique quis.</p>
@@ -378,8 +479,8 @@
             </figure>
           </div>
           <div class="col-md-4 col-sm-6 padleft-right">
-            <figure class="imghvr-fold-up">
-              <img src="img/course03.jpg" class="img-responsive">
+          <figure class="imghvr-fold-up margin-bottom: 30px">
+              <img src="img/eng_up_int.jpg" class="img-responsive">
               <figcaption>
                   <h3>Course Name</h3>
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam atque, nostrum veniam consequatur libero fugiat, similique quis.</p>
@@ -388,8 +489,8 @@
             </figure>
           </div>
           <div class="col-md-4 col-sm-6 padleft-right">
-            <figure class="imghvr-fold-up">
-              <img src="img/course04.jpg" class="img-responsive">
+          <figure class="imghvr-fold-up margin-bottom: 30px">
+              <img src="img/eng_adv.jpg" class="img-responsive">
               <figcaption>
                   <h3>Course Name</h3>
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam atque, nostrum veniam consequatur libero fugiat, similique quis.</p>
@@ -397,45 +498,326 @@
               <a href="#"></a>
             </figure>
           </div>
-          <div class="col-md-4 col-sm-6 padleft-right">
-            <figure class="imghvr-fold-up">
-              <img src="img/course05.jpg" class="img-responsive">
-              <figcaption>
-                  <h3>Course Name</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam atque, nostrum veniam consequatur libero fugiat, similique quis.</p>
-              </figcaption>
-              <a href="#"></a>
-            </figure>
-          </div>
-          <div class="col-md-4 col-sm-6 padleft-right">
-            <figure class="imghvr-fold-up">
-              <img src="img/course06.jpg" class="img-responsive">
-              <figcaption>
-                  <h3>Course Name</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam atque, nostrum veniam consequatur libero fugiat, similique quis.</p>
-              </figcaption>
-              <a href="#"></a>
-            </figure>
+</div>
+      </div>
+    </section>
+	<section id ="spanish" class="section-padding">
+      <div class="container">
+        <div class="row">
+          <div class="header-section text-center">
+            <h1><B>Испанский язык</B></h1>
+            <hr class="bottom-line">
           </div>
         </div>
       </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <figure class="imghvr-fold-up">
+              <img src="img/span_1.jpg"  class="img-responsive" >
+              <figcaption>
+                  <p><font size=5>Начинающий уровень<br>!!!</font><br> </p>
+              </figcaption>
+              <a href="#"></a>
+            </figure>
+          </div>
+          <div class="col-md-6">
+            <figure class="imghvr-fold-up">
+              <img src="img/span_2.jpg"  class="img-responsive" >
+              <figcaption>
+                  <p><font size=5>Продолжающий уровень<br>!!!</font><br> </p>
+              </figcaption>
+              <a href="#"></a>
+            </figure>
+          </div>
+</div>
+      </div>
     </section>
+	
+	<section id ="italian" class="section-padding">
+      <div class="container">
+        <div class="row">
+          <div class="header-section text-center">
+            <h1><B>Итальянский язык</B></h1>
+            <hr class="bottom-line">
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <figure class="imghvr-fold-up">
+              <img src="img/ital_1.jpg"  class="img-responsive" >
+              <figcaption>
+                  <p><font size=5>Начинающий уровень<br>!!!</font><br> </p>
+              </figcaption>
+              <a href="#"></a>
+            </figure>
+          </div>
+          <div class="col-md-6">
+            <figure class="imghvr-fold-up">
+              <img src="img/ital_2.jpg"  class="img-responsive" >
+              <figcaption>
+                  <p><font size=5>Продолжающий уровень<br>!!!</font><br> </p>
+              </figcaption>
+              <a href="#"></a>
+            </figure>
+          </div>
+</div>
+      </div>
+    </section>
+	
+	<section id ="polish" class="section-padding">
+      <div class="container">
+        <div class="row">
+          <div class="header-section text-center">
+            <h1><B>Польский язык</B></h1>
+            <hr class="bottom-line">
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <figure class="imghvr-fold-up">
+              <img src="img/pol_1.jpg" class="img-responsive">
+              <figcaption>
+                 <p><font size=5>Начинающий уровень<br>!!!</font><br> </p>
+              </figcaption>
+              <a href="#"></a>
+            </figure>
+          </div>
+          <div class="col-md-6">
+            <figure class="imghvr-fold-up">
+              <img src="img/pol_2.jpg" class="img-responsive">
+              <figcaption>
+                  <p><font size=5>Продолжающий уровень<br>!!!</font><br> </p>
+              </figcaption>
+              <a href="#"></a>
+            </figure>
+          </div>
+         
+   
+</div>
+      </div>
+    </section>
+	
+	<section id ="french" class="section-padding">
+      <div class="container">
+        <div class="row">
+          <div class="header-section text-center">
+            <h1><B>Французский язык</B></h1>
+            <hr class="bottom-line">
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <figure class="imghvr-fold-up">
+              <img src="img/french_1.jpg" class="img-responsive">
+              <figcaption>
+                 <p><font size=5>Начинающий уровень<br>!!!</font><br> </p>
+              </figcaption>
+              <a href="#"></a>
+            </figure>
+          </div>
+          <div class="col-md-6">
+            <figure class="imghvr-fold-up">
+              <img src="img/french_2.jpg" class="img-responsive">
+              <figcaption>
+                  <p><font size=5>Продолжающий уровень<br>!!!</font><br> </p>
+              </figcaption>
+              <a href="#"></a>
+            </figure>
+          </div>
+         
+         
+         
+         
+</div>
+      </div>
+    </section>
+	
+	<section id ="german" class="section-padding">
+      <div class="container">
+        <div class="row">
+          <div class="header-section text-center">
+            <h1><B>Немецкий язык</B></h1>
+            <hr class="bottom-line">
+          </div>
+        </div>
+      </div>
+      <div class="container" >
+        <div class="row">
+          <div class="col-md-6">
+            <figure class="imghvr-fold-up margin-bottom: 10px" >
+              <img src="img/germ_1.jpg" class="img-responsive">
+              <figcaption>
+                  <p><font size=5>Начинающий уровень<br>!!!</font><br> </p>
+              </figcaption>
+              <a href="#"></a>
+            </figure>
+          </div>
+          <div class="col-md-6">
+            <figure class="imghvr-fold-up">
+              <img src="img/germ_2.jpg" class="img-responsive">
+              <figcaption>
+                  <p><font size=5>Продолжающий уровень<br>!!!</font><br> </p>
+              </figcaption>
+              <a href="#"></a>
+            </figure>
+          </div>
+          
+          
+       
+</div>
+      </div>
+    </section>
+       <!-- </div>
+      </div>
+    </section>-->
     <!--/ Courses-->
     <!--Pricing-->
     <section id ="pricing" class="section-padding">
       <div class="container">
         <div class="row">
           <div class="header-section text-center">
-            <h2>Our Pricing</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem nesciunt vitae,<br> maiores, magni dolorum aliquam.</p>
-            <hr class="bottom-line">
+            <h2>Наши цены</h2>
+           
           </div>
           <div class="col-md-4 col-sm-4">
             <div class="price-table">
               <!-- Plan  -->
               <div class="pricing-head">
-                <h4>Monthly Plan</h4>
-                <span class="fa fa-usd curency"></span> <span class="amount">200</span> 
+                <h4>Английский язык</h4>
+                <span class="fa fa-BYR curency"></span> <span class="amount">285</span> 
+              </div>
+          
+              <!-- Plean Detail -->
+              <div class="price-in mart-15">
+                <a href="#" class="btn btn-bg green btn-block">PURCHACE</a> 
+              </div>
+            </div>
+          </div>
+		  <div class="col-md-4 col-sm-4">
+            <div class="price-table">
+              <!-- Plan  -->
+              <div class="pricing-head">
+                <h4>Немецкий язык</h4>
+                <span class="fa fa-BYR curency"></span> <span class="amount">285</span> 
+              </div>
+          
+              <!-- Plean Detail -->
+              <div class="price-in mart-15">
+                <a href="#" class="btn btn-bg green btn-block">PURCHACE</a> 
+              </div>
+            </div>
+          </div>
+		  <div class="col-md-4 col-sm-4">
+            <div class="price-table">
+              <!-- Plan  -->
+              <div class="pricing-head">
+                <h4>Французский язык</h4>
+                <span class="fa fa-BYR curency"></span> <span class="amount">285</span> 
+              </div>
+          
+              <!-- Plean Detail -->
+              <div class="price-in mart-15">
+                <a href="#" class="btn btn-bg green btn-block">PURCHACE</a> 
+              </div>
+            </div>
+          </div>
+		  <div class="col-md-4 col-sm-4">
+            <div class="price-table">
+              <!-- Plan  -->
+              <div class="pricing-head">
+                <h4>Испанский язык</h4>
+                <span class="fa fa-BYR curency"></span> <span class="amount">285</span> 
+              </div>
+          
+              <!-- Plean Detail -->
+              <div class="price-in mart-15">
+                <a href="#" class="btn btn-bg green btn-block">PURCHACE</a> 
+              </div>
+            </div>
+          </div>
+		  <div class="col-md-4 col-sm-4">
+            <div class="price-table">
+              <!-- Plan  -->
+              <div class="pricing-head">
+                <h4>Итальянский язык</h4>
+                <span class="fa fa-BYR curency"></span> <span class="amount">285</span> 
+              </div>
+          
+              <!-- Plean Detail -->
+              <div class="price-in mart-15">
+                <a href="#" class="btn btn-bg green btn-block">PURCHACE</a> 
+              </div>
+            </div>
+          </div>
+		  <div class="col-md-4 col-sm-4">
+            <div class="price-table">
+              <!-- Plan  -->
+              <div class="pricing-head">
+                <h4>Польский язык</h4>
+                <span class="fa fa-BYR curency"></span> <span class="amount">285</span> 
+              </div>
+          
+              <!-- Plean Detail -->
+              <div class="price-in mart-15">
+                <a href="#" class="btn btn-bg green btn-block">PURCHACE</a> 
+              </div>
+            </div>
+          </div>
+		  <div class="col-md-4 col-sm-4">
+            <div class="price-table">
+              <!-- Plan  -->
+              <div class="pricing-head">
+                <h4>IT-English</h4>
+                <span class="fa fa-BYR curency"></span> <span class="amount">285</span> 
+              </div>
+          
+              <!-- Plean Detail -->
+              <div class="price-in mart-15">
+                <a href="#" class="btn btn-bg green btn-block">PURCHACE</a> 
+              </div>
+            </div>
+          </div>
+		  <div class="col-md-4 col-sm-4">
+            <div class="price-table">
+              <!-- Plan  -->
+              <div class="pricing-head">
+                <h4>Business English</h4>
+                <span class="fa fa-BYR curency"></span> <span class="amount">285</span> 
+              </div>
+          
+              <!-- Plean Detail -->
+              <div class="price-in mart-15">
+                <a href="#" class="btn btn-bg green btn-block">PURCHACE</a> 
+              </div>
+            </div>
+          </div>
+		  <div class="col-md-4 col-sm-4">
+            <div class="price-table">
+              <!-- Plan  -->
+              <div class="pricing-head">
+                <h4>Express English</h4>
+                <span class="fa fa-BYR curency"></span> <span class="amount">285</span> 
+              </div>
+          
+              <!-- Plean Detail -->
+              <div class="price-in mart-15">
+                <a href="#" class="btn btn-bg green btn-block">PURCHACE</a> 
+              </div>
+            </div>
+          </div>
+		  <div class="col-md-4 col-sm-4">
+            <div class="price-table">
+              <!-- Plan  -->
+              <div class="pricing-head">
+                <h5>Business Correspondence Language</h5>
+                <span class="fa fa-BYR curency"></span> <span class="amount">152</span> 
               </div>
           
               <!-- Plean Detail -->
@@ -448,8 +830,8 @@
             <div class="price-table">
               <!-- Plan  -->
               <div class="pricing-head">
-                <h4>Quarterly Plan</h4>
-                <span class="fa fa-usd curency"></span> <span class="amount">800</span> 
+                <h5>Курс коммуникативной грамматики</h5>
+                <span class="fa fa-BYR curency"></span> <span class="amount">152</span> 
               </div>
           
               <!-- Plean Detail -->
@@ -462,8 +844,8 @@
             <div class="price-table">
               <!-- Plan  -->
               <div class="pricing-head">
-                <h4>Year Plan</h4>
-                <span class="fa fa-usd curency"></span> <span class="amount">1200</span> 
+                <h3>Подготовка к ЦТ</h3>
+                <span class="fa fa-BYR curency"></span> <span class="amount">285</span> 
               </div>
           
               <!-- Plean Detail -->
@@ -481,11 +863,11 @@
       <div class="container">
         <div class="row">
           <div class="header-section text-center">
-            <h2>Contact Us</h2>
+            <h2>Напишите нам</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem nesciunt vitae,<br> maiores, magni dolorum aliquam.</p>
             <hr class="bottom-line">
           </div>
-          <div id="sendmessage">Your message has been sent. Thank you!</div>
+          <div id="sendmessage">Ваше сообщение отправлено. Спасибо!</div>
           <div id="errormessage"></div>
           <form action="" method="post" role="form" class="contactForm">
               <div class="col-md-6 col-sm-6 col-xs-12 left">
@@ -520,56 +902,7 @@
       </div>
     </section>
     <!--/ Contact-->
-    <!--Footer-->
-    <footer id="footer" class="footer">
-      <div class="container text-center">
-    
-      <h3>Start Your Free Trial Now!</h3>
-    
-      <form class="mc-trial row">
-        <div class="form-group col-md-3 col-md-offset-2 col-sm-4">
-          <div class=" controls">
-            <input name="name" placeholder="Enter Your Name" class="form-control" type="text">
-          </div>
-        </div><!-- End email input -->
-        <div class="form-group col-md-3 col-sm-4">
-          <div class=" controls">
-            <input name="EMAIL" placeholder="Enter Your email" class="form-control" type="email">
-          </div>
-        </div><!-- End email input -->
-        <div class="col-md-2 col-sm-4">
-          <p>
-            <button name="submit" type="submit" class="btn btn-block btn-submit">
-            Submit <i class="fa fa-arrow-right"></i></button>
-          </p>
-        </div>
-      </form><!-- End newsletter-form -->
-      <ul class="social-links">
-        <li><a href="#link"><i class="fa fa-twitter fa-fw"></i></a></li>
-        <li><a href="#link"><i class="fa fa-facebook fa-fw"></i></a></li>
-        <li><a href="#link"><i class="fa fa-google-plus fa-fw"></i></a></li>
-        <li><a href="#link"><i class="fa fa-dribbble fa-fw"></i></a></li>
-        <li><a href="#link"><i class="fa fa-linkedin fa-fw"></i></a></li>
-      </ul>
-        ©2016 Mentor Theme. All rights reserved
-        <div class="credits">
-            <!-- 
-                All the links in the footer should remain intact. 
-                You can delete the links only if you purchased the pro version.
-                Licensing information: https://bootstrapmade.com/license/
-                Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Mentor
-            -->
-            Designed by <a href="https://bootstrapmade.com/">Free Bootstrap Themes</a>
-        </div>
-      </div>
-    </footer>
-    <!--/ Footer-->
-    
-    <script src="js/jquery.min.js"></script>
-    <script src="js/jquery.easing.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/custom.js"></script>
-    <script src="contactform/contactform.js"></script>
-    
+@endsection
+	
   </body>
 </html>

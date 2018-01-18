@@ -8,17 +8,11 @@
     <meta name="keywords" content="free website templates, free bootstrap themes, free template, free bootstrap, free website template">
     
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans|Candal|Alegreya+Sans">
-    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href={{asset ('css/font-awesome.min.css')}}>
+    <link rel="stylesheet" type="text/css" href={{asset ('css/bootstrap.min.css')}}>
     <link rel="stylesheet" type="text/css" href={{asset ('css/imagehover.min.css')}}>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-	<link rel="stylesheet" type="text/css" media="print" href={{asset('css/print.css')}}>
-    <!-- =======================================================
-        Theme Name: Mentor
-        Theme URL: https://bootstrapmade.com/mentor-free-education-bootstrap-theme/
-        Author: BootstrapMade.com
-        Author URL: https://bootstrapmade.com
-    ======================================================= -->
+    <link rel="stylesheet" type="text/css" href={{asset ('css/style.css')}}>
+    
   </head>
   <body>
     <!--Navigation bar-->
@@ -34,7 +28,7 @@
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav navbar-right">
-         <li><a href="print.css">Версия для печати</a></li> 
+        <!--  <li><a href="#feature">Услуги</a></li> -->
           <li><a href="#news">Новости</a></li>
           <li><!--<a href="#courses">Курсы</a>-->
 		  <!--<div class="dropdown">-->
@@ -108,71 +102,18 @@
       </div>
     </div>
     <!--/ Modal box-->
-    <!--Banner-->
-    <div class="banner">
-      <div class="bg-color">
-        <div class="container">
-          <div class="row">
-            <div class="banner-text text-center">
-              <div class="text-border">
-                <h2 class="text-dec">Trust & Quality</h2>
-              </div>
-              <div class="intro-para text-center quote">
-                <p class="big-text">Центр языковой подготовки по иностранным языкам при БГУИР</p>
-                <p class="small-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium enim repellat sapiente quos architecto<br>Laudantium enim repellat sapiente quos architecto</p>
-                <a href="#footer" class="btn get-quote">GET A QUOTE</a>
-              </div>
-              <a href="#feature" class="mouse-hover"><div class="mouse"></div></a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!--/ Banner-->
+   
     <!--Feature-->
     @yield('content')
     <!--Footer-->
     <footer id="footer" class="footer">
-      <!--<div class="container text-center">
-    
-      <h3>Начните бесплатное занятие прямо сейчас!</h3>
-    
-      <form class="mc-trial row">
-        <div class="form-group col-md-3 col-md-offset-2 col-sm-4">
-          <div class=" controls">
-            <input name="name" placeholder="Введите Ваше имя" class="form-control" type="text">
-          </div>
-        </div><!-- End email input 
-        <div class="form-group col-md-3 col-sm-4">
-          <div class=" controls">
-            <input name="EMAIL" placeholder="Введите адрес электронной почты" class="form-control" type="email">
-          </div>
-        </div><!-- End email input 
-        <div class="col-md-2 col-sm-4">
-          <p>
-            <button name="submit" type="submit" class="btn btn-block btn-submit">
-            Submit <i class="fa fa-arrow-right"></i></button>
-          </p>
-        </div>
-      </form><!-- End newsletter-form 
-      <ul class="social-links">
-        <li><a href="#link"><i class="fa fa-twitter fa-fw"></i></a></li>
-        <li><a href="#link"><i class="fa fa-facebook fa-fw"></i></a></li>
-        <li><a href="#link"><i class="fa fa-google-plus fa-fw"></i></a></li>
-        <li><a href="#link"><i class="fa fa-dribbble fa-fw"></i></a></li>
-        <li><a href="#link"><i class="fa fa-linkedin fa-fw"></i></a></li>
-      </ul> -->
+     
 	  <div class="container text-center">
         220013, г. Минск, ул. П. Бровки, 6, 309 ауд.
 		Центр языковой подготовки
 		
         <div class="credits">
-            <!-- 
-                All the links in the footer should remain intact. 
-                You can delete the links only if you purchased the pro version.
-                Licensing information: https://bootstrapmade.com/license/
-                Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Mentor
-            -->
+           
             Адрес электронной почты <a href="kaffl1@bsuir.by ">kaffl1@bsuir.by </a>
         </div>
       </div>

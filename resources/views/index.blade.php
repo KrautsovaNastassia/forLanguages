@@ -1,11 +1,11 @@
 @extends('layouts.base');
 @section('content')
-<section id ="news" class="section-padding">
+<!--<section id ="news" class="section-padding">
       <div class="container">
         <div class="row">
           <div class="header-section text-center">
             <h2>{{(isset($obj->name))?$obj->name:"Добро пожаловать на сайт"}}</h2>
-            <!--{{(isset($obj->body))?$obj->body:"-"}}-->
+            <!--{{(isset($obj->body))?$obj->body:"-"}}
             <hr class="bottom-line">
           </div>
           <div class="feature-info">
@@ -45,7 +45,43 @@
         </div>
         </div>
       </div>
-    </section>
+    </section>-->
+	<section id ="news" class="section-padding"> 
+<div class="container"> 
+<div class="row"> 
+<div class="header-section text-center"> 
+<h2>{{(isset($obj->name))?$obj->name:"Добро пожаловать на сайт"}}</h2> 
+<!--{{(isset($obj->body))?$obj->body:"-"}}--> 
+</div> 
+<div class="feature-info"> 
+<div class="fea"> 
+<div class="col-md-4"> 
+<div class="heading pull-right"> 
+<h4> <center>Учи английский смотря фильмы</center></h4> 
+<a href="https://english-films.com/" ><img src="img/abc.png" class="img-responsive"></a> 
+</div> 
+</div> 
+</div> 
+<div class="fea"> 
+<div class="col-md-4"> 
+<div class="heading pull-right"> 
+<h4> <center>Мы уже в VK, присоединяйся!</center></h4> 
+<a href="https://vk.com/club113964950" ><img src="img/vk.png" class="img-responsive"></a> 
+</div> 
+</div> 
+</div> 
+<div class="fea"> 
+<div class="col-md-4"> 
+<div class="heading pull-right"> 
+<h4> <center>Стань профи с Лео</center></h4> 
+<a href="http://lingualeo.com/ru" ><img src="img/leo.png" class="img-responsive"></a> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</section>
     <!--/ feature-->
     <!--Organisations
     <section id ="organisations" class="section-padding">
@@ -347,7 +383,7 @@
               <figcaption>
                   <p><font size=5>Английский с нуля?<br>Освой первый уровень!</font><br> </p>
               </figcaption>
-              <a href="#"></a>
+              <a href="course/1"></a>
             </figure>
           </div>
           <div class="col-md-4 col-sm-6 padleft-right">
@@ -356,47 +392,43 @@
               <figcaption>
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam atque, nostrum veniam consequatur libero fugiat, similique quis.</p>
               </figcaption>
-              <a href="#"></a>
+              <a href="course/2"></a>
             </figure>
           </div>
           <div class="col-md-4 col-sm-6 padleft-right">
             <figure class="imghvr-fold-up">
               <img src="img/eng_pre_int.jpg" class="img-responsive">
               <figcaption>
-                  <h3>Course Name</h3>
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam atque, nostrum veniam consequatur libero fugiat, similique quis.</p>
               </figcaption>
-              <a href="#"></a>
+              <a href="course/3"></a>
             </figure>
           </div>
           <div class="col-md-4 col-sm-6 padleft-right">
             <figure class="imghvr-fold-up margin-bottom-15px">
               <img src="img/eng_int.jpg" class="img-responsive">
               <figcaption>
-                  <h3>Course Name</h3>
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam atque, nostrum veniam consequatur libero fugiat, similique quis.</p>
               </figcaption>
-              <a href="#"></a>
+              <a href="course/4"></a>
             </figure>
           </div>
           <div class="col-md-4 col-sm-6 padleft-right">
           <figure class="imghvr-fold-up margin-bottom: 30px">
               <img src="img/eng_up_int.jpg" class="img-responsive">
               <figcaption>
-                  <h3>Course Name</h3>
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam atque, nostrum veniam consequatur libero fugiat, similique quis.</p>
               </figcaption>
-              <a href="#"></a>
+              <a href="course/5"></a>
             </figure>
           </div>
           <div class="col-md-4 col-sm-6 padleft-right">
           <figure class="imghvr-fold-up margin-bottom: 30px">
               <img src="img/eng_adv.jpg" class="img-responsive">
               <figcaption>
-                  <h3>Course Name</h3>
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam atque, nostrum veniam consequatur libero fugiat, similique quis.</p>
               </figcaption>
-              <a href="#"></a>
+              <a href="course/6"></a>
             </figure>
           </div>
 		  
@@ -770,8 +802,52 @@
       </div>
     </section>
     <!--/ Pricing-->
-    <!--Contact-->
+  <!--  <!--Contact
     <section id ="contact" class="section-padding">
+      <div class="container">
+        <div class="row">
+          <div class="header-section text-center">
+            <h2>Напишите нам</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem nesciunt vitae,<br> maiores, magni dolorum aliquam.</p>
+            <hr class="bottom-line">
+          </div>
+          <div id="sendmessage">Ваше сообщение отправлено. Спасибо!</div>
+          <div id="errormessage"></div>
+          <form action="" method="post" role="form" class="contactForm">
+              <div class="col-md-6 col-sm-6 col-xs-12 left">
+                <div class="form-group">
+                    <input type="text" name="name" class="form-control form" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                    <div class="validation"></div>
+                </div>
+                <div class="form-group">
+                    <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                    <div class="validation"></div>
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                    <div class="validation"></div>
+                </div>
+              </div>
+              
+              <div class="col-md-6 col-sm-6 col-xs-12 right">
+                <div class="form-group">
+                    <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+                    <div class="validation"></div>
+                </div>
+              </div>
+              
+              <div class="col-xs-12">
+                <!-- Button 
+                <button type="submit" id="submit" name="submit" class="form contact-form-button light-form-button oswald light">SEND EMAIL</button>
+              </div>
+          </form>
+          
+        </div>
+      </div>
+    </section>--?
+    / Contact-->
+	<!---->
+	<section id ="contact" class="section-padding">
       <div class="container">
         <div class="row">
           <div class="header-section text-center">
@@ -813,5 +889,4 @@
         </div>
       </div>
     </section>
-    <!--/ Contact-->
 @endsection
