@@ -13,6 +13,6 @@ class BaseController extends Controller
         return view('index')->with('obj', $obj);
     }
     public function getOne($id=null){
-        return view('welcome')->with('id', $id);
+        return view('index')->with('id', $id);
     }
 }

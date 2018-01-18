@@ -12,6 +12,7 @@
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href={{asset ('css/imagehover.min.css')}}>
     <link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/rating.css">
 	<link rel="stylesheet" type="text/css" media="print" href={{asset('css/print.css')}}>
     <!-- =======================================================
         Theme Name: Mentor
@@ -54,7 +55,8 @@
 		  </li>
           <li><a href="#pricing">Цены</a></li>
 		  <li><a href="#aboutcenter">О центре</a></li>
-          <li><a href=""{{asset('login')}}"" data-target="#login" data-toggle="modal">Войти</a></li>
+          <!--<li><a href=""{{asset('login')}}"" data-target="#login" data-toggle="modal">Войти</a></li>-->
+		  <li><a href="/home" >Войти</a></li>
           <li class="btn-trial"><a href="{{asset('register')}}">Регистрация</a></li>
         </ul>
         </div>
@@ -108,6 +110,7 @@
       </div>
     </div>
     <!--/ Modal box-->
+	
     <!--Banner-->
     <div class="banner">
       <div class="bg-color">
@@ -131,6 +134,54 @@
     <!--/ Banner-->
     <!--Feature-->
     @yield('content')
+	<section id ="comment" class="section-padding">
+      <div class="container">
+        <div class="row">
+          <div class="header-section text-center">
+            <h2>Оставьте свой комментарий</h2>
+            <hr class="bottom-line">
+          </div>
+          <div id="sendmessage">Ваше сообщение отправлено. Спасибо!</div>
+          <div id="errormessage"></div>
+          <form action="" method="post" role="form" class="contactForm">
+              <div class="col-md-6 col-sm-6 col-xs-12 left">
+
+              <div class="col-md-6 col-sm-6 col-xs-12 right">
+                <div class="form-group">
+                    <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+                    <div class="validation"></div>
+                </div>
+              </div>
+              
+              <div class="col-xs-12">
+                <!-- Button -->
+                <button type="submit" id="submit" name="submit" class="form contact-form-button light-form-button oswald light">Отправить</button>
+              </div>
+          </form>
+          
+        </div>
+      </div>
+    </section>
+	<h3>Оцените нашу статью</h3>
+
+<!--[if lte IE 7]><style>#reviewStars-input{display:none}</style><![endif]-->
+
+<div id="reviewStars-input">
+    <input id="star-4" type="radio" name="reviewStars"/>
+    <label title="gorgeous" for="star-4"></label>
+
+    <input id="star-3" type="radio" name="reviewStars"/>
+    <label title="good" for="star-3"></label>
+
+    <input id="star-2" type="radio" name="reviewStars"/>
+    <label title="regular" for="star-2"></label>
+
+    <input id="star-1" type="radio" name="reviewStars"/>
+    <label title="poor" for="star-1"></label>
+
+    <input id="star-0" type="radio" name="reviewStars"/>
+    <label title="bad" for="star-0"></label>
+</div>
     <!--Footer-->
     <footer id="footer" class="footer">
       <!--<div class="container text-center">
@@ -162,6 +213,7 @@
         <li><a href="#link"><i class="fa fa-dribbble fa-fw"></i></a></li>
         <li><a href="#link"><i class="fa fa-linkedin fa-fw"></i></a></li>
       </ul> -->
+	  
 	  <div class="container text-center">
         220013, г. Минск, ул. П. Бровки, 6, 309 ауд.
 		Центр языковой подготовки
