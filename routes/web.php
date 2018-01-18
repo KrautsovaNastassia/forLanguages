@@ -13,8 +13,11 @@
 
 Route::get('/', 'BaseController@getIndex');
 //всегда последний
+Route::get('print', 'BaseController@getOne')->name('print');
 Route::get('course/{id}','CourseController@getOne');
-Route::get('/{id}', 'BaseController@getOne');
+//Route::get('/{id}', 'BaseController@getIndex');
+
+Route::resource('/images','ImageController');
 
 Auth::routes();
 

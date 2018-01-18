@@ -34,7 +34,7 @@
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav navbar-right">
-         <li><a href="print.css">Версия для печати</a></li> 
+         <li><a href="print">Версия для печати</a></li> 
           <li><a href="#news">Новости</a></li>
           <li><!--<a href="#courses">Курсы</a>-->
 		  <!--<div class="dropdown">-->
