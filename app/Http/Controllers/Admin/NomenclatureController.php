@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers\Admin;
+namespace App\Http\Controllers#Admin;
 
 use App\Http\Controllers\Controller;
 use Redirect;
@@ -117,5 +117,6 @@ class NomenclatureController extends Controller {
 	{
 		$courses = Nomenclature::where('showhide','show')->paginate(3);
 	}
+	
 
 }
