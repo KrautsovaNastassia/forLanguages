@@ -2,6 +2,8 @@
 
 use Illuminate\Database\Seeder;
 
+use Illuminate\Database\Eloquent\Model;
+
 class UsersTableSeeder extends Seeder
 {
     /**
@@ -14,7 +16,7 @@ class UsersTableSeeder extends Seeder
        DB::table('users')->insert([
 	  'name' => str_random(10),
       'email' => str_random(10).'@gmail.com',
-      'password' => bcrypt('secret'),
+      'password' => bcrypt('secret')
     ]);
     }
 }

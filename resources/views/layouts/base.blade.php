@@ -23,6 +23,7 @@
   </head>
   <body>
     <!--Navigation bar-->
+	<h1></h1>
     <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
@@ -42,7 +43,6 @@
 		  <a id="myNavbar" type="button" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Курсы <span class="nav navbar-nav navbar-right"></span> </a>
 		 <!-- <div class="nav navbar-nav navbar-right">-->
 
-
   <ul class="dropdown-menu" aria-labelledby="myNavbar">
     <li><a href="#english">Английский язык</a></li>
 	<li><a href="#spanish">Испанский язык</a></li>
@@ -58,8 +58,25 @@
           <!--<li><a href=""{{asset('login')}}"" data-target="#login" data-toggle="modal">Войти</a></li>-->
 		  <li><a href="/home" >Войти</a></li>
           <li class="btn-trial"><a href="{{asset('register')}}">Регистрация</a></li>
+		  
+			<div id="google_translate_element"></div><script type="text/javascript">
+				function googleTranslateElementInit() {
+					new google.translate.TranslateElement({pageLanguage: 'ru', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, multilanguagePage: true}, 'google_translate_element');
+				}
+			</script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+		  
+		  
+		<!-- <ul class="nav navbar-right"> <form class="well form-search">
+		<input type="text" class="span3 search-query" placeholder="Поиск..." > 
+	    <button class="btn">Найти</button>
+	</form></ul>-->
         </ul>
+		
         </div>
+	<!--	<ul class="nav navbar-right"> <form class="well form-search">
+		<input type="text" class="span3 search-query" placeholder="Поиск..." > 
+	<button class="btn">Найти</button>
+	</form> </ul> -->
       </div>
     </nav>
     <!--/ Navigation bar-->

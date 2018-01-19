@@ -46,6 +46,20 @@
         </div>
       </div>
     </section>-->
+	
+	<script>
+  (function() {
+    var cx = '017219906553364327639:4frl_mezagy';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:search></gcse:search>
+	
 	<section id ="news" class="section-padding"> 
 <div class="container"> 
 <div class="row"> 
@@ -802,8 +816,7 @@
       </div>
     </section>
     <!--/ Pricing-->
-  
-  
+    
 	<section id ="contact" class="section-padding">
       <div class="container">
         <div class="row">
