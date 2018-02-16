@@ -830,8 +830,9 @@
           <form action="" method="post" role="form" class="contactForm">
               <div class="col-md-6 col-sm-6 col-xs-12 left">
                 <div class="form-group">
-                    <input type="text" name="name" class="form-control form" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-                    <div class="validation"></div>
+                    <input  type="text" name="name" class="form-control form" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+      
+					<div class="validation"></div>
                 </div>
                 <div class="form-group">
                     <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
@@ -852,7 +853,8 @@
               
               <div class="col-xs-12">
                 <!-- Button -->
-                <button type="submit" id="submit" name="submit" class="form contact-form-button light-form-button oswald light">SEND EMAIL</button>
+                <button type="submit" id="submit" name="submit" class="form contact-form-button light-form-button oswald light">SEND EMAIL
+				</button>
               </div>
           </form>
           

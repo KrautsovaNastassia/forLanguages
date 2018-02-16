@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Хост: 127.0.0.1:3306
--- Время создания: Янв 19 2018 г., 17:41
+-- Время создания: Фев 16 2018 г., 21:22
 -- Версия сервера: 5.7.19
 -- Версия PHP: 7.0.21
 
@@ -76,6 +76,18 @@ INSERT INTO `images` (`id`, `title`, `img`, `created_at`, `updated_at`) VALUES
 -- --------------------------------------------------------
 
 --
+-- Структура таблицы `mails`
+--
+
+CREATE TABLE `mails` (
+  `id` int(11) NOT NULL,
+  `address` varchar(255) NOT NULL,
+  `mail` varchar(500) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
 -- Структура таблицы `maintexts`
 --
 
@@ -94,7 +106,14 @@ CREATE TABLE `maintexts` (
 --
 
 INSERT INTO `maintexts` (`id`, `name`, `body`, `url`, `showhide`, `created_at`, `updated_at`) VALUES
-(1, 'Добро пожаловать на главную страницу', '<p>описание</p>', 'index', 'show', '2017-10-09 08:33:35', '2017-10-09 08:33:35');
+(1, 'Добро пожаловать на главную страницу', '<p>описание</p>', 'index', 'show', '2017-10-09 08:33:35', '2017-10-09 08:33:35'),
+(2, 'Добро пожаловать на сайт', 'Описание', 'index', 'show', NULL, NULL),
+(3, 'Добро пожаловать на сайт', 'Описание', 'index', 'show', NULL, NULL),
+(4, 'Добро пожаловать на сайт', 'Описание', 'index', 'show', NULL, NULL),
+(5, 'Добро пожаловать на сайт', 'Описание', 'index', 'show', NULL, NULL),
+(6, 'Добро пожаловать на сайт', 'Описание', 'index', 'show', NULL, NULL),
+(7, 'Добро пожаловать на сайт', 'Описание', 'index', 'show', NULL, NULL),
+(8, 'Добро пожаловать на сайт', 'Описание', 'index', 'show', NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -169,7 +188,29 @@ INSERT INTO `migrations` (`id`, `migration`, `batch`) VALUES
 (9, '2017_11_09_104253_create_nomenclature_table', 4),
 (13, '2017_12_18_111433_create_courses_table', 5),
 (14, '2018_01_18_150317_CreateImagesTable', 6),
-(15, '2018_01_18_183954_create_rating_table', 7);
+(15, '2018_01_18_183954_create_rating_table', 7),
+(16, '2018_01_20_062042_CreateNewsTable', 8);
+
+-- --------------------------------------------------------
+
+--
+-- Структура таблицы `news`
+--
+
+CREATE TABLE `news` (
+  `id` int(10) UNSIGNED NOT NULL,
+  `new` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `img` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Дамп данных таблицы `news`
+--
+
+INSERT INTO `news` (`id`, `new`, `img`, `created_at`, `updated_at`) VALUES
+(1, 'We are going to watch a film this friday!', 'new1.jpg', NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -376,6 +417,12 @@ ALTER TABLE `migrations`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Индексы таблицы `news`
+--
+ALTER TABLE `news`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Индексы таблицы `nomenclature`
 --
 ALTER TABLE `nomenclature`
@@ -436,7 +483,7 @@ ALTER TABLE `images`
 -- AUTO_INCREMENT для таблицы `maintexts`
 --
 ALTER TABLE `maintexts`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 --
 -- AUTO_INCREMENT для таблицы `menus`
 --
@@ -446,7 +493,12 @@ ALTER TABLE `menus`
 -- AUTO_INCREMENT для таблицы `migrations`
 --
 ALTER TABLE `migrations`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
+--
+-- AUTO_INCREMENT для таблицы `news`
+--
+ALTER TABLE `news`
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 --
 -- AUTO_INCREMENT для таблицы `nomenclature`
 --
