@@ -46,20 +46,6 @@
         </div>
       </div>
     </section>-->
-	
-<!--	<script>
-  (function() {
-    var cx = '017219906553364327639:4frl_mezagy';
-    var gcse = document.createElement('script');
-    gcse.type = 'text/javascript';
-    gcse.async = true;
-    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
-    var s = document.getElementsByTagName('script')[0];
-    s.parentNode.insertBefore(gcse, s);
-  })();
-</script>
-<gcse:search></gcse:search> -->
-	
 	<section id ="news" class="section-padding"> 
 <div class="container"> 
 <div class="row"> 
@@ -96,6 +82,16 @@
 </div> 
 </div> 
 </section>
+
+
+
+
+
+
+
+
+
+
     <!--/ feature-->
     <!--Organisations
     <section id ="organisations" class="section-padding">
@@ -289,7 +285,7 @@
                 </div>   
               </div>                                
               <div class="pm-staff-profile-details text-center">  
-                <p class="pm-staff-profile-name">Булгакова Диана Андреевна </p>
+                <p class="pm-staff-profile-name">Булгакова<br> Диана Андреевна </p>
                 <p class="pm-staff-profile-title">Преподаватель</p>
                 
                 <p class="pm-staff-profile-bio">Ведет практические занятия в группах Intermediate, Pre-Intermediate </p>
@@ -445,10 +441,14 @@
               <a href="course/6"></a>
             </figure>
           </div>
-		  
-		  <div class="col-md-4 col-sm-6 padleft-right">
+		 
+		  <div class="col-md-5 col-sm-6 padleft-right">
+		  <br>
+		  <br>
+		  <br>
+		  <br>
             <figure class="imghvr-fold-up">
-              <img src="img/eng_adv.jpg" class="img-responsive">
+              <img src="img/bus_eng.jpg" class="img-responsive">
               <figcaption>
                   <h3>Course Name</h3>
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam atque, nostrum veniam consequatur libero fugiat, similique quis.</p>
@@ -456,6 +456,83 @@
               <a href="#"></a>
             </figure>
           </div>
+		  
+		  <div class="col-md-5 col-sm-6 padleft-right">
+		  <br>
+		  <br>
+		  <br>
+		  <br>
+            <figure class="imghvr-fold-up">
+              <img src="img/it_eng.jpg" class="img-responsive">
+              <figcaption>
+                  <h3>Course Name</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam atque, nostrum veniam consequatur libero fugiat, similique quis.</p>
+              </figcaption>
+              <a href="#"></a>
+            </figure>
+          </div>
+		  </center>
+		 
+		  
+		  <div class="col-md-3 col-sm-6 padleft-right">
+		  <br>
+		  <br>
+		  <br>
+		  <br>
+            <figure class="imghvr-fold-up">
+              <img src="img/expr_eng.jpg" class="img-responsive">
+              <figcaption>
+                  <h3>Course Name</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam atque, nostrum veniam consequatur libero fugiat, similique quis.</p>
+              </figcaption>
+              <a href="#"></a>
+            </figure>
+          </div></p>
+		   
+		  <div class="col-md-3 col-sm-6 padleft-right">
+		  <br>
+		  <br>
+		  <br>
+		  <br>
+            <figure class="imghvr-fold-up">
+              <img src="img/bus_cor_eng.jpg" class="img-responsive">
+              <figcaption>
+                  <h3>Course Name</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam atque, nostrum veniam consequatur libero fugiat, similique quis.</p>
+              </figcaption>
+              <a href="#"></a>
+            </figure>
+          </div></p>
+		  
+		  <div class="col-md-3 col-sm-6 padleft-right">
+		  <br>
+		  <br>
+		  <br>
+		  <br>
+            <figure class="imghvr-fold-up">
+              <img src="img/commun_eng.jpg" class="img-responsive">
+              <figcaption>
+                  <h3>Course Name</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam atque, nostrum veniam consequatur libero fugiat, similique quis.</p>
+              </figcaption>
+              <a href="#"></a>
+            </figure>
+          </div></p>
+		  
+		  <div class="col-md-3 col-sm-6 padleft-right">
+		  <br>
+		  <br>
+		  <br>
+		  <br>
+            <figure class="imghvr-fold-up">
+              <img src="img/CT_eng.jpg" class="img-responsive">
+              <figcaption>
+                  <h3>Course Name</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam atque, nostrum veniam consequatur libero fugiat, similique quis.</p>
+              </figcaption>
+              <a href="#"></a>
+            </figure>
+          </div></p>
 </div>
       </div>
     </section>
@@ -816,7 +893,61 @@
       </div>
     </section>
     <!--/ Pricing-->
-    
+  <!--  <!--Contact
+    <section id ="contact" class="section-padding">
+      <div class="container">
+        <div class="row">
+          <div class="header-section text-center">
+            <h2>Напишите нам</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem nesciunt vitae,<br> maiores, magni dolorum aliquam.</p>
+            <hr class="bottom-line">
+          </div>
+          <div id="sendmessage">Ваше сообщение отправлено. Спасибо!</div>
+          <div id="errormessage"></div>
+          <form action="" method="post" role="form" class="contactForm">
+              <div class="col-md-6 col-sm-6 col-xs-12 left">
+                <div class="form-group">
+                    <input type="text" name="name" class="form-control form" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                    <div class="validation"></div>
+                </div>
+                <div class="form-group">
+                    <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                    <div class="validation"></div>
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                    <div class="validation"></div>
+                </div>
+              </div>
+              
+              <div class="col-md-6 col-sm-6 col-xs-12 right">
+                <div class="form-group">
+                    <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+                    <div class="validation"></div>
+                </div>
+              </div>
+              
+              <div class="col-xs-12">
+                <!-- Button 
+                <button type="submit" id="submit" name="submit" class="form contact-form-button light-form-button oswald light">SEND EMAIL</button>
+              </div>
+          </form>
+          
+        </div>
+      </div>
+    </section>--?
+    / Contact-->
+	<!---->
+	<br>
+	<br>
+	<center><img src="img/translate.jpg"  class="img-responsive" >
+	<div id="google_translate_element"></div><script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'ru', includedLanguages: 'en'}, 'google_translate_element');
+}
+</script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+        </center>
+	
 	<section id ="contact" class="section-padding">
       <div class="container">
         <div class="row">
@@ -830,9 +961,8 @@
           <form action="" method="post" role="form" class="contactForm">
               <div class="col-md-6 col-sm-6 col-xs-12 left">
                 <div class="form-group">
-                    <input  type="text" name="name" class="form-control form" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-      
-					<div class="validation"></div>
+                    <input type="text" name="name" class="form-control form" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                    <div class="validation"></div>
                 </div>
                 <div class="form-group">
                     <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
@@ -853,8 +983,7 @@
               
               <div class="col-xs-12">
                 <!-- Button -->
-                <button type="submit" id="submit" name="submit" class="form contact-form-button light-form-button oswald light">SEND EMAIL
-				</button>
+                <button type="submit" id="submit" name="submit" class="form contact-form-button light-form-button oswald light">SEND EMAIL</button>
               </div>
           </form>
           
