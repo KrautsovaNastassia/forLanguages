@@ -827,6 +827,9 @@
                 <span class="fa fa-BYR curency"></span> <span class="amount">285</span> 
               </div>
           
+		  
+		  
+		  
               <!-- Plean Detail -->
               <div class="price-in mart-15">
                 <a href="#" class="btn btn-bg green btn-block">PURCHACE</a> 
