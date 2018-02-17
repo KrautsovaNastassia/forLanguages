@@ -59,11 +59,11 @@
 		  <li><a href="/home" >Войти</a></li>
           <li class="btn-trial"><a href="{{asset('register')}}">Регистрация</a></li>
 		  
-			<div id="google_translate_element"></div><script type="text/javascript">
+		<!--	<div id="google_translate_element"></div><script type="text/javascript">
 				function googleTranslateElementInit() {
 					new google.translate.TranslateElement({pageLanguage: 'ru', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, multilanguagePage: true}, 'google_translate_element');
 				}
-			</script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+			</script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script> -->
 		  
 		  
 		<!-- <ul class="nav navbar-right"> <form class="well form-search">
@@ -151,7 +151,7 @@
     <!--/ Banner-->
     <!--Feature-->
     @yield('content')
-	<section id ="comment" class="section-padding">
+	<!--<section id ="comment" class="section-padding">
       <div class="container">
         <div class="row">
           <div class="header-section text-center">
@@ -172,7 +172,7 @@
               
               <div class="col-xs-12">
                 <!-- Button -->
-                <button type="submit" id="submit" name="submit" class="form contact-form-button light-form-button oswald light">Отправить</button>
+                <!--<button type="submit" id="submit" name="submit" class="form contact-form-button light-form-button oswald light">Отправить</button>
               </div>
           </form>
           
@@ -183,7 +183,7 @@
 
 <!--[if lte IE 7]><style>#reviewStars-input{display:none}</style><![endif]-->
 
-<div id="reviewStars-input">
+<!-- <div id="reviewStars-input">
     <input id="star-4" type="radio" name="reviewStars"/>
     <label title="gorgeous" for="star-4"></label>
 
@@ -198,7 +198,7 @@
 
     <input id="star-0" type="radio" name="reviewStars"/>
     <label title="bad" for="star-0"></label>
-</div>
+</div> -->
     <!--Footer-->
     <footer id="footer" class="footer">
       <!--<div class="container text-center">
@@ -215,7 +215,7 @@
           <div class=" controls">
             <input name="EMAIL" placeholder="Введите адрес электронной почты" class="form-control" type="email">
           </div>
-        </div><!-- End email input 
+        </div><!-- End email input  
         <div class="col-md-2 col-sm-4">
           <p>
             <button name="submit" type="submit" class="btn btn-block btn-submit">
