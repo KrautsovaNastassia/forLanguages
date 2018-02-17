@@ -47,7 +47,7 @@
       </div>
     </section>-->
 	
-	<script>
+<!--	<script>
   (function() {
     var cx = '017219906553364327639:4frl_mezagy';
     var gcse = document.createElement('script');
@@ -58,7 +58,7 @@
     s.parentNode.insertBefore(gcse, s);
   })();
 </script>
-<gcse:search></gcse:search>
+<gcse:search></gcse:search> -->
 	
 	<section id ="news" class="section-padding"> 
 <div class="container"> 
