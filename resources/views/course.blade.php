@@ -12,7 +12,7 @@
 		<BR>
         <h1><B>{{$obj->name}}</B></h1>
 			
-        <hr class="bottom-line">
+        <hr>
 	    <p>{!!$obj->body!!}</p>
     </div>
 </div>
@@ -20,65 +20,78 @@
       
 
 @if($obj->nomenclature_id==2)
-<a href="/#english"><h4>Английский язык</h4></a>
+<a href="/#spanish"><h4>Испанский язык</h4></a>
 <div class="row">
     <div class="header-section text-center">
 		<BR>
         <h1><B>{{$obj->name}}</B></h1>
 			
-        <hr class="bottom-line">
+        <hr>
 	    <p>{!!$obj->body!!}</p>
     </div>
 </div>
 @endif
 
 @if($obj->nomenclature_id==3)
-<a href="/#english"><h4>Английский язык</h4></a>
+<a href="/#italian"><h4>Итальянский язык</h4></a>
 <div class="row">
     <div class="header-section text-center">
 		<BR>
         <h1><B>{{$obj->name}}</B></h1>
 			
-        <hr class="bottom-line">
+        <hr>
 	    <p>{!!$obj->body!!}</p>
     </div>
 </div>
 @endif      
 
 @if($obj->nomenclature_id==4)
-<a href="/#english"><h4>Английский язык</h4></a>
+<a href="/#polish"><h4>Польский язык</h4></a>
 <div class="row">
     <div class="header-section text-center">
 		<BR>
         <h1><B>{{$obj->name}}</B></h1>
 			
-        <hr class="bottom-line">
+        <hr>
 	    <p>{!!$obj->body!!}</p>
     </div>
 </div>
 @endif
 
 @if($obj->nomenclature_id==5)
-<a href="/#english"><h4>Английский язык</h4></a>
+<a href="/#french"><h4>Французский язык</h4></a>
 <div class="row">
     <div class="header-section text-center">
 		<BR>
         <h1><B>{{$obj->name}}</B></h1>
 			
-        <hr class="bottom-line">
+        <hr>
 	    <p>{!!$obj->body!!}</p>
     </div>
 </div>
 @endif
 
 @if($obj->nomenclature_id==6)
-<a href="/#english"><h4>Английский язык</h4></a>
+<a href="/#german"><h4>Немецкий язык</h4></a>
 <div class="row">
     <div class="header-section text-center">
 		<BR>
         <h1><B>{{$obj->name}}</B></h1>
 			
-        <hr class="bottom-line">
+        <hr>
+	    <p>{!!$obj->body!!}</p>
+    </div>
+</div>
+@endif
+
+@if($obj->nomenclature_id==7)
+<a href="/#chinese"><h4>Китайский язык</h4></a>
+<div class="row">
+    <div class="header-section text-center">
+		<BR>
+        <h1><B>{{$obj->name}}</B></h1>
+			
+        <hr>
 	    <p>{!!$obj->body!!}</p>
     </div>
 </div>

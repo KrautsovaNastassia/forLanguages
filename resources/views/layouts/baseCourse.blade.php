@@ -25,7 +25,7 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href={{asset('about')}}>ЦЯП <span><I>БГУИР</I></span></a>
+        <a class="navbar-brand" href={{asset('about')}}>LTC <span><I>BSUIR</I></span></a>
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav navbar-right">
@@ -106,7 +106,7 @@
    
     <!--Feature-->
     @yield('content')
-	<section id ="comment" class="section-padding">
+	<!--<section id ="comment" class="section-padding">
       <div class="container">
         <div class="row">
           <div class="header-section text-center">
@@ -126,7 +126,7 @@
               </div>
               
               <div class="col-xs-12">
-                <!-- Button -->
+                <!-- Button 
                 <button type="submit" id="submit" name="submit" class="form contact-form-button light-form-button oswald light">Отправить</button>
               </div>
           </form>
@@ -136,7 +136,7 @@
     </section>
 	<h3>Оцените нашу статью</h3>
 
-<!--[if lte IE 7]><style>#reviewStars-input{display:none}</style><![endif]-->
+<!--[if lte IE 7]><style>#reviewStars-input{display:none}</style><![endif]
 
 <div id="reviewStars-input">
     <input id="star-4" type="radio" name="reviewStars"/>
@@ -154,9 +154,9 @@
     <input id="star-0" type="radio" name="reviewStars"/>
     <label title="bad" for="star-0"></label>
 	<br><br>
-</div>
+</div>-->
     <!--Footer-->
-    <footer id="footer" class="footer">
+    <footer id="footer" class="footer-courses">
      
 	  <div class="container text-center">
         220013, г. Минск, ул. П. Бровки, 6, 309 ауд.

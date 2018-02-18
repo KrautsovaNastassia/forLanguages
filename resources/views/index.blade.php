@@ -46,7 +46,7 @@
         </div>
       </div>
     </section>-->
-	<section id ="news" class="section-padding"> 
+<section id ="news" class="section-padding"> 
 <div class="container"> 
 <div class="row"> 
 <div class="header-section text-center"> 
@@ -382,6 +382,7 @@
           <div class="header-section text-center">
             <h1><B>Английский язык</B></h1>
             <hr class="bottom-line">
+			<h2>Не знаешь на каком уровне твой английский? Можешь узнать это <a href="https://docs.google.com/forms/d/1QsnDA8mbnh62Zdf0I0IXsLIGuG9XlhesQNhqEpk7NQQ/alreadyresponded?edit_requested=true">здесь</a></h2>
           </div>
         </div>
       </div>
@@ -442,95 +443,73 @@
             </figure>
           </div>
 		 
-		  <div class="col-md-5 col-sm-6 padleft-right">
-		  <br>
-		  <br>
-		  <br>
-		  <br>
+		  <div class="col-md-5 col-sm-6 padcenter padtop">
+		  
             <figure class="imghvr-fold-up">
               <img src="img/bus_eng.jpg" class="img-responsive">
               <figcaption>
                   <h3>Course Name</h3>
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam atque, nostrum veniam consequatur libero fugiat, similique quis.</p>
               </figcaption>
-              <a href="#"></a>
+              <a href="course/7"></a>
             </figure>
           </div>
 		  
-		  <div class="col-md-5 col-sm-6 padleft-right">
-		  <br>
-		  <br>
-		  <br>
-		  <br>
+		  <div class="col-md-5 col-sm-6 padleft-right padtop">
+		
             <figure class="imghvr-fold-up">
               <img src="img/it_eng.jpg" class="img-responsive">
               <figcaption>
                   <h3>Course Name</h3>
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam atque, nostrum veniam consequatur libero fugiat, similique quis.</p>
               </figcaption>
-              <a href="#"></a>
+              <a href="course/8"></a>
             </figure>
           </div>
 		  </center>
 		 
 		  
-		  <div class="col-md-3 col-sm-6 padleft-right">
-		  <br>
-		  <br>
-		  <br>
-		  <br>
+		  <div class="col-md-3 col-sm-6 padleft-right padtop">
             <figure class="imghvr-fold-up">
               <img src="img/expr_eng.jpg" class="img-responsive">
               <figcaption>
                   <h3>Course Name</h3>
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam atque, nostrum veniam consequatur libero fugiat, similique quis.</p>
               </figcaption>
-              <a href="#"></a>
+              <a href="course/9"></a>
             </figure>
           </div></p>
 		   
-		  <div class="col-md-3 col-sm-6 padleft-right">
-		  <br>
-		  <br>
-		  <br>
-		  <br>
+		  <div class="col-md-3 col-sm-6 padleft-right padtop">
             <figure class="imghvr-fold-up">
               <img src="img/bus_cor_eng.jpg" class="img-responsive">
               <figcaption>
                   <h3>Course Name</h3>
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam atque, nostrum veniam consequatur libero fugiat, similique quis.</p>
               </figcaption>
-              <a href="#"></a>
+              <a href="course/10"></a>
             </figure>
           </div></p>
 		  
-		  <div class="col-md-3 col-sm-6 padleft-right">
-		  <br>
-		  <br>
-		  <br>
-		  <br>
+		  <div class="col-md-3 col-sm-6 padleft-right padtop">
             <figure class="imghvr-fold-up">
               <img src="img/commun_eng.jpg" class="img-responsive">
               <figcaption>
                   <h3>Course Name</h3>
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam atque, nostrum veniam consequatur libero fugiat, similique quis.</p>
               </figcaption>
-              <a href="#"></a>
+              <a href="course/11"></a>
             </figure>
           </div></p>
 		  
-		  <div class="col-md-3 col-sm-6 padleft-right">
-		  <br>
-		  <br>
-		  <br>
-		  <br>
+		  <div class="col-md-3 col-sm-6 padleft-right padtop">
             <figure class="imghvr-fold-up">
               <img src="img/CT_eng.jpg" class="img-responsive">
               <figcaption>
                   <h3>Course Name</h3>
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam atque, nostrum veniam consequatur libero fugiat, similique quis.</p>
               </figcaption>
-              <a href="#"></a>
+              <a href="course/12"></a>
             </figure>
           </div></p>
 </div>
@@ -553,7 +532,7 @@
               <figcaption>
                   <p><font size=5>Начинающий уровень<br>!!!</font><br> </p>
               </figcaption>
-              <a href="#"></a>
+              <a href="course/13"></a>
             </figure>
           </div>
           <div class="col-md-6">
@@ -562,7 +541,7 @@
               <figcaption>
                   <p><font size=5>Продолжающий уровень<br>!!!</font><br> </p>
               </figcaption>
-              <a href="#"></a>
+              <a href="course/14"></a>
             </figure>
           </div>
 </div>
@@ -586,7 +565,7 @@
               <figcaption>
                   <p><font size=5>Начинающий уровень<br>!!!</font><br> </p>
               </figcaption>
-              <a href="#"></a>
+              <a href="course/15"></a>
             </figure>
           </div>
           <div class="col-md-6">
@@ -595,7 +574,7 @@
               <figcaption>
                   <p><font size=5>Продолжающий уровень<br>!!!</font><br> </p>
               </figcaption>
-              <a href="#"></a>
+              <a href="course/16"></a>
             </figure>
           </div>
 </div>
@@ -619,7 +598,7 @@
               <figcaption>
                  <p><font size=5>Начинающий уровень<br>!!!</font><br> </p>
               </figcaption>
-              <a href="#"></a>
+              <a href="course/17"></a>
             </figure>
           </div>
           <div class="col-md-6">
@@ -628,7 +607,7 @@
               <figcaption>
                   <p><font size=5>Продолжающий уровень<br>!!!</font><br> </p>
               </figcaption>
-              <a href="#"></a>
+              <a href="course/18"></a>
             </figure>
           </div>
          
@@ -654,7 +633,7 @@
               <figcaption>
                  <p><font size=5>Начинающий уровень<br>!!!</font><br> </p>
               </figcaption>
-              <a href="#"></a>
+              <a href="course/19"></a>
             </figure>
           </div>
           <div class="col-md-6">
@@ -663,7 +642,7 @@
               <figcaption>
                   <p><font size=5>Продолжающий уровень<br>!!!</font><br> </p>
               </figcaption>
-              <a href="#"></a>
+              <a href="course/20"></a>
             </figure>
           </div>
          
@@ -691,7 +670,7 @@
               <figcaption>
                   <p><font size=5>Начинающий уровень<br>!!!</font><br> </p>
               </figcaption>
-              <a href="#"></a>
+              <a href="course/21"></a>
             </figure>
           </div>
           <div class="col-md-6">
@@ -700,7 +679,43 @@
               <figcaption>
                   <p><font size=5>Продолжающий уровень<br>!!!</font><br> </p>
               </figcaption>
-              <a href="#"></a>
+              <a href="course/22"></a>
+            </figure>
+          </div>
+          
+          
+       
+</div>
+      </div>
+    </section>
+	
+	<section id ="chinese" class="section-padding">
+      <div class="container">
+        <div class="row">
+          <div class="header-section text-center">
+            <h1><B>Китайский язык</B></h1>
+            <hr class="bottom-line">
+          </div>
+        </div>
+      </div>
+      <div class="container" >
+        <div class="row">
+          <div class="col-md-6">
+            <figure class="imghvr-fold-up margin-bottom: 10px" >
+              <img src="img/germ_1.jpg" class="img-responsive">
+              <figcaption>
+                  <p><font size=5>Начинающий уровень<br>!!!</font><br> </p>
+              </figcaption>
+              <a href="course/23"></a>
+            </figure>
+          </div>
+          <div class="col-md-6">
+            <figure class="imghvr-fold-up">
+              <img src="img/germ_2.jpg" class="img-responsive">
+              <figcaption>
+                  <p><font size=5>Продолжающий уровень<br>!!!</font><br> </p>
+              </figcaption>
+              <a href="course/24"></a>
             </figure>
           </div>
           
@@ -941,7 +956,7 @@
     </section>--?
     / Contact-->
 	<!---->
-	<br>
+<!--	<br>
 	<br>
 	<center><img src="img/translate.jpg"  class="img-responsive" >
 	<div id="google_translate_element"></div><script type="text/javascript">
@@ -949,7 +964,7 @@ function googleTranslateElementInit() {
   new google.translate.TranslateElement({pageLanguage: 'ru', includedLanguages: 'en'}, 'google_translate_element');
 }
 </script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-        </center>
+        </center>-->
 	
 	<section id ="contact" class="section-padding">
       <div class="container">
