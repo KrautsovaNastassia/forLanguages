@@ -725,7 +725,7 @@
             <div class="price-table">
               <!-- Plan  -->
               <div class="pricing-head">
-                <h4>Английский язык</h4>
+                <h4 style="color: DarkSlateGray">Английский язык</h4>
                 <span class="fa fa-BYR curency"></span> <span class="amount">285</span> 
               </div>
           
@@ -739,7 +739,7 @@
             <div class="price-table">
               <!-- Plan  -->
               <div class="pricing-head">
-                <h4>Немецкий язык</h4>
+                <h4 style="color: DarkSlateGray">Немецкий язык</h4>
                 <span class="fa fa-BYR curency"></span> <span class="amount">285</span> 
               </div>
           
@@ -753,7 +753,7 @@
             <div class="price-table">
               <!-- Plan  -->
               <div class="pricing-head">
-                <h4>Французский язык</h4>
+                <h4 style="color: DarkSlateGray">Французский язык</h4>
                 <span class="fa fa-BYR curency"></span> <span class="amount">285</span> 
               </div>
           
@@ -767,7 +767,7 @@
             <div class="price-table">
               <!-- Plan  -->
               <div class="pricing-head">
-                <h4>Испанский язык</h4>
+                <h4 style="color: DarkSlateGray">Испанский язык</h4>
                 <span class="fa fa-BYR curency"></span> <span class="amount">285</span> 
               </div>
           
@@ -781,7 +781,7 @@
             <div class="price-table">
               <!-- Plan  -->
               <div class="pricing-head">
-                <h4>Итальянский язык</h4>
+                <h4 style="color: DarkSlateGray">Итальянский язык</h4>
                 <span class="fa fa-BYR curency"></span> <span class="amount">285</span> 
               </div>
           
@@ -795,7 +795,7 @@
             <div class="price-table">
               <!-- Plan  -->
               <div class="pricing-head">
-                <h4>Польский язык</h4>
+                <h4 style="color: DarkSlateGray">Польский язык</h4>
                 <span class="fa fa-BYR curency"></span> <span class="amount">285</span> 
               </div>
           
@@ -809,7 +809,7 @@
             <div class="price-table">
               <!-- Plan  -->
               <div class="pricing-head">
-                <h4>IT-English</h4>
+                <h4 style="color: DarkSlateGray">IT-English</h4>
                 <span class="fa fa-BYR curency"></span> <span class="amount">285</span> 
               </div>
           
@@ -823,7 +823,7 @@
             <div class="price-table">
               <!-- Plan  -->
               <div class="pricing-head">
-                <h4>Business English</h4>
+                <h4 style="color: DarkSlateGray">Business English</h4>
                 <span class="fa fa-BYR curency"></span> <span class="amount">285</span> 
               </div>
           
@@ -840,7 +840,7 @@
             <div class="price-table">
               <!-- Plan  -->
               <div class="pricing-head">
-                <h4>Express English</h4>
+                <h4 style="color: DarkSlateGray">Express English</h4>
                 <span class="fa fa-BYR curency"></span> <span class="amount">285</span> 
               </div>
           
@@ -854,7 +854,7 @@
             <div class="price-table">
               <!-- Plan  -->
               <div class="pricing-head">
-                <h5>Business Correspondence Language</h5>
+                <h5 style="color: DarkSlateGray">Business Correspondence Language</h5>
                 <span class="fa fa-BYR curency"></span> <span class="amount">152</span> 
               </div>
           
@@ -868,7 +868,7 @@
             <div class="price-table">
               <!-- Plan  -->
               <div class="pricing-head">
-                <h5>Курс коммуникативной грамматики</h5>
+                <h5 style="color: DarkSlateGray">Курс коммуникативной грамматики</h5>
                 <span class="fa fa-BYR curency"></span> <span class="amount">152</span> 
               </div>
           
@@ -882,7 +882,7 @@
             <div class="price-table">
               <!-- Plan  -->
               <div class="pricing-head">
-                <h3>Подготовка к ЦТ</h3>
+                <h3 style="color: DarkSlateGray">Подготовка к ЦТ</h3>
                 <span class="fa fa-BYR curency"></span> <span class="amount">285</span> 
               </div>
           
