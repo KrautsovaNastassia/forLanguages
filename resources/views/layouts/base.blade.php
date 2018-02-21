@@ -48,8 +48,9 @@
 	<li><a href="#spanish">Испанский язык</a></li>
 	<li><a href="#italian">Итальянский язык</a></li>
 	<li><a href="#polish">Польский язык</a></li>
-	<li><a href="#german">Немецкий язык</a></li>
 	<li><a href="#french">Французский язык</a></li>
+	<li><a href="#german">Немецкий язык</a></li>
+	<li><a href="#chinese">Китайский язык</a></li>
   </ul>
 <!--</div>-->
 		  </li>
@@ -139,10 +140,11 @@
               </div>
               <div class="intro-para text-center quote">
                 <p class="big-text">Центр языковой подготовки по иностранным языкам при БГУИР</p>
-                <p class="small-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium enim repellat sapiente quos architecto<br>Laudantium enim repellat sapiente quos architecto</p>
-                <a href="#footer" class="btn get-quote">GET A QUOTE</a>
+                <p class="small-text">He who does not know foreign languages does not know anything about his own<br>(Кто не знает иностранных языков, ничего не знает и о своём собственном)</p>
+				<p class="small-text1" align="right">I.F. Goethe</p>
+                <!--<a href="#footer" class="btn get-quote">GET A QUOTE</a>-->
               </div>
-              <a href="#feature" class="mouse-hover"><div class="mouse"></div></a>
+            <!--  <a href="#feature" class="mouse-hover"><div class="mouse"></div></a>-->
             </div>
           </div>
         </div>
