@@ -50,14 +50,13 @@
 <div class="container"> 
 <div class="row"> 
 <div class="header-section text-center"> 
-<h2>{{(isset($obj->name))?$obj->name:"Добро пожаловать на сайт"}}</h2> 
 <!--{{(isset($obj->body))?$obj->body:"-"}}--> 
 </div> 
 <div class="feature-info"> 
 <div class="fea"> 
 <div class="col-md-4"> 
 <div class="heading pull-right"> 
-<h4> <center>Учи английский смотря фильмы</center></h4> 
+<h4> <center>{{trans('client.news.puzzle english')}}</center></h4> 
 <a href="https://english-films.com/" ><img src="img/abc.png" class="img-responsive"></a> 
 </div> 
 </div> 
@@ -65,7 +64,7 @@
 <div class="fea"> 
 <div class="col-md-4"> 
 <div class="heading pull-right"> 
-<h4> <center>Мы уже в VK, присоединяйся!</center></h4> 
+<h4> <center>{{trans('client.news.vk')}}</center></h4> 
 <a href="https://vk.com/club113964950" ><img src="img/vk.png" class="img-responsive"></a> 
 </div> 
 </div> 
@@ -73,7 +72,7 @@
 <div class="fea"> 
 <div class="col-md-4"> 
 <div class="heading pull-right"> 
-<h4> <center>Стань профи с Лео</center></h4> 
+<h4> <center>{{trans('client.news.leo')}}</center></h4> 
 <a href="http://lingualeo.com/ru" ><img src="img/leo.png" class="img-responsive"></a> 
 </div> 
 </div> 
@@ -199,7 +198,7 @@
       <div class="container">
         <div class="row">
           <div class="header-section text-center">
-            <h2>Преподаватели</h2>
+            <h2>{{trans('client.teachers.teachers')}}</h2>
             
           </div>
 		  <div class="col-lg-4 col-md-4 col-sm-4">
@@ -210,8 +209,8 @@
                 </div>   
               </div>                                
               <div class="pm-staff-profile-details text-center">  
-                <p class="pm-staff-profile-name">Шелягова Тамара Григорьевна</p>
-                <p class="pm-staff-profile-title">Заведующая кафедрой иностранных языков №1</p>
+                <p class="pm-staff-profile-name">{{trans('client.teachers.ShTG')}}</p>
+                <p class="pm-staff-profile-title">{{trans('client.teachers.chief of pulpit')}}</p>
                 
                 <p class="pm-staff-profile-bio"> </p>
               </div>     
@@ -225,8 +224,8 @@
                 </div>   
               </div>                                
               <div class="pm-staff-profile-details text-center">  
-                <p class="pm-staff-profile-name">Левкович Татьяна Викторовна </p>
-                <p class="pm-staff-profile-title">Начальник Центра</p>
+                <p class="pm-staff-profile-name">{{trans('client.teachers.LTV')}}</p>
+                <p class="pm-staff-profile-title">{{trans('client.teachers.chief of center')}}</p>
                 
                 <p class="pm-staff-profile-bio"> </p>
               </div>     
@@ -240,10 +239,10 @@
                 </div>   
               </div>                                
               <div class="pm-staff-profile-details text-center">  
-                <p class="pm-staff-profile-name">Блюмер Мария Александровна</p>
-                <p class="pm-staff-profile-title">Преподаватель</p>
+                <p class="pm-staff-profile-name">{{trans('client.teachers.BMA')}}</p>
+                <p class="pm-staff-profile-title">{{trans('client.teachers.teacher')}}</p>
                 
-                <p class="pm-staff-profile-bio">Ведет практические занятия в группах Upper-Intermediate </p>
+                <p class="pm-staff-profile-bio">{{trans('client.teachers.lessons')}} Upper-Intermediate </p>
               </div>     
             </div>
           </div>
@@ -255,10 +254,10 @@
                 </div>   
               </div>                                
               <div class="pm-staff-profile-details text-center">  
-                <p class="pm-staff-profile-name">Язбек Елена Александровна </p>
-                <p class="pm-staff-profile-title">Преподаватель</p>
+                <p class="pm-staff-profile-name">{{trans('client.teachers.YEA')}}</p>
+                <p class="pm-staff-profile-title">{{trans('client.teachers.teacher')}}</p>
                 
-                <p class="pm-staff-profile-bio">Ведет практические занятия в группах Intermediate, Beginner </p>
+                <p class="pm-staff-profile-bio">{{trans('client.teachers.lessons')}} Intermediate, Beginner </p>
               </div>     
             </div>
           </div>
@@ -270,10 +269,10 @@
                 </div>   
               </div>                                
               <div class="pm-staff-profile-details text-center">  
-                <p class="pm-staff-profile-name">Белоус Татьяна<br> Сергеевна </p>
-                <p class="pm-staff-profile-title">Преподаватель</p>
+                <p class="pm-staff-profile-name">{{trans('client.teachers.BTS')}}</p>
+                <p class="pm-staff-profile-title">{{trans('client.teachers.teacher')}}</p>
                 
-                <p class="pm-staff-profile-bio">Ведет практические занятия в группах Beginner,Elementary </p>
+                <p class="pm-staff-profile-bio">{{trans('client.teachers.lessons')}} Beginner,Elementary </p>
               </div>     
             </div>
           </div>
@@ -285,10 +284,10 @@
                 </div>   
               </div>                                
               <div class="pm-staff-profile-details text-center">  
-                <p class="pm-staff-profile-name">Булгакова<br> Диана Андреевна </p>
-                <p class="pm-staff-profile-title">Преподаватель</p>
+                <p class="pm-staff-profile-name">{{trans('client.teachers.BDA')}}</p>
+                <p class="pm-staff-profile-title">{{trans('client.teachers.teacher')}}</p>
                 
-                <p class="pm-staff-profile-bio">Ведет практические занятия в группах Intermediate, Pre-Intermediate </p>
+                <p class="pm-staff-profile-bio">{{trans('client.teachers.lessons')}} Intermediate, Pre-Intermediate </p>
               </div>     
             </div>
           </div>
@@ -300,10 +299,10 @@
                 </div>   
               </div>                                
               <div class="pm-staff-profile-details text-center">  
-                <p class="pm-staff-profile-name">Галецкая Ангелина Юрьевна </p>
-                <p class="pm-staff-profile-title">Преподаватель</p>
+                <p class="pm-staff-profile-name">{{trans('client.teachers.GAY')}}</p>
+                <p class="pm-staff-profile-title">{{trans('client.teachers.teacher')}}</p>
                 
-                <p class="pm-staff-profile-bio">Ведет практические занятия в группах IT-English, Upper-Intermediate, Intermediate  </p>
+                <p class="pm-staff-profile-bio">{{trans('client.teachers.lessons')}} IT-English, Upper-Intermediate, Intermediate  </p>
               </div>     
             </div>
           </div>
@@ -315,10 +314,10 @@
                 </div>   
               </div>                                
               <div class="pm-staff-profile-details text-center">  
-                <p class="pm-staff-profile-name">Гончарова Ирина Викторовна </p>
-                <p class="pm-staff-profile-title">Преподаватель</p>
+                <p class="pm-staff-profile-name">{{trans('client.teachers.GIV')}}</p>
+                <p class="pm-staff-profile-title">{{trans('client.teachers.teacher')}}</p>
                 
-                <p class="pm-staff-profile-bio">Ведет практические занятия в группах Beginner, Pre-Intermediate, Advanced, IT-Enlish </p>
+                <p class="pm-staff-profile-bio">{{trans('client.teachers.lessons')}} Beginner, Pre-Intermediate, Advanced, IT-Enlish </p>
               </div>     
             </div>
           </div>
@@ -330,10 +329,10 @@
                 </div>   
               </div>                                
               <div class="pm-staff-profile-details text-center">  
-                <p class="pm-staff-profile-name">Маликова Ирина Гавриловна </p>
-                <p class="pm-staff-profile-title">Преподаватель</p>
+                <p class="pm-staff-profile-name">{{trans('client.teachers.MIG')}}</p>
+                <p class="pm-staff-profile-title">{{trans('client.teachers.teacher')}}</p>
                 
-                <p class="pm-staff-profile-bio">Ведет практические занятия в группах Upper-Intermediate </p>
+                <p class="pm-staff-profile-bio">{{trans('client.teachers.lessons')}} Upper-Intermediate </p>
               </div>     
             </div>
           </div>
@@ -373,16 +372,16 @@
       <div class="container">-->
         <div class="row">
           <div class="header-section text-center">
-            <h1><B>КУРСЫ</B></h1>
+            <h1><B>{{trans('client.courses.courses')}}</B></h1>
 			 </div>
         </div>
 	<section id ="english" class="section-padding">
       <div class="container">
         <div class="row">
           <div class="header-section text-center">
-            <h1><B>Английский язык</B></h1>
+            <h1><B>{{trans('client.menu.english')}}</B></h1>
             <hr class="bottom-line">
-			<h2>Не знаешь на каком уровне твой английский? Можешь узнать это <a href="https://docs.google.com/forms/d/1QsnDA8mbnh62Zdf0I0IXsLIGuG9XlhesQNhqEpk7NQQ/alreadyresponded?edit_requested=true">здесь</a></h2>
+			<h2>{{trans('client.courses.message')}} <a href="https://docs.google.com/forms/d/1QsnDA8mbnh62Zdf0I0IXsLIGuG9XlhesQNhqEpk7NQQ/alreadyresponded?edit_requested=true">{{trans('client.courses.here')}}</a></h2>
           </div>
         </div>
       </div>
@@ -519,7 +518,7 @@
       <div class="container">
         <div class="row">
           <div class="header-section text-center">
-            <h1><B>Испанский язык</B></h1>
+            <h1><B>{{trans('client.menu.spanish')}}</B></h1>
             <hr class="bottom-line">
           </div>
         </div>
@@ -552,7 +551,7 @@
       <div class="container">
         <div class="row">
           <div class="header-section text-center">
-            <h1><B>Итальянский язык</B></h1>
+            <h1><B>{{trans('client.menu.italian')}}</B></h1>
             <hr class="bottom-line">
           </div>
         </div>
@@ -585,7 +584,7 @@
       <div class="container">
         <div class="row">
           <div class="header-section text-center">
-            <h1><B>Польский язык</B></h1>
+            <h1><B>{{trans('client.menu.polish')}}</B></h1>
             <hr class="bottom-line">
           </div>
         </div>
@@ -620,7 +619,7 @@
       <div class="container">
         <div class="row">
           <div class="header-section text-center">
-            <h1><B>Французский язык</B></h1>
+            <h1><B>{{trans('client.menu.french')}}</B></h1>
             <hr class="bottom-line">
           </div>
         </div>
@@ -657,7 +656,7 @@
       <div class="container">
         <div class="row">
           <div class="header-section text-center">
-            <h1><B>Немецкий язык</B></h1>
+            <h1><B>{{trans('client.menu.german')}}</B></h1>
             <hr class="bottom-line">
           </div>
         </div>
@@ -693,7 +692,7 @@
       <div class="container">
         <div class="row">
           <div class="header-section text-center">
-            <h1><B>Китайский язык</B></h1>
+            <h1><B>{{trans('client.menu.chinese')}}</B></h1>
             <hr class="bottom-line">
           </div>
         </div>
@@ -733,14 +732,14 @@
       <div class="container">
         <div class="row">
           <div class="header-section text-center">
-            <h2>Наши цены</h2>
+            <h2>{{trans('client.prices.prices')}}</h2>
            
           </div>
           <div class="col-md-4 col-sm-4">
             <div class="price-table">
               <!-- Plan  -->
               <div class="pricing-head">
-                <h4>Английский язык</h4>
+                <h4>{{trans('client.menu.english')}}</h4>
                 <span class="fa fa-BYR curency"></span> <span class="amount">285</span> 
               </div>
           
@@ -754,7 +753,7 @@
             <div class="price-table">
               <!-- Plan  -->
               <div class="pricing-head">
-                <h4>Немецкий язык</h4>
+                <h4>{{trans('client.menu.german')}}</h4>
                 <span class="fa fa-BYR curency"></span> <span class="amount">285</span> 
               </div>
           
@@ -768,7 +767,7 @@
             <div class="price-table">
               <!-- Plan  -->
               <div class="pricing-head">
-                <h4>Французский язык</h4>
+                <h4>{{trans('client.menu.french')}}</h4>
                 <span class="fa fa-BYR curency"></span> <span class="amount">285</span> 
               </div>
           
@@ -782,7 +781,7 @@
             <div class="price-table">
               <!-- Plan  -->
               <div class="pricing-head">
-                <h4>Испанский язык</h4>
+                <h4>{{trans('client.menu.spanish')}}</h4>
                 <span class="fa fa-BYR curency"></span> <span class="amount">285</span> 
               </div>
           
@@ -796,7 +795,7 @@
             <div class="price-table">
               <!-- Plan  -->
               <div class="pricing-head">
-                <h4>Итальянский язык</h4>
+                <h4>{{trans('client.menu.italian')}}</h4>
                 <span class="fa fa-BYR curency"></span> <span class="amount">285</span> 
               </div>
           
@@ -810,7 +809,7 @@
             <div class="price-table">
               <!-- Plan  -->
               <div class="pricing-head">
-                <h4>Польский язык</h4>
+                <h4>{{trans('client.menu.polish')}}</h4>
                 <span class="fa fa-BYR curency"></span> <span class="amount">285</span> 
               </div>
           
@@ -824,7 +823,7 @@
             <div class="price-table">
               <!-- Plan  -->
               <div class="pricing-head">
-                <h4>IT-English</h4>
+                <h4>{{trans('client.prices.IT')}}</h4>
                 <span class="fa fa-BYR curency"></span> <span class="amount">285</span> 
               </div>
           
@@ -838,13 +837,9 @@
             <div class="price-table">
               <!-- Plan  -->
               <div class="pricing-head">
-                <h4>Business English</h4>
+                <h4>{{trans('client.prices.business')}}</h4>
                 <span class="fa fa-BYR curency"></span> <span class="amount">285</span> 
               </div>
-          
-		  
-		  
-		  
               <!-- Plean Detail -->
               <div class="price-in mart-15">
                 <a href="#" class="btn btn-bg green btn-block">PURCHACE</a> 
@@ -855,7 +850,7 @@
             <div class="price-table">
               <!-- Plan  -->
               <div class="pricing-head">
-                <h4>Express English</h4>
+                <h4>{{trans('client.prices.express')}}</h4>
                 <span class="fa fa-BYR curency"></span> <span class="amount">285</span> 
               </div>
           
@@ -869,7 +864,7 @@
             <div class="price-table">
               <!-- Plan  -->
               <div class="pricing-head">
-                <h5>Business Correspondence Language</h5>
+                <h5>{{trans('client.prices.correspondence')}}</h5>
                 <span class="fa fa-BYR curency"></span> <span class="amount">152</span> 
               </div>
           
@@ -883,7 +878,7 @@
             <div class="price-table">
               <!-- Plan  -->
               <div class="pricing-head">
-                <h5>Курс коммуникативной грамматики</h5>
+                <h5>{{trans('client.prices.communication')}}</h5>
                 <span class="fa fa-BYR curency"></span> <span class="amount">152</span> 
               </div>
           
@@ -897,7 +892,7 @@
             <div class="price-table">
               <!-- Plan  -->
               <div class="pricing-head">
-                <h3>Подготовка к ЦТ</h3>
+                <h3>{{trans('client.prices.CT')}}</h3>
                 <span class="fa fa-BYR curency"></span> <span class="amount">285</span> 
               </div>
           
@@ -970,7 +965,7 @@ function googleTranslateElementInit() {
       <div class="container">
         <div class="row">
           <div class="header-section text-center">
-            <h2>Напишите нам</h2>
+            <h2>{{trans('client.connection.write us')}}</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem nesciunt vitae,<br> maiores, magni dolorum aliquam.</p>
             <hr class="bottom-line">
           </div>

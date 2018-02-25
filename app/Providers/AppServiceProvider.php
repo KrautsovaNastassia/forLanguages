@@ -4,6 +4,7 @@ namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
 use App\User;
+use App;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -23,6 +24,11 @@ class AppServiceProvider extends ServiceProvider
 			@mail($email,$thema,$body);
 			
 		});
+		
+		if(isset($_COOKIE['lang'])){
+		    $loc=$_COOKIE['lang'];
+			App::setLocale($loc);
+		}
       
     }
 
