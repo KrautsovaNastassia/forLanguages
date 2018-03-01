@@ -11,7 +11,7 @@
 |
 */
 
-Route::get('/', 'BaseController@getIndex');
+Route::get('/', 'BaseController@getIndex')->middleware('lang');
 //всегда последний
 Route::get('print', 'BaseController@getOne')->name('print');
 Route::get('course/{id}','CourseController@getOne');

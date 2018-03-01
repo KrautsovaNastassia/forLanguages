@@ -213,11 +213,23 @@ Banner
     padding-left: 5px;
     padding-right: 0px;
 }
+.padcenter{
+    padding-left: 5px;
+    padding-right: 0px;
+	margin-left: 100px;
+}
+.padtop{
+	margin-top: 100px;
+}
 .big-text{
     font-size: 35px;
 }
 .small-text{
-    font-size: 16px;
+    font-size: 20px;
+}
+.small-text1{
+    font-size: 20px;
+	margin-right: 272px;
 }
 .quote .btn{
     background-color: #5fcf80;
@@ -577,6 +589,11 @@ Footer
     padding: 60px 0 20px;
     background: #111;
     color: #ccc;
+}
+.footer-courses {
+    padding: 20px 0 20px;
+    background: #5fcf80;
+    color: #f7fdf9;
 }
 .footer a {
     color: #fff;

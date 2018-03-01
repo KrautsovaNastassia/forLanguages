@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -32,33 +32,41 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href={{asset('about')}}>LTC <span><I>BSUIR</I></span></a>
+        <a class="navbar-brand" href={{asset('about')}}>{{trans('client.menu.ltc')}}<span><I>{{trans('client.menu.bsuir')}}</I></span></a>
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav navbar-right">
-         <li><a href="print">Версия для печати</a></li> 
-          <li><a href="#news">Новости</a></li>
+         <li><a href="print">{{trans('client.menu.print version')}}</a></li> 
+          <li><a href="#news">{{trans('client.menu.news')}}</a></li>
           <li><!--<a href="#courses">Курсы</a>-->
 		  <!--<div class="dropdown">-->
-		  <a id="myNavbar" type="button" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Курсы <span class="nav navbar-nav navbar-right"></span> </a>
+		  <a id="myNavbar" type="button" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{trans('client.menu.courses')}}<span class="nav navbar-nav navbar-right"></span> </a>
 		 <!-- <div class="nav navbar-nav navbar-right">-->
 
   <ul class="dropdown-menu" aria-labelledby="myNavbar">
-    <li><a href="#english">Английский язык</a></li>
-	<li><a href="#spanish">Испанский язык</a></li>
-	<li><a href="#italian">Итальянский язык</a></li>
-	<li><a href="#polish">Польский язык</a></li>
-	<li><a href="#german">Немецкий язык</a></li>
-	<li><a href="#french">Французский язык</a></li>
+    <li><a href="#english">{{trans('client.menu.english')}}</a></li>
+	<li><a href="#spanish">{{trans('client.menu.spanish')}}</a></li>
+	<li><a href="#italian">{{trans('client.menu.italian')}}</a></li>
+	<li><a href="#polish">{{trans('client.menu.polish')}}</a></li>
+	<li><a href="#french">{{trans('client.menu.french')}}</a></li>
+	<li><a href="#german">{{trans('client.menu.german')}}</a></li>
+	<li><a href="#chinese">{{trans('client.menu.chinese')}}</a></li>
   </ul>
 <!--</div>-->
 		  </li>
-          <li><a href="#pricing">Цены</a></li>
-		  <li><a href="#aboutcenter">О центре</a></li>
+          <li><a href="#pricing">{{trans('client.menu.prices')}}</a></li>
+		  <li><a href="#aboutcenter">{{trans('client.menu.about center')}}</a></li>
           <!--<li><a href=""{{asset('login')}}"" data-target="#login" data-toggle="modal">Войти</a></li>-->
-		  <li><a href="/home" >Войти</a></li>
-          <li class="btn-trial"><a href="{{asset('register')}}">Регистрация</a></li>
-		  
+		  <li><a href="/home" >{{trans('client.menu.sign in')}}</a></li>
+          <li class="btn-trial"><a href="{{asset('register')}}">{{trans('client.menu.sign up')}}</a></li>
+		  <li><a id="myNavbar" type="button" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Язык<span class="nav navbar-nav navbar-right"></span> </a>
+
+  <ul class="dropdown-menu" aria-labelledby="myNavbar">
+	<li><a href="/?lang=en">Английский</a></li>
+	<li><a href="/?lang=by">Белоруский</a></li>
+    <li><a href="/?lang=ru">Русский</a></li>
+  </ul>
+  </li>
 		<!--	<div id="google_translate_element"></div><script type="text/javascript">
 				function googleTranslateElementInit() {
 					new google.translate.TranslateElement({pageLanguage: 'ru', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, multilanguagePage: true}, 'google_translate_element');
@@ -138,11 +146,12 @@
                 <h2 class="text-dec">Trust & Quality</h2>
               </div>
               <div class="intro-para text-center quote">
-                <p class="big-text">Центр языковой подготовки по иностранным языкам при БГУИР</p>
-                <p class="small-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium enim repellat sapiente quos architecto<br>Laudantium enim repellat sapiente quos architecto</p>
-                <a href="#footer" class="btn get-quote">GET A QUOTE</a>
+                <p class="big-text">{{trans('client.menu.ltc bsuir')}}</p>
+                <p class="small-text">{{trans('client.menu.proverb')}}<br>{{trans('client.menu.(proverb)')}}</p>
+				<p class="small-text1" align="right">{{trans('client.menu.if goethe')}}</p>
+                <!--<a href="#footer" class="btn get-quote">GET A QUOTE</a>-->
               </div>
-              <a href="#feature" class="mouse-hover"><div class="mouse"></div></a>
+            <!--  <a href="#feature" class="mouse-hover"><div class="mouse"></div></a>-->
             </div>
           </div>
         </div>
@@ -232,8 +241,7 @@
       </ul> -->
 	  
 	  <div class="container text-center">
-        220013, г. Минск, ул. П. Бровки, 6, 309 ауд.
-		Центр языковой подготовки
+        {{trans('client.footer.adress')}}
 		
         <div class="credits">
             <!-- 
@@ -242,7 +250,7 @@
                 Licensing information: https://bootstrapmade.com/license/
                 Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Mentor
             -->
-            Адрес электронной почты <a href="kaffl1@bsuir.by ">kaffl1@bsuir.by </a>
+            {{trans('client.menu.e-mail')}}<a href="kaffl1@bsuir.by ">kaffl1@bsuir.by </a>
         </div>
       </div>
     </footer>
