@@ -45,42 +45,32 @@
         </div>
         </div>
       </div>
-    </section>-->
-<section id ="news" class="section-padding"> 
-<div class="container"> 
-<div class="row"> 
-<div class="header-section text-center"> 
-<!--{{(isset($obj->body))?$obj->body:"-"}}--> 
-</div> 
-<div class="feature-info"> 
-<div class="fea"> 
-<div class="col-md-4"> 
-<div class="heading pull-right"> 
-<h4> <center>{{trans('client.news.puzzle english')}}</center></h4> 
-<a href="https://english-films.com/" ><img src="img/abc.png" class="img-responsive"></a> 
-</div> 
-</div> 
-</div> 
-<div class="fea"> 
-<div class="col-md-4"> 
-<div class="heading pull-right"> 
-<h4> <center>{{trans('client.news.vk')}}</center></h4> 
-<a href="https://vk.com/club113964950" ><img src="img/vk.png" class="img-responsive"></a> 
-</div> 
-</div> 
-</div> 
-<div class="fea"> 
-<div class="col-md-4"> 
-<div class="heading pull-right"> 
-<h4> <center>{{trans('client.news.leo')}}</center></h4> 
-<a href="http://lingualeo.com/ru" ><img src="img/leo.png" class="img-responsive"></a> 
-</div> 
-</div> 
-</div> 
-</div> 
-</div> 
-</div> 
-</section>
+    </section>--> 
+			 <div id="block-for-slider">
+        <div id="viewport">
+            <ul id="slidewrapper">
+			@foreach ($news as $key)
+<li class="slide"><img src="{{ asset('img/'.$key->img) }}" alt="{{$key->id}}" class="slide-img"></li> 
+			@endforeach
+               <!-- <li class="slide"><img src="https://hsto.org/files/8d4/b19/80d/8d4b1980d48c418090e2c4466d8c06e1.jpg" alt="1" class="slide-img"></li>
+                <li class="slide"><img src="https://hsto.org/files/ef1/3d7/97e/ef13d797e4c642c7a1d4b2b91f7ad7b3.jpg" alt="2" class="slide-img"></li>
+                <li class="slide"><img src="https://hsto.org/files/ec5/592/f1e/ec5592f1e814401eb38305682a8e88d4.jpg" alt="3" class="slide-img"></li>
+                <li class="slide"><img src="https://hsto.org/files/eda/61a/3c5/eda61a3c53db408d820643998d9acd81.jpg" alt="4" class="slide-img"></li>-->
+            </ul>
+
+            <div id="prev-next-btns">
+                <div id="prev-btn"></div>
+                <div id="next-btn"></div>
+            </div>
+
+            <ul id="nav-btns">
+                <li class="slide-nav-btn"></li>
+                <li class="slide-nav-btn"></li>
+                <li class="slide-nav-btn"></li>
+                <li class="slide-nav-btn"></li>
+            </ul>
+        </div>
+    </div>
 
 
 
@@ -477,7 +467,7 @@
               </figcaption>
               <a href="course/9"></a>
             </figure>
-          </div></p>
+          </div>
 		   
 		  <div class="col-md-3 col-sm-6 padleft-right padtop">
             <figure class="imghvr-fold-up">
@@ -488,7 +478,7 @@
               </figcaption>
               <a href="course/10"></a>
             </figure>
-          </div></p>
+          </div>
 		  
 		  <div class="col-md-3 col-sm-6 padleft-right padtop">
             <figure class="imghvr-fold-up">
@@ -499,7 +489,7 @@
               </figcaption>
               <a href="course/11"></a>
             </figure>
-          </div></p>
+          </div>
 		  
 		  <div class="col-md-3 col-sm-6 padleft-right padtop">
             <figure class="imghvr-fold-up">
@@ -510,7 +500,7 @@
               </figcaption>
               <a href="course/12"></a>
             </figure>
-          </div></p>
+          </div>
 </div>
       </div>
     </section>

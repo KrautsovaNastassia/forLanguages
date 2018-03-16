@@ -9,8 +9,7 @@ use App\Http\Controllers;
 class NewsController extends Controller
 {
     public function getOne($id=null){
-		
-		$obj=News::find($id);
-		return view ('new',compact('obj'));
+		$news=News::all();
+		return view ('index',compact('news'));
 	}
 }

@@ -6,7 +6,6 @@
 <br>
 @if($obj->nomenclature_id==1)
 <a href="/#english"><h4>Английский язык</h4></a>
-<a href="/1/news/1"><h4>Новости курса<h4></a>
 <div class="row">
     <div class="header-section text-center">
 		<BR>

@@ -10,6 +10,7 @@
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans|Candal|Alegreya+Sans">
     <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	 <link rel="stylesheet" type="text/css" href="css/slider.css">
     <link rel="stylesheet" type="text/css" href={{asset ('css/imagehover.min.css')}}>
     <link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/rating.css">
@@ -37,7 +38,6 @@
         <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav navbar-right">
          <li><a href="print">{{trans('client.menu.print version')}}</a></li> 
-          <li><a href="#news">{{trans('client.menu.news')}}</a></li>
           <li><!--<a href="#courses">Курсы</a>-->
 		  <!--<div class="dropdown">-->
 		  <a id="myNavbar" type="button" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{trans('client.menu.courses')}}<span class="nav navbar-nav navbar-right"></span> </a>
@@ -261,6 +261,4 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/custom.js"></script>
     <script src="contactform/contactform.js"></script>
-    
-  </body>
-</html>
+    <script src="js/slider.js"></script>

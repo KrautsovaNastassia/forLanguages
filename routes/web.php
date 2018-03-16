@@ -15,7 +15,7 @@ Route::get('/', 'BaseController@getIndex')->middleware('lang');
 //всегда последний
 Route::get('print', 'BaseController@getOne')->name('print');
 Route::get('course/{id}','CourseController@getOne');
-Route::get('1/news/{id}','NewsController@getOne');
+Route::get('/','NewsController@getOne');
 //Route::get('/{id}', 'BaseController@getIndex');
 
 Route::resource('/images','ImageController');
