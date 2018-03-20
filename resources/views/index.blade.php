@@ -391,7 +391,7 @@
             <figure class="imghvr-fold-up">
               <img src="img/eng_beg.jpg" class="img-responsive">
               <figcaption>
-                  <p><font size=5>Английский с нуля?<br>Освой первый уровень!</font><br> </p>
+                  <p><font size=5>Английский с нуля?<br>Освойте первый уровень!</font><br> </p>
               </figcaption>
               <a href="course/1"></a>
             </figure>
@@ -400,7 +400,7 @@
             <figure class="imghvr-fold-up">
               <img src="img/eng_elem.jpg" class="img-responsive">
               <figcaption>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam atque, nostrum veniam consequatur libero fugiat, similique quis.</p>
+                  <p><font size=4.5>Начали учить английский и хотите продолжить?<br><br> Elementary — следующий шаг к успеху ;)</font></p>
               </figcaption>
               <a href="course/2"></a>
             </figure>
@@ -409,7 +409,7 @@
             <figure class="imghvr-fold-up">
               <img src="img/eng_pre_int.jpg" class="img-responsive">
               <figcaption>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam atque, nostrum veniam consequatur libero fugiat, similique quis.</p>
+                  <p><font size=4.5>Отключайте русскую озвучку английского кино.<br><br> Ведь после этого курса она вам может не пригодиться :)</font></p>
               </figcaption>
               <a href="course/3"></a>
             </figure>
@@ -418,7 +418,7 @@
             <figure class="imghvr-fold-up margin-bottom-15px">
               <img src="img/eng_int.jpg" class="img-responsive">
               <figcaption>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam atque, nostrum veniam consequatur libero fugiat, similique quis.</p>
+                  <p><font size=5>Можете смело войти <br>в мир англоязычных книг ;)</font> </p>
               </figcaption>
               <a href="course/4"></a>
             </figure>
