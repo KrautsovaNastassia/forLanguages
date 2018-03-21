@@ -184,6 +184,7 @@
     </section>
     <!--/ work-shop-->
     <!--Faculity member-->
+	
     <section id="faculity-member" class="section-padding">
       <div class="container">
         <div class="row">
@@ -570,38 +571,27 @@
       </div>
     </section>
 	
-	<section id ="polish" class="section-padding">
+	<section id ="chinese" class="section-padding">
       <div class="container">
         <div class="row">
           <div class="header-section text-center">
-            <h1><B>{{trans('client.menu.polish')}}</B></h1>
+            <h1><B>{{trans('client.menu.chinese')}}</B></h1>
             <hr class="bottom-line">
           </div>
         </div>
       </div>
       <div class="container">
-        <div class="row">
-          <div class="col-md-6">
+        <div class="row" >
+          <div class="col-md-12" align="center">
             <figure class="imghvr-fold-up">
-              <img src="img/pol_1.jpg" class="img-responsive">
+              <img src="img/chinese.png" width="900" height="563" class="img-responsive">
               <figcaption>
                  <p><font size=5>Начинающий уровень<br>!!!</font><br> </p>
               </figcaption>
               <a href="course/17"></a>
             </figure>
-          </div>
-          <div class="col-md-6">
-            <figure class="imghvr-fold-up">
-              <img src="img/pol_2.jpg" class="img-responsive">
-              <figcaption>
-                  <p><font size=5>Продолжающий уровень<br>!!!</font><br> </p>
-              </figcaption>
-              <a href="course/18"></a>
-            </figure>
-          </div>
-         
-   
-</div>
+          </div>   
+		</div>
       </div>
     </section>
 	
@@ -678,41 +668,6 @@
       </div>
     </section>
 	
-	<section id ="chinese" class="section-padding">
-      <div class="container">
-        <div class="row">
-          <div class="header-section text-center">
-            <h1><B>{{trans('client.menu.chinese')}}</B></h1>
-            <hr class="bottom-line">
-          </div>
-        </div>
-      </div>
-      <div class="container" >
-        <div class="row">
-          <div class="col-md-6">
-            <figure class="imghvr-fold-up margin-bottom: 10px" >
-              <img src="img/germ_1.jpg" class="img-responsive">
-              <figcaption>
-                  <p><font size=5>Начинающий уровень<br>!!!</font><br> </p>
-              </figcaption>
-              <a href="course/23"></a>
-            </figure>
-          </div>
-          <div class="col-md-6">
-            <figure class="imghvr-fold-up">
-              <img src="img/germ_2.jpg" class="img-responsive">
-              <figcaption>
-                  <p><font size=5>Продолжающий уровень<br>!!!</font><br> </p>
-              </figcaption>
-              <a href="course/24"></a>
-            </figure>
-          </div>
-          
-          
-       
-</div>
-      </div>
-    </section>
        <!-- </div>
       </div>
     </section>-->

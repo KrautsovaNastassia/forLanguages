@@ -22,8 +22,6 @@ Route::resource('/images','ImageController');
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/home', 'HomeController@index')->name('home')->middleware('auth');
 
-Auth::routes();  
-
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/logout', 'HomeController@logoutuser')->middleware('auth');

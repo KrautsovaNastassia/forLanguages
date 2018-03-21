@@ -55,7 +55,7 @@ body {
     background-color: #bfbfbf;
     border-radius: 50%;
     top: calc(50% - 25px);
-    margin-top: 200px;
+    margin-top: 264px;
     margin-left: 0px;
 }
 
@@ -68,7 +68,7 @@ body {
 }
 
 #next-btn {
-    right: -627px;
+    right: -708px;
 }
 
 #nav-btns {
@@ -76,8 +76,8 @@ body {
     width: 100%;
     bottom: -378px;
     padding: 0;
-    margin: 0px;
-    margin-left: 350px;
+    margin: -86px;
+    margin-left: 395px;
     text-align: center;
 }
 

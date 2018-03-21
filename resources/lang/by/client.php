@@ -1,8 +1,8 @@
 <?php
 return[
 	'menu'=>[
-		'ltc'=>'ЦМП ',
-		'bsuir'=>'БДУІР',
+		'ltc'=>'LTC ',
+		'bsuir'=>'BSUIR',
 		'print version'=>'Версія для друку',
 		'news'=>'Навіны',
 		'courses'=>'Курсы',
@@ -17,6 +17,7 @@ return[
 		'about center'=>'Аб цэнтры',
 		'sign in'=>'Увайсці',
 		'sign up'=>'Рэгістрацыя',
+		'logout'=>'Выйсці'
 		'ltc bsuir'=>'Цэнтр моўнай падрыхтоўкі па замежных мовах пры БДУІР',
 		'proverb'=>'He who does not know foreign languages does not know anything about his own',
 		'(proverb)'=>'(Хто не ведае ніводнай замежнай мовы, нічога не ведае і аб сваёй уласнай)',

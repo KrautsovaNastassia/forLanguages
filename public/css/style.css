@@ -56,8 +56,9 @@ Navigation bar
 }
 .navbar-default .navbar-nav > li > a {
     color: #717f86;
-    font-size: 14px;
+    font-size: 15px;
     font-weight: 700;
+	margin-bottom: 0px;
 }
 .navbar-nav > li > a{
 	padding: 0px;
@@ -107,6 +108,61 @@ Navigation bar
 .mart20{
 	margin-top: 20px;
 }
+.img-thumbnail1 {
+    display: inline-block;
+    max-width: 100%;
+    height: auto;
+    padding: 0px;
+    line-height: 1.42857143;
+    background-color: #fff;
+    border-radius: 4px;
+    -webkit-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    display: none;
+    float: left;
+    min-width: 160px;
+    padding: 5px 0;
+    margin: 2px 0 0;
+    font-size: 14px;
+    text-align: left;
+    list-style: none;
+    background-color: #fff;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid #ccc;
+    border: 1px solid rgba(0,0,0,.15);
+    border-radius: 4px;
+    -webkit-box-shadow: 0 6px 12px rgba(0,0,0,.175);
+    box-shadow: 0 6px 12px rgba(0,0,0,.175);
+}
+.caret {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: 2px;
+    vertical-align: middle;
+    border-top: 4px dashed;
+    border-top: 4px solid\9;
+    border-right: 4px solid transparent;
+    border-left: 4px solid transparent;
+}
+.dropdown-menu>li>a {
+    display: block;
+    padding: 3px 20px;
+    clear: both;
+    font-weight: 400;
+    line-height: 1.42857143;
+    color: #333;
+    white-space: nowrap;
+}
+
 /***********************************
 Banner
 ************************************/

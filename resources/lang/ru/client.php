@@ -1,8 +1,8 @@
 <?php
 return[
 	'menu'=>[
-		'ltc'=>'ЦЯП ',
-		'bsuir'=>'БГУИР',
+		'ltc'=>'LTC ',
+		'bsuir'=>'BSUIR',
 		'print version'=>'Версия для печати',
 		'news'=>'Новости',
 		'courses'=>'Курсы',
@@ -17,6 +17,7 @@ return[
 		'about center'=>'О центре',
 		'sign in'=>'Войти',
 		'sign up'=>'Регистрация',
+		'logout'=>'Выйти',
 		'ltc bsuir'=>'Центр языковой подготовки по иностранным языкам при БГУИР',
 		'proverb'=>'He who does not know foreign languages does not know anything about his own',
 		'(proverb)'=>'(Кто не знает иностранных языков, ничего не знает и о своём собственном)',

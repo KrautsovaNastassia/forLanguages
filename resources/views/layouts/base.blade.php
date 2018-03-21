@@ -47,26 +47,77 @@
     <li><a href="#english">{{trans('client.menu.english')}}</a></li>
 	<li><a href="#spanish">{{trans('client.menu.spanish')}}</a></li>
 	<li><a href="#italian">{{trans('client.menu.italian')}}</a></li>
-	<li><a href="#polish">{{trans('client.menu.polish')}}</a></li>
+	<li><a href="#chinese">{{trans('client.menu.chinese')}}</a></li>
 	<li><a href="#french">{{trans('client.menu.french')}}</a></li>
 	<li><a href="#german">{{trans('client.menu.german')}}</a></li>
-	<li><a href="#chinese">{{trans('client.menu.chinese')}}</a></li>
   </ul>
 <!--</div>-->
 		  </li>
           <li><a href="#pricing">{{trans('client.menu.prices')}}</a></li>
 		  <li><a href="#aboutcenter">{{trans('client.menu.about center')}}</a></li>
           <!--<li><a href=""{{asset('login')}}"" data-target="#login" data-toggle="modal">Войти</a></li>-->
-		  <li><a href="/home" >{{trans('client.menu.sign in')}}</a></li>
-          <li class="btn-trial"><a href="{{asset('register')}}">{{trans('client.menu.sign up')}}</a></li>
-		  <li><a id="myNavbar" type="button" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Язык<span class="nav navbar-nav navbar-right"></span> </a>
+		  @guest
+                            <li><a href="{{ route('register') }}">{{trans('client.menu.sign up')}}</a></li>
+							<li><a href="{{ route('login') }}">{{trans('client.menu.sign in')}}</a></li>
+                        @else
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                                    {{ Auth::user()->name }} <span class="caret"></span>
+                                </a>
 
-  <ul class="dropdown-menu" aria-labelledby="myNavbar">
+                                <ul class="dropdown-menu" role="menu">
+                                    <li>
+                                        <a href="{{ route('logout') }}"
+                                            onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+                                            {{trans('client.menu.logout')}}
+                                        </a>
+
+                                        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                            {{ csrf_field() }}
+                                        </form>
+                                    </li>
+                                </ul>
+                            </li>
+                        @endguest
+          <!--<li class="btn-trial"><a href="{{asset('register')}}">{{trans('client.menu.sign up')}}</a></li>-->
+		  <!--<li><a id="myNavbar" type="button" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Язык<span class="nav navbar-nav navbar-right"></span> </a>-->
+
+		 <!-- <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                            <img id="imgNavSel" src="http://tattooscalculator.com/img/flag/Rus_40.jpg" alt="..." class="img-thumbnail icon-small">&nbsp;&nbsp;
+                            <span id="lanNavSel">Rus</span> <span class="caret"></span></a>
+		  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                            <img id="imgNavSel" src="http://tattooscalculator.com/img/flag/Rus_40.jpg" alt="..." class="img-thumbnail icon-small">&nbsp;&nbsp;
+                            <span id="lanNavSel">Rus</span> <span class="caret"></span></a>
+		  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                            <img id="imgNavSel" src="http://tattooscalculator.com/img/flag/Eng_40.jpg" alt="..." class="img-thumbnail icon-small">&nbsp;&nbsp;
+                            <span id="lanNavSel">Eng</span> <span class="caret"></span></a>-->
+		  
+		  <li class="dropdown" align="right" aria-labelledby="myNavbar">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                            <img id="imgNavSel" src="img/flag/Rus_40.jpg" alt="..." class="img-thumbnail1 icon-small">&nbsp;&nbsp;
+                            <span id="lanNavSel">Rus</span> <span class="caret"></span></a>
+                        <ul class="dropdown-menu mumu" role="menu">
+                            <li><a id="navEn" href="/?lang=en" class="language">
+                                    <img id="imgNavEn" src="img/flag/Eng_40.jpg" alt="English" class="img-thumbnail1 icon-small">&nbsp;
+                                    <span id="lanNavEn">English</span>&nbsp;
+                                </a></li>
+                            <li><a id="navBy" href="/?lang=by" class="language">
+                                    <img id="imgNavBy" src="img/flag/By_40.jpg" alt="Belarus" class="img-thumbnail1 icon-small">&nbsp;
+                                    <span id="lanNavBy">Беларуская</span>&nbsp;
+                                </a></li>
+                            <li><a id="navRus" href="/?lang=ru" class="language">
+                                    <img id="imgNavRus" src="img/flag/Rus_40.jpg" alt="Russia" class="img-thumbnail1 icon-small">&nbsp;
+                                    <span id="lanNavRus">Русский</span>&nbsp;
+                                </a></li>
+                        </ul>
+               </li>
+ <!-- <ul class="dropdown-menu" aria-labelledby="myNavbar">
 	<li><a href="/?lang=en">Английский</a></li>
 	<li><a href="/?lang=by">Белоруский</a></li>
     <li><a href="/?lang=ru">Русский</a></li>
   </ul>
-  </li>
+  </li>-->
 		<!--	<div id="google_translate_element"></div><script type="text/javascript">
 				function googleTranslateElementInit() {
 					new google.translate.TranslateElement({pageLanguage: 'ru', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, multilanguagePage: true}, 'google_translate_element');

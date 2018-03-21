@@ -17,6 +17,7 @@ return[
 		'about center'=>'About center',
 		'sign in'=>'Sign in',
 		'sign up'=>'Sign up',
+		'logout'=>'Logout',
 		'ltc bsuir'=>'Language training center in foreign languages BSUIR',
 		'proverb'=>'He who does not know foreign languages does not know anything about his own',
 		'(proverb)'=>'(Кто не знает иностранных языков, ничего не знает и о своём собственном)',
