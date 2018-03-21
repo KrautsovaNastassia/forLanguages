@@ -442,11 +442,7 @@
             </figure>
           </div>
 		 
-		  <div class="col-md-5 col-sm-6 padleft-right">
-		  <br>
-		  <br>
-		  <br>
-		  <br>
+		  <div class="col-md-5 col-sm-6 padcenter padtop">
             <figure class="imghvr-fold-up">
               <img src="img/bus_eng.jpg" class="img-responsive">
               <figcaption>
@@ -457,11 +453,8 @@
             </figure>
           </div>
 		  
-		  <div class="col-md-5 col-sm-6 padleft-right">
-		  <br>
-		  <br>
-		  <br>
-		  <br>
+		  <div class="col-md-5 col-sm-6 padleft-right padtop">
+		 
             <figure class="imghvr-fold-up">
               <img src="img/it_eng.jpg" class="img-responsive">
               <figcaption>
@@ -474,11 +467,8 @@
 		  </center>
 		 
 		  
-		  <div class="col-md-3 col-sm-6 padleft-right">
-		  <br>
-		  <br>
-		  <br>
-		  <br>
+		  <div class="col-md-3 col-sm-6 padleft-right padtop">
+		  
             <figure class="imghvr-fold-up">
               <img src="img/expr_eng.jpg" class="img-responsive">
               <figcaption>
@@ -489,11 +479,8 @@
             </figure>
           </div></p>
 		   
-		  <div class="col-md-3 col-sm-6 padleft-right">
-		  <br>
-		  <br>
-		  <br>
-		  <br>
+		  <div class="col-md-3 col-sm-6 padleft-right padtop">
+		 
             <figure class="imghvr-fold-up">
               <img src="img/bus_cor_eng.jpg" class="img-responsive">
               <figcaption>
@@ -504,11 +491,8 @@
             </figure>
           </div></p>
 		  
-		  <div class="col-md-3 col-sm-6 padleft-right">
-		  <br>
-		  <br>
-		  <br>
-		  <br>
+		  <div class="col-md-3 col-sm-6 padleft-right padtop">
+		 
             <figure class="imghvr-fold-up">
               <img src="img/commun_eng.jpg" class="img-responsive">
               <figcaption>
@@ -519,11 +503,8 @@
             </figure>
           </div></p>
 		  
-		  <div class="col-md-3 col-sm-6 padleft-right">
-		  <br>
-		  <br>
-		  <br>
-		  <br>
+		  <div class="col-md-3 col-sm-6 padleft-right padtop">
+		  
             <figure class="imghvr-fold-up">
               <img src="img/CT_eng.jpg" class="img-responsive">
               <figcaption>
