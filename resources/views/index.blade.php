@@ -236,7 +236,7 @@
             <div class="pm-staff-profile-container" >
               <div class="pm-staff-profile-image-wrapper text-center">
                 <div class="pm-staff-profile-image">
-                    <img src="img/блюмер.jpg" alt="" class="img-thumbnail img-circle" />
+                    <img src="img/blumer.jpg" alt="" class="img-thumbnail img-circle" />
                 </div>   
               </div>                                
               <div class="pm-staff-profile-details text-center">  
@@ -251,7 +251,7 @@
             <div class="pm-staff-profile-container" >
               <div class="pm-staff-profile-image-wrapper text-center">
                 <div class="pm-staff-profile-image">
-                  <img src="img/язбек.jpg" alt="" class="img-thumbnail img-circle" />
+                  <img src="img/язбекновая.jpg" alt="" class="img-thumbnail img-circle" />
                 </div>   
               </div>                                
               <div class="pm-staff-profile-details text-center">  
@@ -266,7 +266,7 @@
             <div class="pm-staff-profile-container" >
               <div class="pm-staff-profile-image-wrapper text-center">
                 <div class="pm-staff-profile-image">
-                  <img src="img/белоус.jpg" alt="" class="img-thumbnail img-circle" />
+                  <img src="img/belous.jpg" alt="" class="img-thumbnail img-circle" />
                 </div>   
               </div>                                
               <div class="pm-staff-profile-details text-center">  
@@ -281,7 +281,7 @@
             <div class="pm-staff-profile-container" >
               <div class="pm-staff-profile-image-wrapper text-center">
                 <div class="pm-staff-profile-image">
-                  <img src="img/булгакова.jpg" alt="" class="img-thumbnail img-circle" />
+                  <img src="img/bulgakova.jpg" alt="" class="img-thumbnail img-circle" />
                 </div>   
               </div>                                
               <div class="pm-staff-profile-details text-center">  
@@ -296,7 +296,7 @@
             <div class="pm-staff-profile-container" >
               <div class="pm-staff-profile-image-wrapper text-center">
                 <div class="pm-staff-profile-image">
-                  <img src="img/галецкая.jpg" alt="" class="img-thumbnail img-circle" />
+                  <img src="img/angelina.jpg" alt="" class="img-thumbnail img-circle" />
                 </div>   
               </div>                                
               <div class="pm-staff-profile-details text-center">  
@@ -311,7 +311,7 @@
             <div class="pm-staff-profile-container" >
               <div class="pm-staff-profile-image-wrapper text-center">
                 <div class="pm-staff-profile-image">
-                  <img src="img/гончарова.jpg" alt="" class="img-thumbnail img-circle" />
+                  <img src="img/irina2.jpg" alt="" class="img-thumbnail img-circle" />
                 </div>   
               </div>                                
               <div class="pm-staff-profile-details text-center">  
