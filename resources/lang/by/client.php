@@ -22,6 +22,10 @@ return[
 		'proverb'=>'He who does not know foreign languages does not know anything about his own',
 		'(proverb)'=>'(Хто не ведае ніводнай замежнай мовы, нічога не ведае і аб сваёй уласнай)',
 		'if goethe'=>'I.F. Goethe',
+		'teachers'=>'Маi настаунiкi',
+	],
+	'message'=>[
+	'message'=>'Отправить сообщение',
 	],
 
 	'news'=>[

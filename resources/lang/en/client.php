@@ -22,8 +22,11 @@ return[
 		'proverb'=>'He who does not know foreign languages does not know anything about his own',
 		'(proverb)'=>'(Кто не знает иностранных языков, ничего не знает и о своём собственном)',
 		'if goethe'=>'I.F. Goethe',
+		'teachers'=>'My teachers',
 	],
-
+'message'=>[
+	'message'=>'Send message',
+	],
 	'news'=>[
 		'puzzle english' => 'Learn English by watching movies',
 		'vk' => 'We are already in VK, join us!',

@@ -16,7 +16,7 @@ return [
      * Quickadmin settings
      */
     // Default route
-    'route'              => 'home',
+    'route'              => '/',
     // Default home route
     'homeRoute'          => 'admin',
 

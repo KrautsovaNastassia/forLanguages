@@ -10,7 +10,11 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+Route:: group(['middleware'=>'auth'],function()
+{
+	Route::get('teacher','TeacherController@getAll');
+	Route::get('teacher/{id}','TeacherController@getOne');
+});
 Route::get('/', 'BaseController@getIndex')->middleware('lang');
 //всегда последний
 Route::get('print', 'BaseController@getOne')->name('print');

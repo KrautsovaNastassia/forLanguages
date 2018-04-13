@@ -1,5 +1,26 @@
 @extends('layouts.base');
 @section('content')
+    <!--Banner-->
+    <div class="banner">
+      <div class="bg-color">
+        <div class="container">
+          <div class="row">
+            <div class="banner-text text-center">
+              <div class="text-border">
+                <h2 class="text-dec">Trust & Quality</h2>
+              </div>
+              <div class="intro-para text-center quote">
+                <p class="big-text">{{trans('client.menu.ltc bsuir')}}</p>
+                <p class="small-text">{{trans('client.menu.proverb')}}<br>{{trans('client.menu.(proverb)')}}</p>
+				<p class="small-text1" align="right">{{trans('client.menu.if goethe')}}</p>
+                <!--<a href="#footer" class="btn get-quote">GET A QUOTE</a>-->
+              </div>
+            <!--  <a href="#feature" class="mouse-hover"><div class="mouse"></div></a>-->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 <!--<section id ="news" class="section-padding">
       <div class="container">
         <div class="row">

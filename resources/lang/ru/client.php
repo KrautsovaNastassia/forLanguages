@@ -22,6 +22,7 @@ return[
 		'proverb'=>'He who does not know foreign languages does not know anything about his own',
 		'(proverb)'=>'(Кто не знает иностранных языков, ничего не знает и о своём собственном)',
 		'if goethe'=>'I.F. Goethe',
+		'teachers'=>'Мои преподаватели',
 	],
 
 	'news'=>[
@@ -71,6 +72,9 @@ return[
 	'footer'=>[
 		'adress' => '220013, г. Минск, ул. П. Бровки, 6, 309 ауд. Центр языковой подготовки',
 		'e-mail' => 'Адрес электронной почты ',
+	],
+	'message'=>[
+	'message'=>'Отправить сообщение',
 	],
 ];
 ?>
