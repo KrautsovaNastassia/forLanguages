@@ -20,6 +20,9 @@ Route::get('/', 'BaseController@getIndex')->middleware('lang');
 Route::get('print', 'BaseController@getOne')->name('print');
 Route::get('course/{id}','CourseController@getOne');
 Route::get('/','NewsController@getOne');
+Route::get('/chatstart', 'ChatController@getstart');
+
+Route::get('/chattalk', 'ChatController@gettalk');
 //Route::get('/{id}', 'BaseController@getIndex');
 
 Route::resource('/images','ImageController');
@@ -29,3 +32,4 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home')->middleware('auth');
 
 Route::get('/logout', 'HomeController@logoutuser')->middleware('auth');
+

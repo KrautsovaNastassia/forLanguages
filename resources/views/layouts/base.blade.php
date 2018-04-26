@@ -6,15 +6,17 @@
     <title>Центр языковой подготовки БГУИР</title>
     <meta name="description" content="Free Bootstrap Theme by BootstrapMade.com">
     <meta name="keywords" content="free website templates, free bootstrap themes, free template, free bootstrap, free website template">
-    
+    @section('styles')
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans|Candal|Alegreya+Sans">
     <link rel="stylesheet" type="text/css" href={{asset('css/font-awesome.min.css')}}>
     <link rel="stylesheet" type="text/css" href={{asset('css/bootstrap.min.css')}}>
 	 <link rel="stylesheet" type="text/css" href={{asset('css/slider.css')}}>
     <link rel="stylesheet" type="text/css" href={{asset ('css/imagehover.min.css')}}>
-    <link rel="stylesheet" type="text/css" href={{asset('css/style.css')}}>
+   
 	<link rel="stylesheet" type="text/css" href={{asset('css/rating.css')}}>
 	<link rel="stylesheet" type="text/css" media="print" href={{asset('css/print.css')}}>
+	@show
+	 <link rel="stylesheet" type="text/css" href={{asset('css/style.css')}}>
     <!-- =======================================================
         Theme Name: Mentor
         Theme URL: https://bootstrapmade.com/mentor-free-education-bootstrap-theme/
@@ -62,12 +64,15 @@
                         @else
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-                                    {{ Auth::user()->name }} <span class="caret"></span>
+                                    {{ Auth::user()-> name }} <span class="caret"></span>
                                 </a>
 
                                 <ul class="dropdown-menu" role="menu">
 								<li>
 								<a href ="{{asset('teacher')}}">{{trans('client.menu.teachers')}}<a/>
+								</li>
+								<li>
+								<a href ="{{asset('chatstart')}}">{{trans('client.menu.chat')}}<a/>
 								</li>
                                     <li>
                                         <a href="{{ route('logout') }}"
@@ -289,10 +294,11 @@
       </div>
     </footer>
     <!--/ Footer-->
-    
-    <script src="js/jquery.min.js"></script>
-    <script src="js/jquery.easing.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/custom.js"></script>
-    <script src="contactform/contactform.js"></script>
-    <script src="js/slider.js"></script>
+    @section('scripts')
+    <script src={{asset('js/jquery.min.js')}}></script>
+    <script src={{asset('js/jquery.easing.min.js')}}></script>
+    <script src={{asset('js/bootstrap.min.js')}}></script>
+    <script src={{asset('js/custom.js')}}></script>
+    <script src={{asset('contactform/contactform.js')}}></script>
+    <script src={{asset('js/slider.js')}}></script>
+	@show

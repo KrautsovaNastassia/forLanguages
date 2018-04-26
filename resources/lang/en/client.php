@@ -23,6 +23,7 @@ return[
 		'(proverb)'=>'(Кто не знает иностранных языков, ничего не знает и о своём собственном)',
 		'if goethe'=>'I.F. Goethe',
 		'teachers'=>'My teachers',
+		'chat'=>'Chat',
 	],
 'message'=>[
 	'message'=>'Send message',
