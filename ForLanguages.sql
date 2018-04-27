@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Хост: 127.0.0.1:3306
--- Время создания: Апр 13 2018 г., 19:22
+-- Время создания: Апр 27 2018 г., 08:03
 -- Версия сервера: 5.7.19
 -- Версия PHP: 7.0.21
 
@@ -222,7 +222,8 @@ INSERT INTO `migrations` (`id`, `migration`, `batch`) VALUES
 (14, '2018_01_18_150317_CreateImagesTable', 6),
 (15, '2018_01_18_183954_create_rating_table', 7),
 (16, '2018_01_20_062042_CreateNewsTable', 8),
-(17, '2018_03_31_103907_MessageMigration', 9);
+(17, '2018_03_31_103907_MessageMigration', 9),
+(18, '2018_04_14_092716_create_rooms_table', 10);
 
 -- --------------------------------------------------------
 
@@ -356,6 +357,28 @@ INSERT INTO `roles` (`id`, `title`, `created_at`, `updated_at`) VALUES
 -- --------------------------------------------------------
 
 --
+-- Структура таблицы `rooms`
+--
+
+CREATE TABLE `rooms` (
+  `user_id` int(11) UNSIGNED NOT NULL,
+  `name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `status` int(11) NOT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  `id` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Дамп данных таблицы `rooms`
+--
+
+INSERT INTO `rooms` (`user_id`, `name`, `status`, `created_at`, `updated_at`, `id`) VALUES
+(12, 'TeachersRoom', 1, NULL, NULL, 1);
+
+-- --------------------------------------------------------
+
+--
 -- Структура таблицы `users`
 --
 
@@ -375,7 +398,7 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `role_id`, `name`, `email`, `password`, `remember_token`, `created_at`, `updated_at`) VALUES
-(10, 1, 'forlang', 'lang1308@mail.ru', '$2y$10$27lG1ich/eisXrytc4vQwufIrEiikhSa3pidqNQAL2ihk.7T341lS', 'sNOdasT8grHw6trTiPVB7a7hwi8Ijpysn3KVT32gl8aBJ4TEWxmTRP5EX9eA', '2017-11-09 07:14:22', '2017-11-09 07:14:22'),
+(10, 1, 'forlang', 'lang1308@mail.ru', '$2y$10$27lG1ich/eisXrytc4vQwufIrEiikhSa3pidqNQAL2ihk.7T341lS', 'KENhhJA4344iWxCOyjao0hP5uEgOsTa6w5FbJ7Tgr0CsZXOx4oe5aqNYfeAb', '2017-11-09 07:14:22', '2017-11-09 07:14:22'),
 (11, 2, 'Nastya', 'natusya1998@rambler.ru', '$2y$10$D7YO6BERZ8TvBGHlgc0U2en9xyRwUy9MkmjQ8UbOtAcaNgnEjvFTm', NULL, '2018-01-17 09:29:26', '2018-01-17 09:29:26'),
 (12, 3, 'Maria_Blumer', 'kaffl1@bsuir.by', '$2y$10$FVimJTYBrbwcPbbZpfqrb.Q/BL3EHoVNeVCcRXMkw85fZ13VIeFnG', 'YzmEvfB70sZ7yw8HWbemqnOh75toZcgfNedZAZa0Wxdguh6XrwoxV7TlCjWR', '2018-03-31 06:04:08', '2018-03-31 06:04:08'),
 (13, 3, 'Tatyana_Beloys', 'belous@gmail.com', '$2y$10$YNPBwVeQaiRefsScqEr0/esz/UuFyaAHgGP1MLhd4ugzaak6RNura', 'MFHJRxYQUJUvUVC47s8MvFgahXOZOPvR1RnLGGclq1VjqwBYIIQZRHnLKOwY', '2018-03-31 06:05:54', '2018-03-31 06:05:54'),
@@ -417,7 +440,9 @@ INSERT INTO `users_logs` (`id`, `user_id`, `action`, `action_model`, `action_id`
 (12, 13, 'updated', 'users', 13, '2018-03-31 06:06:31', '2018-03-31 06:06:31'),
 (13, 14, 'updated', 'users', 14, '2018-03-31 06:07:27', '2018-03-31 06:07:27'),
 (14, 15, 'updated', 'users', 15, '2018-03-31 06:08:18', '2018-03-31 06:08:18'),
-(15, 10, 'updated', 'users', 10, '2018-03-31 06:11:42', '2018-03-31 06:11:42');
+(15, 10, 'updated', 'users', 10, '2018-03-31 06:11:42', '2018-03-31 06:11:42'),
+(16, 10, 'updated', 'users', 10, '2018-04-14 05:57:57', '2018-04-14 05:57:57'),
+(17, 10, 'updated', 'users', 10, '2018-04-14 07:11:05', '2018-04-14 07:11:05');
 
 --
 -- Индексы сохранённых таблиц
@@ -505,6 +530,13 @@ ALTER TABLE `roles`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Индексы таблицы `rooms`
+--
+ALTER TABLE `rooms`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `user_id` (`user_id`);
+
+--
 -- Индексы таблицы `users`
 --
 ALTER TABLE `users`
@@ -545,12 +577,17 @@ ALTER TABLE `messages`
 -- AUTO_INCREMENT для таблицы `migrations`
 --
 ALTER TABLE `migrations`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
 --
 -- AUTO_INCREMENT для таблицы `roles`
 --
 ALTER TABLE `roles`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+--
+-- AUTO_INCREMENT для таблицы `rooms`
+--
+ALTER TABLE `rooms`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 --
 -- AUTO_INCREMENT для таблицы `users`
 --
@@ -560,7 +597,17 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT для таблицы `users_logs`
 --
 ALTER TABLE `users_logs`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;COMMIT;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
+--
+-- Ограничения внешнего ключа сохраненных таблиц
+--
+
+--
+-- Ограничения внешнего ключа таблицы `rooms`
+--
+ALTER TABLE `rooms`
+  ADD CONSTRAINT `rooms_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`);
+COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
