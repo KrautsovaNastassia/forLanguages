@@ -10,6 +10,8 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::post('/send/email/{id}','EmailController@postSend');
+Route::get('/messended','EmailController@getM');
 Route:: group(['middleware'=>'auth'],function()
 {
 	Route::get('teacher','TeacherController@getAll');
