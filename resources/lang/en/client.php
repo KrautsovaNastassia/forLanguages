@@ -28,6 +28,14 @@ return[
 'message'=>[
 	'message'=>'Send message',
 	],
+	
+	'chat'=>[
+		'roomname' => 'Conversation name',
+		'join'=>'Join',
+		'inonr'=>'Input name of new conversation',
+		'osfl'=>'Or select from list',
+	],
+	
 	'news'=>[
 		'puzzle english' => 'Learn English by watching movies',
 		'vk' => 'We are already in VK, join us!',

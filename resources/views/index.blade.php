@@ -73,10 +73,6 @@
 			@foreach ($news as $key)
 <li class="slide"><img src="{{ asset('img/'.$key->img) }}" alt="{{$key->id}}" class="slide-img"></li> 
 			@endforeach
-               <!-- <li class="slide"><img src="https://hsto.org/files/8d4/b19/80d/8d4b1980d48c418090e2c4466d8c06e1.jpg" alt="1" class="slide-img"></li>
-                <li class="slide"><img src="https://hsto.org/files/ef1/3d7/97e/ef13d797e4c642c7a1d4b2b91f7ad7b3.jpg" alt="2" class="slide-img"></li>
-                <li class="slide"><img src="https://hsto.org/files/ec5/592/f1e/ec5592f1e814401eb38305682a8e88d4.jpg" alt="3" class="slide-img"></li>
-                <li class="slide"><img src="https://hsto.org/files/eda/61a/3c5/eda61a3c53db408d820643998d9acd81.jpg" alt="4" class="slide-img"></li>-->
             </ul>
 
             <div id="prev-next-btns">
@@ -355,21 +351,27 @@
     </section>
     <!--/ Faculity member-->
     <!--Testimonial-->
-    <section id="aboutcenter" class="section-padding">
+    <section id="aboutcenter" class="section-padding" style="
+    padding-top: 0px;
+    margin-left: 591px;>
       <div class="container">
-        <div class="row">
+	  <h2>О центре</h2>
+        <div class="row" style="
+    margin-left: -580px;>
           <div class="header-section text-center">
             <h2 class="white">See What Our Customer Are Saying?</h2>
             <p class="white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem nesciunt vitae,<br> maiores, magni dolorum aliquam.</p>
             <hr class="bottom-line bg-white">
           </div>
-          <div class="col-md-6 col-sm-6">
+          <div class="col-md-6 col-sm-6" style="
+    margin-top: -125px;margin-left: -300px;">
             <div class="text-comment">
               <p class="text-par">"Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, nec sagittis sem"</p>
               <p class="text-name">Abraham Doe - Creative Dırector</p>
             </div>
           </div>
-          <div class="col-md-6 col-sm-6">
+          <div class="col-md-6 col-sm-6" style="
+    margin-top: -125px;">
             <div class="text-comment">
               <p class="text-par">"Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, nec sagittis sem"</p>
               <p class="text-name">Abraham Doe - Creative Dırector</p>

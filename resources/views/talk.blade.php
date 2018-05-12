@@ -44,7 +44,7 @@
 .panel-body
 {
     overflow-y: scroll;
-    height: 450px;
+    height: 370px;
 }
 
 ::-webkit-scrollbar-track
@@ -152,14 +152,19 @@
     </div>
 </div>-->
 <?
-if(isset($_GET['room'])){
+if($_GET['room']!=null){
 	$room=$_GET['room'];
 }
 else{
 	$room=$_GET['selectroom'];
 }
 ?>
-<iframe src="http://localhost:9090/chat.html?Name=<?=Auth::user()->name?>&Room=<?=$room?>"></iframe>
+
+<iframe src="http://localhost:9090/chat.html?Name=<?=Auth::user()->name?>&Room=<?=$room?>" style="    margin-top: 46px;
+    margin-left: 451px;
+    height: 578px;
+    width: 536px;"></iframe>
+
 @stop
 
 

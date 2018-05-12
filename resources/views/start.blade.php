@@ -6,26 +6,29 @@
 @section('content')
 
 
-  <div class="centered-form__form">
+  <div class="centered-form__form" style="    margin-top: 74px;
+    margin-left: 444px;
+    height: 417px;
+    width: 478px;">
     <form action={{asset('/chattalk')}}>
       <div class="form-field">
-        <h3> ZTeam Chat<h3>
+        <h3>{{trans('client.menu.chat')}}<h3>
       </div>
       <div class="form-field">
         <input  value="{{Auth::user()->name}}" type="hidden" name="Name" autofocus/>
       </div>
       <div class="form-field">
-        <label>Room name</label>
-        <input id="myNavbar" type="text" placeholder="Input name of new room" name="room"/>
+        <label>{{trans('client.chat.roomname')}}</label>
+        <input id="myNavbar" type="text" placeholder="{{trans('client.chat.inonr')}}" name="room"/>
 		<select name="selectroom" aria-labelledby="myNavbar">
-		  <option value=0>Or select from list</option>
+		  <option value=0>{{trans('client.chat.osfl')}}</option>
 		  @foreach ($rooms as $key)
 		  <option value="{{$key->id}}">{{$key->name}}</option>
 		  @endforeach
 		 </select>
       </div>
       <div class="form-field">
-        <button>Join</button>
+        <button>{{trans('client.chat.join')}}</button>
       </div>
     </form>
   </div>
