@@ -1,4 +1,4 @@
-@extends('layouts.base');
+@extends('layouts.base')
 @section('content')
     <!--Banner-->
     <div class="banner">
@@ -13,61 +13,18 @@
                 <p class="big-text">{{trans('client.menu.ltc bsuir')}}</p>
                 <p class="small-text">{{trans('client.menu.proverb')}}<br>{{trans('client.menu.(proverb)')}}</p>
 				<p class="small-text1" align="right">{{trans('client.menu.if goethe')}}</p>
-                <!--<a href="#footer" class="btn get-quote">GET A QUOTE</a>-->
               </div>
-            <!--  <a href="#feature" class="mouse-hover"><div class="mouse"></div></a>-->
             </div>
           </div>
         </div>
       </div>
     </div>
-<!--<section id ="news" class="section-padding">
-      <div class="container">
-        <div class="row">
-          <div class="header-section text-center">
-            <h2>{{(isset($obj->name))?$obj->name:"Добро пожаловать на сайт"}}</h2>
-            <!--{{(isset($obj->body))?$obj->body:"-"}}
-            <hr class="bottom-line">
-          </div>
-          <div class="feature-info">
-            <div class="fea">
-              <div class="col-md-4">
-                <div class="heading pull-right">
-                  <h4>Latest Technologies</h4>
-                  <p>Donec et lectus bibendum dolor dictum auctor in ac erat. Vestibulum egestas sollicitudin metus non urna in eros tincidunt convallis id id nisi in interdum.</p>
-                </div>
-                <div class="fea-img pull-left">
-                  <i class="fa fa-css3"></i>
-                </div>
-              </div>
-            </div>
-            <div class="fea">
-              <div class="col-md-4">
-                <div class="heading pull-right">
-                  <h4>Toons Background</h4>
-                  <p>Donec et lectus bibendum dolor dictum auctor in ac erat. Vestibulum egestas sollicitudin metus non urna in eros tincidunt convallis id id nisi in interdum.</p>
-                </div>
-                <div class="fea-img pull-left">
-                  <i class="fa fa-drupal"></i>
-                </div>
-              </div>
-            </div>
-            <div class="fea">
-              <div class="col-md-4">
-                <div class="heading pull-right">
-                  <h4>Award Winning Design</h4>
-                  <p>Donec et lectus bibendum dolor dictum auctor in ac erat. Vestibulum egestas sollicitudin metus non urna in eros tincidunt convallis id id nisi in interdum.</p>
-                </div>
-                <div class="fea-img pull-left">
-                  <i class="fa fa-trophy"></i>
-                </div>
-              </div>
-            </div>
-        </div>
-        </div>
-      </div>
-    </section>--> 
-			 <div id="block-for-slider">
+
+	<!--/Banner-->
+	<!--News-->
+<div class="container" style="margin-left:0px;
+	padding-left:0px;">
+	<div id="block-for-slider">
         <div id="viewport">
             <ul id="slidewrapper">
 			@foreach ($news as $key)
@@ -88,125 +45,17 @@
             </ul>
         </div>
     </div>
+</div>
 
+<!--/News-->
 
-
-
-
-
-
-
-
-
-    <!--/ feature-->
-    <!--Organisations
-    <section id ="organisations" class="section-padding">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6">
-            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">         
-              <div class="orga-stru">
-                <h3>65%</h3>
-                <p>Say NO!!</p>
-                <i class="fa fa-male"></i>
-              </div>  
-            </div>
-            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">         
-              <div class="orga-stru">
-                <h3>20%</h3>
-                <p>Says Yes!!</p>
-                <i class="fa fa-male"></i>
-              </div>  
-            </div>
-            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">         
-              <div class="orga-stru">
-                <h3>15%</h3>
-                <p>Can't Say!!</p>
-                <i class="fa fa-male"></i>
-              </div>  
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="detail-info">
-              <hgroup>
-                <h3 class="det-txt"> Is inclusive quality education affordable?</h3>
-                <h4 class="sm-txt">(Revised and Updated for 2016)</h4>
-              </hgroup>
-              <p class="det-p">Donec et lectus bibendum dolor dictum auctor in ac erat. Vestibulum egestas sollicitudin metus non urna in eros tincidunt convallis id id nisi in interdum.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section> -->
-    <!--/ Organisations-->
-    <!--Cta-->
-   <!-- <section id="cta-2">
-      <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-              <h2 class="text-center">Subscribe Now</h2>
-              <p class="cta-2-txt">Sign up for our free weekly software design courses, we’ll send them right to your inbox.</p>
-             <div class="cta-2-form text-center">
-              <form action="#" method="post" id="workshop-newsletter-form">
-                    <input name="" placeholder="Введите Ваш адрес электронной почты" type="email">
-                    <input class="cta-2-form-submit-btn" value="Subscribe" type="submit">
-                </form>
-             </div>   
-            </div>
-        </div>
-      </div>
-    </section>
-    <!--/ Cta-->
-    <!--work-shop-->
-    <!--<section id="work-shop" class="section-padding">
+	<!--Teachers-->
+    <section id="faculity-member" class="section-padding" style="
+    padding-bottom:0px;">
       <div class="container">
         <div class="row">
           <div class="header-section text-center">
-            <h2>Upcoming Workshop</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem nesciunt vitae,<br> maiores, magni dolorum aliquam.</p>
-            <hr class="bottom-line">
-          </div>
-          <div class="col-md-4 col-sm-6">
-            <div class="service-box text-center">
-              <div class="icon-box">
-                <i class="fa fa-html5 color-green"></i>
-              </div>
-              <div class="icon-text">
-                <h4 class="ser-text">Mentor HTML5 Workshop</h4>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 col-sm-6">
-            <div class="service-box text-center">
-              <div class="icon-box">
-                <i class="fa fa-css3 color-green"></i>
-              </div>
-              <div class="icon-text">
-                <h4 class="ser-text">Mentor CSS3 Workshop</h4>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 col-sm-6">
-            <div class="service-box text-center">
-              <div class="icon-box">
-                <i class="fa fa-joomla color-green"></i>
-              </div>
-              <div class="icon-text">
-                <h4 class="ser-text">Mentor Joomla Workshop</h4>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!--/ work-shop-->
-    <!--Faculity member-->
-	
-    <section id="faculity-member" class="section-padding">
-      <div class="container">
-        <div class="row">
-          <div class="header-section text-center">
-            <h2>{{trans('client.teachers.teachers')}}</h2>
+            <h2 style="padding-bottom: 37px;">{{trans('client.teachers.teachers')}}</h2>
             
           </div>
 		  <div class="col-lg-4 col-md-4 col-sm-4">
@@ -221,6 +70,10 @@
                 <p class="pm-staff-profile-title">{{trans('client.teachers.chief of pulpit')}}</p>
                 
                 <p class="pm-staff-profile-bio"> </p>
+				@guest
+				@else
+					<a href ="{{asset('teacher/17')}}">{{trans('client.message.message')}}<a/>
+				@endguest
               </div>     
             </div>
           </div>
@@ -236,6 +89,10 @@
                 <p class="pm-staff-profile-title">{{trans('client.teachers.chief of center')}}</p>
                 
                 <p class="pm-staff-profile-bio"> </p>
+				@guest
+				@else
+					<a href ="{{asset('teacher/18')}}">{{trans('client.message.message')}}<a/>
+				@endguest
               </div>     
             </div>
           </div>
@@ -251,6 +108,10 @@
                 <p class="pm-staff-profile-title">{{trans('client.teachers.teacher')}}</p>
                 
                 <p class="pm-staff-profile-bio">{{trans('client.teachers.lessons')}} Upper-Intermediate </p>
+				@guest
+				@else
+					<a href ="{{asset('teacher/12')}}">{{trans('client.message.message')}}<a/>
+				@endguest
               </div>     
             </div>
           </div>
@@ -266,6 +127,10 @@
                 <p class="pm-staff-profile-title">{{trans('client.teachers.teacher')}}</p>
                 
                 <p class="pm-staff-profile-bio">{{trans('client.teachers.lessons')}} Intermediate, Beginner </p>
+				@guest
+				@else
+					<a href ="{{asset('teacher/19')}}">{{trans('client.message.message')}}<a/>
+				@endguest
               </div>     
             </div>
           </div>
@@ -281,6 +146,10 @@
                 <p class="pm-staff-profile-title">{{trans('client.teachers.teacher')}}</p>
                 
                 <p class="pm-staff-profile-bio">{{trans('client.teachers.lessons')}} Beginner,Elementary </p>
+				@guest
+				@else
+					<a href ="{{asset('teacher/13')}}">{{trans('client.message.message')}}<a/>
+				@endguest
               </div>     
             </div>
           </div>
@@ -296,6 +165,10 @@
                 <p class="pm-staff-profile-title">{{trans('client.teachers.teacher')}}</p>
                 
                 <p class="pm-staff-profile-bio">{{trans('client.teachers.lessons')}} Intermediate, Pre-Intermediate </p>
+				@guest
+				@else
+					<a href ="{{asset('teacher/14')}}">{{trans('client.message.message')}}<a/>
+				@endguest
               </div>     
             </div>
           </div>
@@ -311,6 +184,10 @@
                 <p class="pm-staff-profile-title">{{trans('client.teachers.teacher')}}</p>
                 
                 <p class="pm-staff-profile-bio">{{trans('client.teachers.lessons')}} IT-English, Upper-Intermediate, Intermediate  </p>
+				@guest
+				@else
+					<a href ="{{asset('teacher/15')}}">{{trans('client.message.message')}}<a/>
+				@endguest
               </div>     
             </div>
           </div>
@@ -326,6 +203,10 @@
                 <p class="pm-staff-profile-title">{{trans('client.teachers.teacher')}}</p>
                 
                 <p class="pm-staff-profile-bio">{{trans('client.teachers.lessons')}} Beginner, Pre-Intermediate, Advanced, IT-Enlish </p>
+				@guest
+				@else
+					<a href ="{{asset('teacher/20')}}">{{trans('client.message.message')}}<a/>
+				@endguest
               </div>     
             </div>
           </div>
@@ -341,193 +222,148 @@
                 <p class="pm-staff-profile-title">{{trans('client.teachers.teacher')}}</p>
                 
                 <p class="pm-staff-profile-bio">{{trans('client.teachers.lessons')}} Upper-Intermediate </p>
+				@guest
+				@else
+					<a href ="{{asset('teacher/21')}}">{{trans('client.message.message')}}<a/>
+				@endguest
               </div>     
             </div>
           </div>
-          
-          
         </div>
       </div>
     </section>
-    <!--/ Faculity member-->
-    <!--Testimonial-->
-    <section id="aboutcenter" class="section-padding" style="
-    padding-top: 0px;
-    margin-left: 591px;>
+	<!--/Teachers-->
+    <!--About center-->
+    <section id="aboutcenter" class="section-padding"  align="center">
       <div class="container">
-	  <h2>О центре</h2>
-        <div class="row" style="
-    margin-left: -580px;>
-          <div class="header-section text-center">
-            <h2 class="white">See What Our Customer Are Saying?</h2>
-            <p class="white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem nesciunt vitae,<br> maiores, magni dolorum aliquam.</p>
-            <hr class="bottom-line bg-white">
-          </div>
-          <div class="col-md-6 col-sm-6" style="
-    margin-top: -125px;margin-left: -300px;">
-            <div class="text-comment">
-              <p class="text-par">"Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, nec sagittis sem"</p>
-              <p class="text-name">Abraham Doe - Creative Dırector</p>
-            </div>
-          </div>
-          <div class="col-md-6 col-sm-6" style="
-    margin-top: -125px;">
-            <div class="text-comment">
-              <p class="text-par">"Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, nec sagittis sem"</p>
-              <p class="text-name">Abraham Doe - Creative Dırector</p>
-            </div>
-          </div>
+	  <h2 style="margin-bottom: 30px;">{{trans('client.center.about center')}}</h2>
+	  <iframe width="900" height="506" src="https://www.youtube.com/embed/rjT-dSHAvOY?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
         </div>
       </div>
     </section>
-    <!--/ Testimonial-->
+    <!--/About center-->
+	
+	
     <!--Courses-->
-    <!--<section id ="courses" class="section-padding">
-      <div class="container">-->
         <div class="row">
           <div class="header-section text-center">
             <h1><B>{{trans('client.courses.courses')}}</B></h1>
 			 </div>
         </div>
+	
 	<section id ="english" class="section-padding">
       <div class="container">
         <div class="row">
           <div class="header-section text-center">
             <h1><B>{{trans('client.menu.english')}}</B></h1>
             <hr class="bottom-line">
-			<h2>{{trans('client.courses.message')}} <a href="https://docs.google.com/forms/d/1QsnDA8mbnh62Zdf0I0IXsLIGuG9XlhesQNhqEpk7NQQ/alreadyresponded?edit_requested=true">{{trans('client.courses.here')}}</a></h2>
+			<h2><a  style=" color: #4b4b4c;">{{trans('client.courses.message')}}<a> <a href="https://docs.google.com/forms/d/1QsnDA8mbnh62Zdf0I0IXsLIGuG9XlhesQNhqEpk7NQQ/alreadyresponded?edit_requested=true">{{trans('client.courses.here')}}</a></h2>
           </div>
         </div>
       </div>
+	  @foreach($courses as $courses)
+	  @if($courses->id>=1 && $courses->id<=6)
       <div class="container">
         <div class="row">
           <div class="col-md-4 col-sm-6 padleft-right">
             <figure class="imghvr-fold-up">
-              <img src="img/eng_beg.jpg" class="img-responsive">
-              <figcaption>
-                  <p><font size=5>Английский с нуля?<br>Освой первый уровень!</font><br> </p>
+              <img src="{{ asset('img/'.$courses->picture) }}" class="img-responsive">
+              <figcaption style="padding-top:5px;">
+			  <?php $field='description_'.$lang ?>
+			  {!!$courses->$field!!}
               </figcaption>
-              <a href="course/1"></a>
+              <a href="{{asset('course/'.$courses->id)}}"></a>
             </figure>
           </div>
-          <div class="col-md-4 col-sm-6 padleft-right">
-            <figure class="imghvr-fold-up">
-              <img src="img/eng_elem.jpg" class="img-responsive">
-              <figcaption>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam atque, nostrum veniam consequatur libero fugiat, similique quis.</p>
-              </figcaption>
-              <a href="course/2"></a>
-            </figure>
-          </div>
-          <div class="col-md-4 col-sm-6 padleft-right">
-            <figure class="imghvr-fold-up">
-              <img src="img/eng_pre_int.jpg" class="img-responsive">
-              <figcaption>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam atque, nostrum veniam consequatur libero fugiat, similique quis.</p>
-              </figcaption>
-              <a href="course/3"></a>
-            </figure>
-          </div>
-          <div class="col-md-4 col-sm-6 padleft-right">
-            <figure class="imghvr-fold-up margin-bottom-15px">
-              <img src="img/eng_int.jpg" class="img-responsive">
-              <figcaption>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam atque, nostrum veniam consequatur libero fugiat, similique quis.</p>
-              </figcaption>
-              <a href="course/4"></a>
-            </figure>
-          </div>
-          <div class="col-md-4 col-sm-6 padleft-right">
-          <figure class="imghvr-fold-up margin-bottom: 30px">
-              <img src="img/eng_up_int.jpg" class="img-responsive">
-              <figcaption>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam atque, nostrum veniam consequatur libero fugiat, similique quis.</p>
-              </figcaption>
-              <a href="course/5"></a>
-            </figure>
-          </div>
-          <div class="col-md-4 col-sm-6 padleft-right">
-          <figure class="imghvr-fold-up margin-bottom: 30px">
-              <img src="img/eng_adv.jpg" class="img-responsive">
-              <figcaption>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam atque, nostrum veniam consequatur libero fugiat, similique quis.</p>
-              </figcaption>
-              <a href="course/6"></a>
-            </figure>
-          </div>
+		  @endif
+		  
 		 
-		  <div class="col-md-5 col-sm-6 padcenter padtop">
-		  
+		 @if($courses->id==7)
+		<div class="col-md-5 col-sm-6 padcenter padtop">
             <figure class="imghvr-fold-up">
-              <img src="img/bus_eng.jpg" class="img-responsive">
-              <figcaption>
-                  <h3>Course Name</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam atque, nostrum veniam consequatur libero fugiat, similique quis.</p>
-              </figcaption>
-              <a href="course/7"></a>
-            </figure>
-          </div>
-		  
-		  <div class="col-md-5 col-sm-6 padleft-right padtop">
-		
-            <figure class="imghvr-fold-up">
-              <img src="img/it_eng.jpg" class="img-responsive">
-              <figcaption>
-                  <h3>Course Name</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam atque, nostrum veniam consequatur libero fugiat, similique quis.</p>
-              </figcaption>
-              <a href="course/8"></a>
+              <img src="{{ asset('img/'.$courses->picture) }}" class="img-responsive">
+              <figcaption style="padding-top: 60px;">
+					<h3 align="center" >{{$courses->title}}</h3>
+                  <?php $field='description_'.$lang ?>
+				  {!!$courses->$field!!}
+				</figcaption>
+              <a href="{{asset('course/'.$courses->id)}}"></a>
             </figure>
           </div>
 		  </center>
+		 @endif
+		 @if($courses->id==8)
+		  <div class="col-md-5 col-sm-6 padleft-right padtop">
+            <figure class="imghvr-fold-up">
+              <img src="{{ asset('img/'.$courses->picture) }}" class="img-responsive">
+              <figcaption style="padding-top: 60px;">
+					<h3 align="center" >{{$courses->title}}</h3>
+                  <?php $field='description_'.$lang ?>
+				  {!!$courses->$field!!}
+				</figcaption>
+              <a href="{{asset('course/'.$courses->id)}}"></a>
+            </figure>
+          </div>
+		  @endif
 		 
+		 @if($courses->id==9)
 		  
 		  <div class="col-md-3 col-sm-6 padleft-right padtop">
             <figure class="imghvr-fold-up">
-              <img src="img/expr_eng.jpg" class="img-responsive">
-              <figcaption>
-                  <h3>Course Name</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam atque, nostrum veniam consequatur libero fugiat, similique quis.</p>
+              <img src="{{ asset('img/'.$courses->picture) }}" class="img-responsive">
+              <figcaption style="padding-top: 5px;">
+                  <h3 align="center" >{{$courses->title}}</h3>
+                  <?php $field='description_'.$lang ?>
+				  {!!$courses->$field!!}
               </figcaption>
-              <a href="course/9"></a>
+              <a href="{{asset('course/'.$courses->id)}}"></a>
             </figure>
           </div>
-		   
+		 @endif
+		 @if($courses->id==10)
 		  <div class="col-md-3 col-sm-6 padleft-right padtop">
             <figure class="imghvr-fold-up">
-              <img src="img/bus_cor_eng.jpg" class="img-responsive">
-              <figcaption>
-                  <h3>Course Name</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam atque, nostrum veniam consequatur libero fugiat, similique quis.</p>
+              <img src="{{ asset('img/'.$courses->picture) }}" class="img-responsive">
+              <figcaption style="padding-top: 5px; padding-left: 5px; padding-right: 5px;">
+                  <h3 align="center" >{{$courses->title}}</h3>
+                  <?php $field='description_'.$lang ?>
+				  {!!$courses->$field!!}
               </figcaption>
-              <a href="course/10"></a>
+              <a href="{{asset('course/'.$courses->id)}}"></a>
+            </figure>
+          </div>
+		  @endif
+		 @if($courses->id==11)
+		  <div class="col-md-3 col-sm-6 padleft-right padtop">
+            <figure class="imghvr-fold-up">
+              <img src="{{ asset('img/'.$courses->picture) }}" class="img-responsive">
+              <figcaption style="padding-top: 5px; padding-left: 5px; padding-right: 5px;">
+                  <h3 align="center" >{{$courses->title}}</h3>
+                  <?php $field='description_'.$lang ?>
+				  {!!$courses->$field!!}
+              </figcaption>
+              <a href="{{asset('course/'.$courses->id)}}"></a>
+            </figure>
+          </div>
+		  @endif
+		 @if($courses->id==12)
+		  <div class="col-md-3 col-sm-6 padleft-right padtop">
+            <figure class="imghvr-fold-up">
+              <img src="{{ asset('img/'.$courses->picture) }}" class="img-responsive">
+              <figcaption style="padding-top: 5px;">
+                  <h3 align="center" >{{$courses->title}}</h3>
+                  <?php $field='description_'.$lang ?>
+				  {!!$courses->$field!!}
+              </figcaption>
+              <a href="{{asset('course/'.$courses->id)}}"></a>
             </figure>
           </div>
 		  
-		  <div class="col-md-3 col-sm-6 padleft-right padtop">
-            <figure class="imghvr-fold-up">
-              <img src="img/commun_eng.jpg" class="img-responsive">
-              <figcaption>
-                  <h3>Course Name</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam atque, nostrum veniam consequatur libero fugiat, similique quis.</p>
-              </figcaption>
-              <a href="course/11"></a>
-            </figure>
-          </div>
-		  
-		  <div class="col-md-3 col-sm-6 padleft-right padtop">
-            <figure class="imghvr-fold-up">
-              <img src="img/CT_eng.jpg" class="img-responsive">
-              <figcaption>
-                  <h3>Course Name</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam atque, nostrum veniam consequatur libero fugiat, similique quis.</p>
-              </figcaption>
-              <a href="course/12"></a>
-            </figure>
-          </div>
-</div>
+		</div>
       </div>
     </section>
+	@endif
+	@if($courses->id==13)
 	<section id ="spanish" class="section-padding">
       <div class="container">
         <div class="row">
@@ -541,26 +377,33 @@
         <div class="row">
           <div class="col-md-6">
             <figure class="imghvr-fold-up">
-              <img src="img/span_1.jpg"  class="img-responsive" >
-              <figcaption>
-                  <p><font size=5>Начинающий уровень<br>!!!</font><br> </p>
-              </figcaption>
-              <a href="course/13"></a>
+              <img src="{{ asset('img/'.$courses->picture) }}" class="img-responsive">
+              <figcaption style="padding-top: 60px;">
+				<h3 align="center" >{{$courses->title}}</h3>
+                  <?php $field='description_'.$lang ?>
+				  {!!$courses->$field!!}
+				</figcaption>
+              <a href="{{asset('course/'.$courses->id)}}"></a>
             </figure>
           </div>
-          <div class="col-md-6">
+		  @endif
+	@if($courses->id==14)
+		<div class="col-md-6">
             <figure class="imghvr-fold-up">
-              <img src="img/span_2.jpg"  class="img-responsive" >
-              <figcaption>
-                  <p><font size=5>Продолжающий уровень<br>!!!</font><br> </p>
-              </figcaption>
-              <a href="course/14"></a>
+              <img src="{{ asset('img/'.$courses->picture) }}" class="img-responsive">
+              <figcaption style="padding-top: 60px;">
+				<h3 align="center" >{{$courses->title}}</h3>
+                  <?php $field='description_'.$lang ?>
+				  {!!$courses->$field!!}
+				</figcaption>
+              <a href="{{asset('course/'.$courses->id)}}"></a>
             </figure>
           </div>
-</div>
+		</div>
       </div>
     </section>
-	
+	@endif
+	@if($courses->id==15)
 	<section id ="italian" class="section-padding">
       <div class="container">
         <div class="row">
@@ -572,28 +415,38 @@
       </div>
       <div class="container">
         <div class="row">
+
+		  
           <div class="col-md-6">
             <figure class="imghvr-fold-up">
-              <img src="img/ital_1.jpg"  class="img-responsive" >
-              <figcaption>
-                  <p><font size=5>Начинающий уровень<br>!!!</font><br> </p>
-              </figcaption>
-              <a href="course/15"></a>
+              <img src="{{ asset('img/'.$courses->picture) }}" class="img-responsive">
+              <figcaption style="padding-top: 60px;">
+				<h3 align="center" >{{$courses->title}}</h3>
+                  <?php $field='description_'.$lang ?>
+				  {!!$courses->$field!!}
+				</figcaption>
+              <a href="{{asset('course/'.$courses->id)}}"></a>
             </figure>
           </div>
-          <div class="col-md-6">
+		  @endif
+	@if($courses->id==16)
+	<div class="col-md-6">
             <figure class="imghvr-fold-up">
-              <img src="img/ital_2.jpg"  class="img-responsive" >
-              <figcaption>
-                  <p><font size=5>Продолжающий уровень<br>!!!</font><br> </p>
-              </figcaption>
-              <a href="course/16"></a>
+              <img src="{{ asset('img/'.$courses->picture) }}" class="img-responsive">
+              <figcaption style="padding-top: 60px;">
+				<h3 align="center" >{{$courses->title}}</h3>
+                  <?php $field='description_'.$lang ?>
+				  {!!$courses->$field!!}
+				</figcaption>
+              <a href="{{asset('course/'.$courses->id)}}"></a>
             </figure>
           </div>
-</div>
+		
+		</div>
       </div>
     </section>
-	
+	@endif
+	@if($courses->id==17)
 	<section id ="chinese" class="section-padding">
       <div class="container">
         <div class="row">
@@ -605,19 +458,26 @@
       </div>
       <div class="container">
         <div class="row" >
+
+		  
           <div class="col-md-12" align="center">
             <figure class="imghvr-fold-up">
-              <img src="img/chinese.png" width="900" height="563" class="img-responsive">
-              <figcaption>
-                 <p><font size=5>Начинающий уровень<br>!!!</font><br> </p>
+              <img src="{{ asset('img/'.$courses->picture) }}" width="900" height="563" class="img-responsive">
+              <figcaption style="padding-top: 100px; padding-left: 80px; padding-right: 80px;">
+				<h1 align="center" >{{$courses->title}}</h1>
+                  <?php $field='description_'.$lang ?>
+				  {!!$courses->$field!!}
               </figcaption>
-              <a href="course/17"></a>
+              <a href="{{asset('course/'.$courses->id)}}"></a>
             </figure>
-          </div>   
+          </div>  
+			
+
 		</div>
       </div>
     </section>
-	
+	@endif
+	@if($courses->id==18)
 	<section id ="french" class="section-padding">
       <div class="container">
         <div class="row">
@@ -629,32 +489,38 @@
       </div>
       <div class="container">
         <div class="row">
+
+		  
           <div class="col-md-6">
             <figure class="imghvr-fold-up">
-              <img src="img/french_1.jpg" class="img-responsive">
-              <figcaption>
-                 <p><font size=5>Начинающий уровень<br>!!!</font><br> </p>
-              </figcaption>
-              <a href="course/19"></a>
+              <img src="{{ asset('img/'.$courses->picture) }}" class="img-responsive">
+              <figcaption style="padding-top: 50px;">
+				<h3 align="center" >{{$courses->title}}</h3>
+                  <?php $field='description_'.$lang ?>
+				  {!!$courses->$field!!}
+				</figcaption>
+              <a href="{{asset('course/'.$courses->id)}}"></a>
             </figure>
           </div>
-          <div class="col-md-6">
+		  @endif
+		  @if($courses->id==19)
+        <div class="col-md-6">
             <figure class="imghvr-fold-up">
-              <img src="img/french_2.jpg" class="img-responsive">
-              <figcaption>
-                  <p><font size=5>Продолжающий уровень<br>!!!</font><br> </p>
-              </figcaption>
-              <a href="course/20"></a>
+              <img src="{{ asset('img/'.$courses->picture) }}" class="img-responsive">
+              <figcaption style="padding-top: 50px;">
+				<h3 align="center" >{{$courses->title}}</h3>
+                  <?php $field='description_'.$lang ?>
+				  {!!$courses->$field!!}
+				</figcaption>
+              <a href="{{asset('course/'.$courses->id)}}"></a>
             </figure>
           </div>
-         
-         
-         
-         
-</div>
+		  
+         </div>
       </div>
     </section>
-	
+	@endif
+	@if($courses->id==20)
 	<section id ="german" class="section-padding">
       <div class="container">
         <div class="row">
@@ -666,35 +532,42 @@
       </div>
       <div class="container" >
         <div class="row">
-          <div class="col-md-6">
-            <figure class="imghvr-fold-up margin-bottom: 10px" >
-              <img src="img/germ_1.jpg" class="img-responsive">
-              <figcaption>
-                  <p><font size=5>Начинающий уровень<br>!!!</font><br> </p>
-              </figcaption>
-              <a href="course/21"></a>
-            </figure>
-          </div>
+
+		  
           <div class="col-md-6">
             <figure class="imghvr-fold-up">
-              <img src="img/germ_2.jpg" class="img-responsive">
-              <figcaption>
-                  <p><font size=5>Продолжающий уровень<br>!!!</font><br> </p>
-              </figcaption>
-              <a href="course/22"></a>
+              <img src="{{ asset('img/'.$courses->picture) }}" class="img-responsive">
+              <figcaption style="padding-top: 40px;">
+				<h3 align="center" >{{$courses->title}}</h3>
+                  <?php $field='description_'.$lang ?>
+				  {!!$courses->$field!!}
+				</figcaption>
+              <a href="{{asset('course/'.$courses->id)}}"></a>
             </figure>
           </div>
-          
-          
-       
-</div>
+		  @endif
+		  
+		  @if($courses->id==21)
+          <div class="col-md-6">
+            <figure class="imghvr-fold-up">
+              <img src="{{ asset('img/'.$courses->picture) }}" class="img-responsive">
+              <figcaption style="padding-top: 60px;">
+				<h3 align="center" >{{$courses->title}}</h3>
+                  <?php $field='description_'.$lang ?>
+				  {!!$courses->$field!!}
+				</figcaption>
+              <a href="{{asset('course/'.$courses->id)}}"></a>
+            </figure>
+          </div>
+		  
+         </div>
       </div>
     </section>
-	
-       <!-- </div>
-      </div>
-    </section>-->
+	@endif
+	@endforeach
     <!--/ Courses-->
+	
+	
     <!--Pricing-->
     <section id ="pricing" class="section-padding">
       <div class="container">
@@ -874,72 +747,20 @@
       </div>
     </section>
     <!--/ Pricing-->
-  <!--  <!--Contact
-    <section id ="contact" class="section-padding">
-      <div class="container">
-        <div class="row">
-          <div class="header-section text-center">
-            <h2>Напишите нам</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem nesciunt vitae,<br> maiores, magni dolorum aliquam.</p>
-            <hr class="bottom-line">
-          </div>
-          <div id="sendmessage">Ваше сообщение отправлено. Спасибо!</div>
-          <div id="errormessage"></div>
-          <form action="" method="post" role="form" class="contactForm">
-              <div class="col-md-6 col-sm-6 col-xs-12 left">
-                <div class="form-group">
-                    <input type="text" name="name" class="form-control form" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-                    <div class="validation"></div>
-                </div>
-                <div class="form-group">
-                    <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
-                    <div class="validation"></div>
-                </div>
-                <div class="form-group">
-                    <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-                    <div class="validation"></div>
-                </div>
-              </div>
-              
-              <div class="col-md-6 col-sm-6 col-xs-12 right">
-                <div class="form-group">
-                    <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
-                    <div class="validation"></div>
-                </div>
-              </div>
-              
-              <div class="col-xs-12">
-                <!-- Button 
-                <button type="submit" id="submit" name="submit" class="form contact-form-button light-form-button oswald light">SEND EMAIL</button>
-              </div>
-          </form>
-          
-        </div>
-      </div>
-    </section>--?
-    / Contact-->
-	<!---->
-<!--	<br>
-	<br>
-	<center><img src="img/translate.jpg"  class="img-responsive" >
-	<div id="google_translate_element"></div><script type="text/javascript">
-function googleTranslateElementInit() {
-  new google.translate.TranslateElement({pageLanguage: 'ru', includedLanguages: 'en'}, 'google_translate_element');
-}
-</script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-        </center>-->
-	
+  
+	<!--Contsct-->
 	<section id ="contact" class="section-padding">
       <div class="container">
         <div class="row">
           <div class="header-section text-center">
             <h2>{{trans('client.connection.write us')}}</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem nesciunt vitae,<br> maiores, magni dolorum aliquam.</p>
+           
             <hr class="bottom-line">
           </div>
           <div id="sendmessage">Ваше сообщение отправлено. Спасибо!</div>
           <div id="errormessage"></div>
-          <form action="" method="post" role="form" class="contactForm">
+          <form action="{{asset('/message')}}" method="post" role="form" class="contactForm">
+		  {!!csrf_field()!!}
               <div class="col-md-6 col-sm-6 col-xs-12 left">
                 <div class="form-group">
                     <input type="text" name="name" class="form-control form" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
@@ -971,4 +792,5 @@ function googleTranslateElementInit() {
         </div>
       </div>
     </section>
+	<!--/ Contsct-->
 @endsection

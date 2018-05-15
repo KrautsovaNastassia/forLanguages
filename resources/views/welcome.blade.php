@@ -1,258 +1,19 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Центр языковой подготовки БГУИР</title>
-    <meta name="description" content="Free Bootstrap Theme by BootstrapMade.com">
-    <meta name="keywords" content="free website templates, free bootstrap themes, free template, free bootstrap, free website template">
-    
-    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans|Candal|Alegreya+Sans">
-    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="css/imagehover.min.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-	<link rel="stylesheet" type="text/css" href="css/print.css">
-    <!-- =======================================================
-        Theme Name: Mentor
-        Theme URL: https://bootstrapmade.com/mentor-free-education-bootstrap-theme/
-        Author: BootstrapMade.com
-        Author URL: https://bootstrapmade.com
-    ======================================================= -->
-  </head>
-  <body>
-    <!--Navigation bar-->
-    <nav class="navbar navbar-default navbar-fixed-top">
-      <div class="container">
-        <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href={{asset('about')}}>Men<span>tor</span></a>
-        </div>
-        <div class="collapse navbar-collapse" id="myNavbar">
-        <ul class="nav navbar-nav navbar-right">
-		
-        <li><a href="print.css">Печать</a></li>
-          <li><a href="#news">Новости</a></li>
-          <li><!--<a href="#courses">Курсы</a>-->
-		  <!--<div class="dropdown">-->
-		  <a id="myNavbar" type="button" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Курсы <span class="nav navbar-nav navbar-right"></span> </a>
-		 <!-- <div class="nav navbar-nav navbar-right">-->
-
-
-  <ul class="dropdown-menu" aria-labelledby="myNavbar">
-    <li><a href="#english">Английский язык</a></li>
-	<li><a href="#spanish">Испанский язык</a></li>
-	<li><a href="#italian">Итальянский язык</a></li>
-	<li><a href="#polish">Польский язык</a></li>
-	<li><a href="#german">Немецкий язык</a></li>
-	<li><a href="#french">Французский язык</a></li>
-  </ul>
-<!--</div>-->
-		  </li>
-          <li><a href="#pricing">Цены</a></li>
-          <li><a href="#" data-target="#login" data-toggle="modal">Войти</a></li>
-          <li class="btn-trial"><a href="{{asset('register')}}">Регистрация</a></li>
-        </ul>
-        </div>
-      </div>
-    </nav>
-    <!--/ Navigation bar-->
-    <!--Modal box-->
-    <div class="modal fade" id="login" role="dialog">
-      <div class="modal-dialog modal-sm">
-      
-        <!-- Modal content no 1-->
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal">&times;</button>
-            <h4 class="modal-title text-center form-title">Логин</h4>
-          </div>
-          <div class="modal-body padtrbl">
-
-            <div class="login-box-body">
-              <p class="login-box-msg">Войдите, чтобы начать обучение</p>
-              <div class="form-group">
-                <form name="" id="loginForm">
-                 <div class="form-group has-feedback"> <!----- username -------------->
-                      <input class="form-control" placeholder="Имя пользователя"  id="loginid" type="text" autocomplete="off" /> 
-            <span style="display:none;font-weight:bold; position:absolute;color: red;position: absolute;padding:4px;font-size: 11px;background-color:rgba(128, 128, 128, 0.26);z-index: 17;  right: 27px; top: 5px;" id="span_loginid"></span><!---Alredy exists  ! -->
-                      <span class="glyphicon glyphicon-user form-control-feedback"></span>
-                  </div>
-                  <div class="form-group has-feedback"><!----- password -------------->
-                      <input class="form-control" placeholder="Пароль" id="loginpsw" type="password" autocomplete="off" />
-            <span style="display:none;font-weight:bold; position:absolute;color: grey;position: absolute;padding:4px;font-size: 11px;background-color:rgba(128, 128, 128, 0.26);z-index: 17;  right: 27px; top: 5px;" id="span_loginpsw"></span><!---Alredy exists  ! -->
-                      <span class="glyphicon glyphicon-lock form-control-feedback"></span>
-                  </div>
-                  <div class="row">
-                      <div class="col-xs-12">
-                          <div class="checkbox icheck">
-                              <label>
-                                <input type="checkbox" id="loginrem" > Запомнить меня
-                              </label>
-                          </div>
-                      </div>
-                      <div class="col-xs-12">
-                          <button type="button" class="btn btn-green btn-block btn-flat" onclick="userlogin()">Войти</button>
-                      </div>
-                  </div>
-                </form>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
 @extends('layouts.base')
+@section('navbar')
+	<h1></h1>
+    <nav class="navbar navbar-default navbar-fixed-top" style="display:none;">
+	</nav>
+@endsection
+
 @section('content')
-<section id ="news" class="section-padding">
+<!--Teachers-->
+
+    <section id="faculity-member" class="section-padding" style="
+    padding-bottom:0px;">
       <div class="container">
         <div class="row">
           <div class="header-section text-center">
-            <h2>{{(isset($obj->name))?$obj->name:"Добро пожаловать на сайт"}}</h2>
-            <!--{{(isset($obj->body))?$obj->body:"-"}}-->
-          </div>
-          <div class="feature-info">
-            <div class="fea">
-              <div class="col-md-4">
-                <div class="heading pull-right">
-                  <h4> <center>Учи английский смотря фильмы</center></h4>
-                  <a href="https://english-films.com/" ><img src="img/abc.png" class="img-responsive"></a>
-                </div>
-              </div>
-            </div>
-            <div class="fea">
-              <div class="col-md-4">
-                <div class="heading pull-right">
-                  <h4> <center>Мы уже в VK, присоединяйся!</center></h4>
-                  <a href="https://vk.com/club113964950" ><img src="img/vk.png" class="img-responsive"></a>
-                </div>
-              </div>
-            </div>
-            <div class="fea">
-              <div class="col-md-4">
-                <div class="heading pull-right">
-                  <h4> <center>Стань профи с Лео</center></h4>
-                  <a href="http://lingualeo.com/ru" ><img src="img/leo.png" class="img-responsive"></a>
-                </div>
-              </div>
-            </div>
-        </div>
-        </div>
-      </div>
-    </section>
-    <!--/ feature-->
-    <!--Organisations
-    <section id ="organisations" class="section-padding">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6">
-            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">         
-              <div class="orga-stru">
-                <h3>65%</h3>
-                <p>Say NO!!</p>
-                <i class="fa fa-male"></i>
-              </div>  
-            </div>
-            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">         
-              <div class="orga-stru">
-                <h3>20%</h3>
-                <p>Says Yes!!</p>
-                <i class="fa fa-male"></i>
-              </div>  
-            </div>
-            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">         
-              <div class="orga-stru">
-                <h3>15%</h3>
-                <p>Can't Say!!</p>
-                <i class="fa fa-male"></i>
-              </div>  
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="detail-info">
-              <hgroup>
-                <h3 class="det-txt"> Is inclusive quality education affordable?</h3>
-                <h4 class="sm-txt">(Revised and Updated for 2016)</h4>
-              </hgroup>
-              <p class="det-p">Donec et lectus bibendum dolor dictum auctor in ac erat. Vestibulum egestas sollicitudin metus non urna in eros tincidunt convallis id id nisi in interdum.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section> -->
-    <!--/ Organisations-->
-    <!--Cta-->
-   <!-- <section id="cta-2">
-      <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-              <h2 class="text-center">Subscribe Now</h2>
-              <p class="cta-2-txt">Sign up for our free weekly software design courses, we’ll send them right to your inbox.</p>
-             <div class="cta-2-form text-center">
-              <form action="#" method="post" id="workshop-newsletter-form">
-                    <input name="" placeholder="Введите Ваш адрес электронной почты" type="email">
-                    <input class="cta-2-form-submit-btn" value="Subscribe" type="submit">
-                </form>
-             </div>   
-            </div>
-        </div>
-      </div>
-    </section>
-    <!--/ Cta-->
-    <!--work-shop-->
-    <!--<section id="work-shop" class="section-padding">
-      <div class="container">
-        <div class="row">
-          <div class="header-section text-center">
-            <h2>Upcoming Workshop</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem nesciunt vitae,<br> maiores, magni dolorum aliquam.</p>
-            <hr class="bottom-line">
-          </div>
-          <div class="col-md-4 col-sm-6">
-            <div class="service-box text-center">
-              <div class="icon-box">
-                <i class="fa fa-html5 color-green"></i>
-              </div>
-              <div class="icon-text">
-                <h4 class="ser-text">Mentor HTML5 Workshop</h4>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 col-sm-6">
-            <div class="service-box text-center">
-              <div class="icon-box">
-                <i class="fa fa-css3 color-green"></i>
-              </div>
-              <div class="icon-text">
-                <h4 class="ser-text">Mentor CSS3 Workshop</h4>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 col-sm-6">
-            <div class="service-box text-center">
-              <div class="icon-box">
-                <i class="fa fa-joomla color-green"></i>
-              </div>
-              <div class="icon-text">
-                <h4 class="ser-text">Mentor Joomla Workshop</h4>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!--/ work-shop-->
-    <!--Faculity member-->
-    <section id="faculity-member" class="section-padding">
-      <div class="container">
-        <div class="row">
-          <div class="header-section text-center">
-            <h2>Преподаватели</h2>
+            <h2 style="padding-bottom: 37px;">{{trans('client.teachers.teachers')}}</h2>
             
           </div>
 		  <div class="col-lg-4 col-md-4 col-sm-4">
@@ -263,8 +24,8 @@
                 </div>   
               </div>                                
               <div class="pm-staff-profile-details text-center">  
-                <p class="pm-staff-profile-name">Шелягова Тамара Григорьевна</p>
-                <p class="pm-staff-profile-title">Заведующая кафедрой иностранных языков №1</p>
+                <p class="pm-staff-profile-name">{{trans('client.teachers.ShTG')}}</p>
+                <p class="pm-staff-profile-title">{{trans('client.teachers.chief of pulpit')}}</p>
                 
                 <p class="pm-staff-profile-bio"> </p>
               </div>     
@@ -278,8 +39,8 @@
                 </div>   
               </div>                                
               <div class="pm-staff-profile-details text-center">  
-                <p class="pm-staff-profile-name">Левкович Татьяна Викторовна </p>
-                <p class="pm-staff-profile-title">Начальник Центра</p>
+                <p class="pm-staff-profile-name">{{trans('client.teachers.LTV')}}</p>
+                <p class="pm-staff-profile-title">{{trans('client.teachers.chief of center')}}</p>
                 
                 <p class="pm-staff-profile-bio"> </p>
               </div>     
@@ -293,10 +54,10 @@
                 </div>   
               </div>                                
               <div class="pm-staff-profile-details text-center">  
-                <p class="pm-staff-profile-name">Блюмер Мария Александровна</p>
-                <p class="pm-staff-profile-title">Преподаватель</p>
+                <p class="pm-staff-profile-name">{{trans('client.teachers.BMA')}}</p>
+                <p class="pm-staff-profile-title">{{trans('client.teachers.teacher')}}</p>
                 
-                <p class="pm-staff-profile-bio">Ведет практические занятия в группах Upper-Intermediate </p>
+                <p class="pm-staff-profile-bio">{{trans('client.teachers.lessons')}} Upper-Intermediate </p>
               </div>     
             </div>
           </div>
@@ -308,10 +69,10 @@
                 </div>   
               </div>                                
               <div class="pm-staff-profile-details text-center">  
-                <p class="pm-staff-profile-name">Язбек Елена Александровна </p>
-                <p class="pm-staff-profile-title">Преподаватель</p>
+                <p class="pm-staff-profile-name">{{trans('client.teachers.YEA')}}</p>
+                <p class="pm-staff-profile-title">{{trans('client.teachers.teacher')}}</p>
                 
-                <p class="pm-staff-profile-bio">Ведет практические занятия в группах Intermediate, Beginner </p>
+                <p class="pm-staff-profile-bio">{{trans('client.teachers.lessons')}} Intermediate, Beginner </p>
               </div>     
             </div>
           </div>
@@ -323,10 +84,10 @@
                 </div>   
               </div>                                
               <div class="pm-staff-profile-details text-center">  
-                <p class="pm-staff-profile-name">Белоус Татьяна<br> Сергеевна </p>
-                <p class="pm-staff-profile-title">Преподаватель</p>
+                <p class="pm-staff-profile-name">{{trans('client.teachers.BTS')}}</p>
+                <p class="pm-staff-profile-title">{{trans('client.teachers.teacher')}}</p>
                 
-                <p class="pm-staff-profile-bio">Ведет практические занятия в группах Beginner,Elementary </p>
+                <p class="pm-staff-profile-bio">{{trans('client.teachers.lessons')}} Beginner,Elementary </p>
               </div>     
             </div>
           </div>
@@ -338,10 +99,10 @@
                 </div>   
               </div>                                
               <div class="pm-staff-profile-details text-center">  
-                <p class="pm-staff-profile-name">Булгакова Диана Андреевна </p>
-                <p class="pm-staff-profile-title">Преподаватель</p>
+                <p class="pm-staff-profile-name">{{trans('client.teachers.BDA')}}</p>
+                <p class="pm-staff-profile-title">{{trans('client.teachers.teacher')}}</p>
                 
-                <p class="pm-staff-profile-bio">Ведет практические занятия в группах Intermediate, Pre-Intermediate </p>
+                <p class="pm-staff-profile-bio">{{trans('client.teachers.lessons')}} Intermediate, Pre-Intermediate </p>
               </div>     
             </div>
           </div>
@@ -353,10 +114,10 @@
                 </div>   
               </div>                                
               <div class="pm-staff-profile-details text-center">  
-                <p class="pm-staff-profile-name">Галецкая Ангелина Юрьевна </p>
-                <p class="pm-staff-profile-title">Преподаватель</p>
+                <p class="pm-staff-profile-name">{{trans('client.teachers.GAY')}}</p>
+                <p class="pm-staff-profile-title">{{trans('client.teachers.teacher')}}</p>
                 
-                <p class="pm-staff-profile-bio">Ведет практические занятия в группах IT-English, Upper-Intermediate, Intermediate  </p>
+                <p class="pm-staff-profile-bio">{{trans('client.teachers.lessons')}} IT-English, Upper-Intermediate, Intermediate  </p>
               </div>     
             </div>
           </div>
@@ -368,10 +129,10 @@
                 </div>   
               </div>                                
               <div class="pm-staff-profile-details text-center">  
-                <p class="pm-staff-profile-name">Гончарова Ирина Викторовна </p>
-                <p class="pm-staff-profile-title">Преподаватель</p>
+                <p class="pm-staff-profile-name">{{trans('client.teachers.GIV')}}</p>
+                <p class="pm-staff-profile-title">{{trans('client.teachers.teacher')}}</p>
                 
-                <p class="pm-staff-profile-bio">Ведет практические занятия в группах Beginner, Pre-Intermediate, Advanced, IT-Enlish </p>
+                <p class="pm-staff-profile-bio">{{trans('client.teachers.lessons')}} Beginner, Pre-Intermediate, Advanced, IT-Enlish </p>
               </div>     
             </div>
           </div>
@@ -383,129 +144,142 @@
                 </div>   
               </div>                                
               <div class="pm-staff-profile-details text-center">  
-                <p class="pm-staff-profile-name">Маликова Ирина Гавриловна </p>
-                <p class="pm-staff-profile-title">Преподаватель</p>
+                <p class="pm-staff-profile-name">{{trans('client.teachers.MIG')}}</p>
+                <p class="pm-staff-profile-title">{{trans('client.teachers.teacher')}}</p>
                 
-                <p class="pm-staff-profile-bio">Ведет практические занятия в группах Upper-Intermediate </p>
+                <p class="pm-staff-profile-bio">{{trans('client.teachers.lessons')}} Upper-Intermediate </p>
               </div>     
             </div>
           </div>
-          
-          
         </div>
       </div>
     </section>
-    <!--/ Faculity member-->
-    <!--Testimonial-->
-    <section id="testimonial" class="section-padding">
-      <div class="container">
+	<!--/Teachers-->
+	
+	 <!--Courses-->
         <div class="row">
           <div class="header-section text-center">
-            <h2 class="white">See What Our Customer Are Saying?</h2>
-            <p class="white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem nesciunt vitae,<br> maiores, magni dolorum aliquam.</p>
-            <hr class="bottom-line bg-white">
-          </div>
-          <div class="col-md-6 col-sm-6">
-            <div class="text-comment">
-              <p class="text-par">"Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, nec sagittis sem"</p>
-              <p class="text-name">Abraham Doe - Creative Dırector</p>
-            </div>
-          </div>
-          <div class="col-md-6 col-sm-6">
-            <div class="text-comment">
-              <p class="text-par">"Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, nec sagittis sem"</p>
-              <p class="text-name">Abraham Doe - Creative Dırector</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!--/ Testimonial-->
-    <!--Courses-->
-    <!--<section id ="courses" class="section-padding">
-      <div class="container">-->
-        <div class="row">
-          <div class="header-section text-center">
-            <h1><B>КУРСЫ</B></h1>
+            <h1><B>{{trans('client.courses.courses')}}</B></h1>
 			 </div>
         </div>
+	
 	<section id ="english" class="section-padding">
       <div class="container">
         <div class="row">
           <div class="header-section text-center">
-            <h1><B>Английский язык</B></h1>
+            <h1><B>{{trans('client.menu.english')}}</B></h1>
             <hr class="bottom-line">
-          </div>
+			</div>
         </div>
       </div>
+	  @foreach($courses as $courses)
+	  @if($courses->id>=1 && $courses->id<=6)
       <div class="container">
         <div class="row">
           <div class="col-md-4 col-sm-6 padleft-right">
             <figure class="imghvr-fold-up">
-              <img src="img/eng_beg.jpg" class="img-responsive">
-              <figcaption>
-                  <p><font size=5>Английский с нуля?<br>Освой первый уровень!</font><br> </p>
+              <img src="{{ asset('img/'.$courses->picture) }}" class="img-responsive">
+              <figcaption style="padding-top:5px;">
+			  <?php $field='description_'.$lang ?>
+			  {!!$courses->$field!!}
               </figcaption>
-              <a href="#"></a>
+              <a href="{{asset('course/'.$courses->id)}}"></a>
             </figure>
           </div>
-          <div class="col-md-4 col-sm-6 padleft-right">
+		  @endif
+		  
+		 
+		 @if($courses->id==7)
+		<div class="col-md-5 col-sm-6 padcenter padtop">
             <figure class="imghvr-fold-up">
-              <img src="img/eng_elem.jpg" class="img-responsive">
-              <figcaption>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam atque, nostrum veniam consequatur libero fugiat, similique quis.</p>
-              </figcaption>
-              <a href="#"></a>
+              <img src="{{ asset('img/'.$courses->picture) }}" class="img-responsive">
+              <figcaption style="padding-top: 60px;">
+					<h3 align="center" >{{$courses->title}}</h3>
+                  <?php $field='description_'.$lang ?>
+				  {!!$courses->$field!!}
+				</figcaption>
+              <a href="{{asset('course/'.$courses->id)}}"></a>
             </figure>
           </div>
-          <div class="col-md-4 col-sm-6 padleft-right">
+		  </center>
+		 @endif
+		 @if($courses->id==8)
+		  <div class="col-md-5 col-sm-6 padleft-right padtop">
             <figure class="imghvr-fold-up">
-              <img src="img/eng_pre_int.jpg" class="img-responsive">
-              <figcaption>
-                  <h3>Course Name</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam atque, nostrum veniam consequatur libero fugiat, similique quis.</p>
-              </figcaption>
-              <a href="#"></a>
+              <img src="{{ asset('img/'.$courses->picture) }}" class="img-responsive">
+              <figcaption style="padding-top: 60px;">
+					<h3 align="center" >{{$courses->title}}</h3>
+                  <?php $field='description_'.$lang ?>
+				  {!!$courses->$field!!}
+				</figcaption>
+              <a href="{{asset('course/'.$courses->id)}}"></a>
             </figure>
           </div>
-          <div class="col-md-4 col-sm-6 padleft-right">
-            <figure class="imghvr-fold-up margin-bottom-15px">
-              <img src="img/eng_int.jpg" class="img-responsive">
-              <figcaption>
-                  <h3>Course Name</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam atque, nostrum veniam consequatur libero fugiat, similique quis.</p>
+		  @endif
+		 
+		 @if($courses->id==9)
+		  
+		  <div class="col-md-3 col-sm-6 padleft-right padtop">
+            <figure class="imghvr-fold-up">
+              <img src="{{ asset('img/'.$courses->picture) }}" class="img-responsive">
+              <figcaption style="padding-top: 5px;">
+                  <h3 align="center" >{{$courses->title}}</h3>
+                  <?php $field='description_'.$lang ?>
+				  {!!$courses->$field!!}
               </figcaption>
-              <a href="#"></a>
+              <a href="{{asset('course/'.$courses->id)}}"></a>
             </figure>
           </div>
-          <div class="col-md-4 col-sm-6 padleft-right">
-          <figure class="imghvr-fold-up margin-bottom: 30px">
-              <img src="img/eng_up_int.jpg" class="img-responsive">
-              <figcaption>
-                  <h3>Course Name</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam atque, nostrum veniam consequatur libero fugiat, similique quis.</p>
+		 @endif
+		 @if($courses->id==10)
+		  <div class="col-md-3 col-sm-6 padleft-right padtop">
+            <figure class="imghvr-fold-up">
+              <img src="{{ asset('img/'.$courses->picture) }}" class="img-responsive">
+              <figcaption style="padding-top: 5px; padding-left: 5px; padding-right: 5px;">
+                  <h3 align="center" >{{$courses->title}}</h3>
+                  <?php $field='description_'.$lang ?>
+				  {!!$courses->$field!!}
               </figcaption>
-              <a href="#"></a>
+              <a href="{{asset('course/'.$courses->id)}}"></a>
             </figure>
           </div>
-          <div class="col-md-4 col-sm-6 padleft-right">
-          <figure class="imghvr-fold-up margin-bottom: 30px">
-              <img src="img/eng_adv.jpg" class="img-responsive">
-              <figcaption>
-                  <h3>Course Name</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam atque, nostrum veniam consequatur libero fugiat, similique quis.</p>
+		  @endif
+		 @if($courses->id==11)
+		  <div class="col-md-3 col-sm-6 padleft-right padtop">
+            <figure class="imghvr-fold-up">
+              <img src="{{ asset('img/'.$courses->picture) }}" class="img-responsive">
+              <figcaption style="padding-top: 5px; padding-left: 5px; padding-right: 5px;">
+                  <h3 align="center" >{{$courses->title}}</h3>
+                  <?php $field='description_'.$lang ?>
+				  {!!$courses->$field!!}
               </figcaption>
-              <a href="#"></a>
+              <a href="{{asset('course/'.$courses->id)}}"></a>
             </figure>
           </div>
-</div>
+		  @endif
+		 @if($courses->id==12)
+		  <div class="col-md-3 col-sm-6 padleft-right padtop">
+            <figure class="imghvr-fold-up">
+              <img src="{{ asset('img/'.$courses->picture) }}" class="img-responsive">
+              <figcaption style="padding-top: 5px;">
+                  <h3 align="center" >{{$courses->title}}</h3>
+                  <?php $field='description_'.$lang ?>
+				  {!!$courses->$field!!}
+              </figcaption>
+              <a href="{{asset('course/'.$courses->id)}}"></a>
+            </figure>
+          </div>
+		  
+		</div>
       </div>
     </section>
+	@endif
+	@if($courses->id==13)
 	<section id ="spanish" class="section-padding">
       <div class="container">
         <div class="row">
           <div class="header-section text-center">
-            <h1><B>Испанский язык</B></h1>
+            <h1><B>{{trans('client.menu.spanish')}}</B></h1>
             <hr class="bottom-line">
           </div>
         </div>
@@ -514,183 +288,210 @@
         <div class="row">
           <div class="col-md-6">
             <figure class="imghvr-fold-up">
-              <img src="img/span_1.jpg"  class="img-responsive" >
-              <figcaption>
-                  <p><font size=5>Начинающий уровень<br>!!!</font><br> </p>
-              </figcaption>
-              <a href="#"></a>
+              <img src="{{ asset('img/'.$courses->picture) }}" class="img-responsive">
+              <figcaption style="padding-top: 60px;">
+				<h3 align="center" >{{$courses->title}}</h3>
+                  <?php $field='description_'.$lang ?>
+				  {!!$courses->$field!!}
+				</figcaption>
+              <a href="{{asset('course/'.$courses->id)}}"></a>
             </figure>
           </div>
-          <div class="col-md-6">
+		  @endif
+	@if($courses->id==14)
+		<div class="col-md-6">
             <figure class="imghvr-fold-up">
-              <img src="img/span_2.jpg"  class="img-responsive" >
-              <figcaption>
-                  <p><font size=5>Продолжающий уровень<br>!!!</font><br> </p>
-              </figcaption>
-              <a href="#"></a>
+              <img src="{{ asset('img/'.$courses->picture) }}" class="img-responsive">
+              <figcaption style="padding-top: 60px;">
+				<h3 align="center" >{{$courses->title}}</h3>
+                  <?php $field='description_'.$lang ?>
+				  {!!$courses->$field!!}
+				</figcaption>
+              <a href="{{asset('course/'.$courses->id)}}"></a>
             </figure>
           </div>
-</div>
+		</div>
       </div>
     </section>
-	
+	@endif
+	@if($courses->id==15)
 	<section id ="italian" class="section-padding">
       <div class="container">
         <div class="row">
           <div class="header-section text-center">
-            <h1><B>Итальянский язык</B></h1>
+            <h1><B>{{trans('client.menu.italian')}}</B></h1>
             <hr class="bottom-line">
           </div>
         </div>
       </div>
       <div class="container">
         <div class="row">
+
+		  
           <div class="col-md-6">
             <figure class="imghvr-fold-up">
-              <img src="img/ital_1.jpg"  class="img-responsive" >
-              <figcaption>
-                  <p><font size=5>Начинающий уровень<br>!!!</font><br> </p>
-              </figcaption>
-              <a href="#"></a>
+              <img src="{{ asset('img/'.$courses->picture) }}" class="img-responsive">
+              <figcaption style="padding-top: 60px;">
+				<h3 align="center" >{{$courses->title}}</h3>
+                  <?php $field='description_'.$lang ?>
+				  {!!$courses->$field!!}
+				</figcaption>
+              <a href="{{asset('course/'.$courses->id)}}"></a>
             </figure>
           </div>
-          <div class="col-md-6">
+		  @endif
+	@if($courses->id==16)
+	<div class="col-md-6">
             <figure class="imghvr-fold-up">
-              <img src="img/ital_2.jpg"  class="img-responsive" >
-              <figcaption>
-                  <p><font size=5>Продолжающий уровень<br>!!!</font><br> </p>
-              </figcaption>
-              <a href="#"></a>
+              <img src="{{ asset('img/'.$courses->picture) }}" class="img-responsive">
+              <figcaption style="padding-top: 60px;">
+				<h3 align="center" >{{$courses->title}}</h3>
+                  <?php $field='description_'.$lang ?>
+				  {!!$courses->$field!!}
+				</figcaption>
+              <a href="{{asset('course/'.$courses->id)}}"></a>
             </figure>
           </div>
-</div>
+		
+		</div>
       </div>
     </section>
-	
-	<section id ="polish" class="section-padding">
+	@endif
+	@if($courses->id==17)
+	<section id ="chinese" class="section-padding">
       <div class="container">
         <div class="row">
           <div class="header-section text-center">
-            <h1><B>Польский язык</B></h1>
+            <h1><B>{{trans('client.menu.chinese')}}</B></h1>
             <hr class="bottom-line">
           </div>
         </div>
       </div>
       <div class="container">
-        <div class="row">
-          <div class="col-md-6">
+        <div class="row" >
+
+		  
+          <div class="col-md-12" align="center">
             <figure class="imghvr-fold-up">
-              <img src="img/pol_1.jpg" class="img-responsive">
-              <figcaption>
-                 <p><font size=5>Начинающий уровень<br>!!!</font><br> </p>
+              <img src="{{ asset('img/'.$courses->picture) }}" width="900" height="563" class="img-responsive">
+              <figcaption style="padding-top: 100px; padding-left: 80px; padding-right: 80px;">
+				<h1 align="center" >{{$courses->title}}</h1>
+                  <?php $field='description_'.$lang ?>
+				  {!!$courses->$field!!}
               </figcaption>
-              <a href="#"></a>
+              <a href="{{asset('course/'.$courses->id)}}"></a>
             </figure>
-          </div>
-          <div class="col-md-6">
-            <figure class="imghvr-fold-up">
-              <img src="img/pol_2.jpg" class="img-responsive">
-              <figcaption>
-                  <p><font size=5>Продолжающий уровень<br>!!!</font><br> </p>
-              </figcaption>
-              <a href="#"></a>
-            </figure>
-          </div>
-         
-   
-</div>
+          </div>  
+			
+
+		</div>
       </div>
     </section>
-	
+	@endif
+	@if($courses->id==18)
 	<section id ="french" class="section-padding">
       <div class="container">
         <div class="row">
           <div class="header-section text-center">
-            <h1><B>Французский язык</B></h1>
+            <h1><B>{{trans('client.menu.french')}}</B></h1>
             <hr class="bottom-line">
           </div>
         </div>
       </div>
       <div class="container">
         <div class="row">
+
+		  
           <div class="col-md-6">
             <figure class="imghvr-fold-up">
-              <img src="img/french_1.jpg" class="img-responsive">
-              <figcaption>
-                 <p><font size=5>Начинающий уровень<br>!!!</font><br> </p>
-              </figcaption>
-              <a href="#"></a>
+              <img src="{{ asset('img/'.$courses->picture) }}" class="img-responsive">
+              <figcaption style="padding-top: 50px;">
+				<h3 align="center" >{{$courses->title}}</h3>
+                  <?php $field='description_'.$lang ?>
+				  {!!$courses->$field!!}
+				</figcaption>
+              <a href="{{asset('course/'.$courses->id)}}"></a>
             </figure>
           </div>
-          <div class="col-md-6">
+		  @endif
+		  @if($courses->id==19)
+        <div class="col-md-6">
             <figure class="imghvr-fold-up">
-              <img src="img/french_2.jpg" class="img-responsive">
-              <figcaption>
-                  <p><font size=5>Продолжающий уровень<br>!!!</font><br> </p>
-              </figcaption>
-              <a href="#"></a>
+              <img src="{{ asset('img/'.$courses->picture) }}" class="img-responsive">
+              <figcaption style="padding-top: 50px;">
+				<h3 align="center" >{{$courses->title}}</h3>
+                  <?php $field='description_'.$lang ?>
+				  {!!$courses->$field!!}
+				</figcaption>
+              <a href="{{asset('course/'.$courses->id)}}"></a>
             </figure>
           </div>
-         
-         
-         
-         
-</div>
+		  
+         </div>
       </div>
     </section>
-	
+	@endif
+	@if($courses->id==20)
 	<section id ="german" class="section-padding">
       <div class="container">
         <div class="row">
           <div class="header-section text-center">
-            <h1><B>Немецкий язык</B></h1>
+            <h1><B>{{trans('client.menu.german')}}</B></h1>
             <hr class="bottom-line">
           </div>
         </div>
       </div>
       <div class="container" >
         <div class="row">
-          <div class="col-md-6">
-            <figure class="imghvr-fold-up margin-bottom: 10px" >
-              <img src="img/germ_1.jpg" class="img-responsive">
-              <figcaption>
-                  <p><font size=5>Начинающий уровень<br>!!!</font><br> </p>
-              </figcaption>
-              <a href="#"></a>
-            </figure>
-          </div>
+
+		  
           <div class="col-md-6">
             <figure class="imghvr-fold-up">
-              <img src="img/germ_2.jpg" class="img-responsive">
-              <figcaption>
-                  <p><font size=5>Продолжающий уровень<br>!!!</font><br> </p>
-              </figcaption>
-              <a href="#"></a>
+              <img src="{{ asset('img/'.$courses->picture) }}" class="img-responsive">
+              <figcaption style="padding-top: 40px;">
+				<h3 align="center" >{{$courses->title}}</h3>
+                  <?php $field='description_'.$lang ?>
+				  {!!$courses->$field!!}
+				</figcaption>
+              <a href="{{asset('course/'.$courses->id)}}"></a>
             </figure>
           </div>
-          
-          
-       
-</div>
+		  @endif
+		  
+		  @if($courses->id==21)
+          <div class="col-md-6">
+            <figure class="imghvr-fold-up">
+              <img src="{{ asset('img/'.$courses->picture) }}" class="img-responsive">
+              <figcaption style="padding-top: 60px;">
+				<h3 align="center" >{{$courses->title}}</h3>
+                  <?php $field='description_'.$lang ?>
+				  {!!$courses->$field!!}
+				</figcaption>
+              <a href="{{asset('course/'.$courses->id)}}"></a>
+            </figure>
+          </div>
+		  
+         </div>
       </div>
     </section>
-       <!-- </div>
-      </div>
-    </section>-->
+	@endif
+	@endforeach
     <!--/ Courses-->
+	
+	
     <!--Pricing-->
     <section id ="pricing" class="section-padding">
       <div class="container">
         <div class="row">
           <div class="header-section text-center">
-            <h2>Наши цены</h2>
+            <h2>{{trans('client.prices.prices')}}</h2>
            
           </div>
           <div class="col-md-4 col-sm-4">
             <div class="price-table">
               <!-- Plan  -->
               <div class="pricing-head">
-                <h4>Английский язык</h4>
+                <h4>{{trans('client.menu.english')}}</h4>
                 <span class="fa fa-BYR curency"></span> <span class="amount">285</span> 
               </div>
           
@@ -704,7 +505,7 @@
             <div class="price-table">
               <!-- Plan  -->
               <div class="pricing-head">
-                <h4>Немецкий язык</h4>
+                <h4>{{trans('client.menu.german')}}</h4>
                 <span class="fa fa-BYR curency"></span> <span class="amount">285</span> 
               </div>
           
@@ -718,7 +519,7 @@
             <div class="price-table">
               <!-- Plan  -->
               <div class="pricing-head">
-                <h4>Французский язык</h4>
+                <h4>{{trans('client.menu.french')}}</h4>
                 <span class="fa fa-BYR curency"></span> <span class="amount">285</span> 
               </div>
           
@@ -732,7 +533,7 @@
             <div class="price-table">
               <!-- Plan  -->
               <div class="pricing-head">
-                <h4>Испанский язык</h4>
+                <h4>{{trans('client.menu.spanish')}}</h4>
                 <span class="fa fa-BYR curency"></span> <span class="amount">285</span> 
               </div>
           
@@ -746,7 +547,7 @@
             <div class="price-table">
               <!-- Plan  -->
               <div class="pricing-head">
-                <h4>Итальянский язык</h4>
+                <h4>{{trans('client.menu.italian')}}</h4>
                 <span class="fa fa-BYR curency"></span> <span class="amount">285</span> 
               </div>
           
@@ -760,7 +561,7 @@
             <div class="price-table">
               <!-- Plan  -->
               <div class="pricing-head">
-                <h4>Польский язык</h4>
+                <h4>{{trans('client.menu.polish')}}</h4>
                 <span class="fa fa-BYR curency"></span> <span class="amount">285</span> 
               </div>
           
@@ -774,7 +575,7 @@
             <div class="price-table">
               <!-- Plan  -->
               <div class="pricing-head">
-                <h4>IT-English</h4>
+                <h4>{{trans('client.prices.IT')}}</h4>
                 <span class="fa fa-BYR curency"></span> <span class="amount">285</span> 
               </div>
           
@@ -788,7 +589,20 @@
             <div class="price-table">
               <!-- Plan  -->
               <div class="pricing-head">
-                <h4>Business English</h4>
+                <h4>{{trans('client.prices.business')}}</h4>
+                <span class="fa fa-BYR curency"></span> <span class="amount">285</span> 
+              </div>
+              <!-- Plean Detail -->
+              <div class="price-in mart-15">
+                <a href="#" class="btn btn-bg green btn-block">PURCHACE</a> 
+              </div>
+            </div>
+          </div>
+		  <div class="col-md-4 col-sm-4">
+            <div class="price-table">
+              <!-- Plan  -->
+              <div class="pricing-head">
+                <h4>{{trans('client.prices.express')}}</h4>
                 <span class="fa fa-BYR curency"></span> <span class="amount">285</span> 
               </div>
           
@@ -802,21 +616,7 @@
             <div class="price-table">
               <!-- Plan  -->
               <div class="pricing-head">
-                <h4>Express English</h4>
-                <span class="fa fa-BYR curency"></span> <span class="amount">285</span> 
-              </div>
-          
-              <!-- Plean Detail -->
-              <div class="price-in mart-15">
-                <a href="#" class="btn btn-bg green btn-block">PURCHACE</a> 
-              </div>
-            </div>
-          </div>
-		  <div class="col-md-4 col-sm-4">
-            <div class="price-table">
-              <!-- Plan  -->
-              <div class="pricing-head">
-                <h5>Business Correspondence Language</h5>
+                <h5>{{trans('client.prices.correspondence')}}</h5>
                 <span class="fa fa-BYR curency"></span> <span class="amount">152</span> 
               </div>
           
@@ -830,7 +630,7 @@
             <div class="price-table">
               <!-- Plan  -->
               <div class="pricing-head">
-                <h5>Курс коммуникативной грамматики</h5>
+                <h5>{{trans('client.prices.communication')}}</h5>
                 <span class="fa fa-BYR curency"></span> <span class="amount">152</span> 
               </div>
           
@@ -844,7 +644,7 @@
             <div class="price-table">
               <!-- Plan  -->
               <div class="pricing-head">
-                <h3>Подготовка к ЦТ</h3>
+                <h3>{{trans('client.prices.CT')}}</h3>
                 <span class="fa fa-BYR curency"></span> <span class="amount">285</span> 
               </div>
           
@@ -858,51 +658,10 @@
       </div>
     </section>
     <!--/ Pricing-->
-    <!--Contact-->
-    <section id ="contact" class="section-padding">
-      <div class="container">
-        <div class="row">
-          <div class="header-section text-center">
-            <h2>Напишите нам</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem nesciunt vitae,<br> maiores, magni dolorum aliquam.</p>
-            <hr class="bottom-line">
-          </div>
-          <div id="sendmessage">Ваше сообщение отправлено. Спасибо!</div>
-          <div id="errormessage"></div>
-          <form action="" method="post" role="form" class="contactForm">
-              <div class="col-md-6 col-sm-6 col-xs-12 left">
-                <div class="form-group">
-                    <input type="text" name="name" class="form-control form" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-                    <div class="validation"></div>
-                </div>
-                <div class="form-group">
-                    <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
-                    <div class="validation"></div>
-                </div>
-                <div class="form-group">
-                    <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-                    <div class="validation"></div>
-                </div>
-              </div>
-              
-              <div class="col-md-6 col-sm-6 col-xs-12 right">
-                <div class="form-group">
-                    <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
-                    <div class="validation"></div>
-                </div>
-              </div>
-              
-              <div class="col-xs-12">
-                <!-- Button -->
-                <button type="submit" id="submit" name="submit" class="form contact-form-button light-form-button oswald light">SEND EMAIL</button>
-              </div>
-          </form>
-          
-        </div>
-      </div>
-    </section>
-    <!--/ Contact-->
-@endsection
+	@endsection
 	
-  </body>
-</html>
+	@section('footer')
+    <footer id="footer" class="footer" style="display:none;">
+	  
+    </footer>
+	@endsection

@@ -9,7 +9,7 @@ class TeacherController extends Controller
     public function getAll()
 	{
 		$teachers=User::where('role_id',3)->get();
-		return view('teachers',compact('teachers'));
+		return view('index',compact('teachers'));
 	
 	}
 	public function getOne($id=null)

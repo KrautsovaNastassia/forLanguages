@@ -159,11 +159,12 @@ else{
 	$room=$_GET['selectroom'];
 }
 ?>
-
-<iframe src="http://localhost:9090/chat.html?Name=<?=Auth::user()->name?>&Room=<?=$room?>" style="    margin-top: 46px;
-    margin-left: 451px;
+<div class="container" align="center">
+<iframe src="http://localhost:9090/chat.html?Name=<?=Auth::user()->name?>&Room=<?=$room?>" style="    margin-top: 50px;
+	margin-bottom: 30px;
     height: 578px;
-    width: 536px;"></iframe>
+    width: 1000px;" align="center"></iframe>
+</div>
 
 @stop
 

@@ -22,11 +22,27 @@ return[
 		'proverb'=>'He who does not know foreign languages does not know anything about his own',
 		'(proverb)'=>'(Кто не знает иностранных языков, ничего не знает и о своём собственном)',
 		'if goethe'=>'I.F. Goethe',
-		'teachers'=>'My teachers',
+		'teachers'=>'Connection with teachers',
 		'chat'=>'Chat',
+		'e-mail'=>'Our e-mail adress ',
 	],
-'message'=>[
-	'message'=>'Send message',
+	
+	'auth'=>[
+		'register'=>'Register',
+		'regist'=>'Register',
+		'name'=>'Name',
+		'email'=>'E-mail Adress',
+		'pass'=>'Password',
+		'confirm pass'=>'Confirm Password',
+		'sign in'=>'Sign in',
+		'remember me'=>'Remember me',
+		'btnlogin'=>'Enter',
+		'woops'=>'Woops',
+		'some_problems_with_input'=>'Some problems with input',
+	],
+	
+	'message'=>[
+		'message'=>'Send message',
 	],
 	
 	'chat'=>[
@@ -35,7 +51,9 @@ return[
 		'inonr'=>'Input name of new conversation',
 		'osfl'=>'Or select from list',
 	],
-	
+	'center'=>[
+		'about center'=>'ABOUT CENTER',
+	],
 	'news'=>[
 		'puzzle english' => 'Learn English by watching movies',
 		'vk' => 'We are already in VK, join us!',
@@ -43,7 +61,7 @@ return[
 	],
 
 	'teachers'=>[
-		'teachers' => 'Teachers',
+		'teachers' => 'TEACHERS',
 		'teacher' => 'Teacher',
 		'ShTG' => 'Shelyagova Tamara Grigoryevna',
 		'LTV' => 'Levkovich Tatiana Viktorovna',
@@ -67,7 +85,7 @@ return[
 	],
 
 	'prices'=>[
-		'prices' => 'Our prices',
+		'prices' => 'OUR PRICES',
 		'IT' => 'IT-English',
 		'business' => 'Business English',
 		'express' => 'Express English',

@@ -3,6 +3,7 @@
 namespace App\Http\Middleware;
 
 use Closure;
+use App;
 
 class LangMiddleware
 {
@@ -25,6 +26,14 @@ class LangMiddleware
 			}
 		}
 		setcookie('lang', $lang, time()+3600);
+		if(isset($_COOKIE['lang'])){
+		    $loc=$_COOKIE['lang'];
+			App::setLocale($loc);
+			if(isset($_GET['lang'])){
+				return redirect('/');
+			}
+			
+		}
 		return $next($request);
     }
 }

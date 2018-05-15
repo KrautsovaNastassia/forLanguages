@@ -23,13 +23,7 @@ class AppServiceProvider extends ServiceProvider
 			$email=$user->email;
 			@mail($email,$thema,$body);
 			
-		});
-		
-		if(isset($_COOKIE['lang'])){
-		    $loc=$_COOKIE['lang'];
-			App::setLocale($loc);
-		}
-      
+		}); 
     }
 
     /**

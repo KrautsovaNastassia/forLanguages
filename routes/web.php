@@ -11,17 +11,19 @@
 |
 */
 Route::post('/send/email/{id}','EmailController@postSend');
+Route::post('/message','EmailController@postMess');
 Route::get('/messended','EmailController@getM');
 Route:: group(['middleware'=>'auth'],function()
 {
-	Route::get('teacher','TeacherController@getAll');
+	//Route::get('teacher','TeacherController@getAll');
 	Route::get('teacher/{id}','TeacherController@getOne');
 });
 Route::get('/', 'BaseController@getIndex')->middleware('lang');
+//Route::get('/', 'CourseController@getAll');
 //всегда последний
 Route::get('print', 'BaseController@getOne')->name('print');
 Route::get('course/{id}','CourseController@getOne');
-Route::get('/','NewsController@getOne');
+//Route::get('/','NewsController@getOne');
 Route::get('/chatstart', 'ChatController@getstart');
 
 Route::get('/chattalk', 'ChatController@gettalk');

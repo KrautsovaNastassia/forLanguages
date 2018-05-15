@@ -17,18 +17,42 @@ return[
 		'about center'=>'Аб цэнтры',
 		'sign in'=>'Увайсці',
 		'sign up'=>'Рэгістрацыя',
-		'logout'=>'Выйсці'
+		'logout'=>'Выйсці',
 		'ltc bsuir'=>'Цэнтр моўнай падрыхтоўкі па замежных мовах пры БДУІР',
 		'proverb'=>'He who does not know foreign languages does not know anything about his own',
 		'(proverb)'=>'(Хто не ведае ніводнай замежнай мовы, нічога не ведае і аб сваёй уласнай)',
 		'if goethe'=>'I.F. Goethe',
-		'teachers'=>'Маi настаунiкi',
+		'teachers'=>'Сувязь з настаунiкамi',
 		'chat'=>'Чат',
+		'e-mail'=>'Наш e-mail адрас ',
 	],
+	
+	'auth'=>[
+		'register'=>'Рэгiстрацыя',
+		'regist'=>'Зарэгістравацца',
+		'name'=>'Імя',
+		'email'=>'E-mail Адрас',
+		'pass'=>'Пароль',
+		'confirm pass'=>'Паўтарыце пароль',
+		'sign in'=>'Уваход',
+		'remember me'=>'запомніць мяне',
+		'btnlogin'=>'Увайсці',
+		'woops'=>'Здаецца штосьцi пайшло не так',
+		'some_problems_with_input'=>'Уведзены няправільныя дадзеныя',
+	],
+	
 	'message'=>[
-	'message'=>'Отправить сообщение',
+		'message'=>'Отправить сообщение',
 	],
-
+	'chat'=>[
+		'roomname' => 'Імя пакоя для размоў',
+		'join'=>'Далучыцца',
+		'inonr'=>'Увядзіце назву новай пакоі',
+		'osfl'=>'Або абярыце з спісу',
+	],
+	'center'=>[
+		'about center'=>'АБ ЦЭНТРЫ',
+	],
 	'news'=>[
 		'puzzle english' => 'Вучы англійская гледзячы фільмы',
 		'vk' => 'Мы ўжо ў VK, далучайся!',
@@ -36,7 +60,7 @@ return[
 	],
 	
 	'teachers'=>[
-		'teachers' => 'Выкладчыкі',
+		'teachers' => 'ВЫКЛАДЧЫКІ',
 		'teacher' => 'Выкладчык',
 		'ShTG' => 'Шелягова Тамара Рыгораўна',
 		'LTV' => 'Ляўковіч Таццяна Віктараўна',
@@ -60,7 +84,7 @@ return[
 	],
 
 	'prices'=>[
-		'prices' => 'Нашы цэны',
+		'prices' => 'НАШЫ ЦЭНЫ',
 		'IT' => 'IT-English',
 		'business' => 'Business English',
 		'express' => 'Express English',

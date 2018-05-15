@@ -21,5 +21,13 @@ class EmailController extends Controller
 		
 		return view('email');
 	}
+	public function postMess()
+	{
+		$to='kaffl1@bsuir.by';
+		$theme=$_POST['subject'];
+		$body=$_POST['message'];
+		mail($to,$theme,$body);
+		return redirect('/messended');
+	}
 	
 }

@@ -4,7 +4,7 @@ body {
 }
 
 #block-for-slider {
-   width: 80%;
+   width: 100%;
     margin: 0;
     margin-top: 20px;
 }
@@ -68,16 +68,16 @@ body {
 }
 
 #next-btn {
-    right: -634px;
+    right: -727px;
 }
 
 #nav-btns {
     position: absolute;
     width: 100%;
-    bottom: -378px;
+    bottom: -390px;
     padding: 0;
     margin: -65px;
-    margin-left: 350px;
+    margin-left: 380px;
     text-align: center;
 }
 

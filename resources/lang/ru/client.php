@@ -22,8 +22,27 @@ return[
 		'proverb'=>'He who does not know foreign languages does not know anything about his own',
 		'(proverb)'=>'(Кто не знает иностранных языков, ничего не знает и о своём собственном)',
 		'if goethe'=>'I.F. Goethe',
-		'teachers'=>'Мои преподаватели',
+		'teachers'=>'Связь с преподавателями',
 		'chat'=>'Чат',
+		'e-mail'=>'Наш e-mail адрес ',
+	],
+	
+	'auth'=>[
+		'register'=>'Регистрация',
+		'regist'=>'Зарегистрироваться',
+		'name'=>'Имя',
+		'email'=>'E-mail Адрес',
+		'pass'=>'Пароль',
+		'confirm pass'=>'Повторите пароль',
+		'sign in'=>'Вход',
+		'remember me'=>'Запомнить меня',
+		'btnlogin'=>'Войти',
+		'woops'=>'Кажется что-то пошло не так',
+		'some_problems_with_input'=>'Введены неправельные данные',
+	],
+	
+	'message'=>[
+		'message'=>'Отправить сообщение',
 	],
 	
 	'chat'=>[
@@ -32,7 +51,9 @@ return[
 		'inonr'=>'Введите название новой беседы',
 		'osfl'=>'Или выберите из списка',
 	],
-
+	'center'=>[
+		'about center'=>'О ЦЕНТРЕ',
+	],
 	'news'=>[
 		'puzzle english' => 'Учи английский смотря фильмы',
 		'vk' => 'Мы уже в VK, присоединяйся!',
@@ -40,7 +61,7 @@ return[
 	],
 
 	'teachers'=>[
-		'teachers' => 'Преподаватели',
+		'teachers' => 'ПРЕПОДАВАТЕЛИ',
 		'teacher' => 'Преподаватель',
 		'ShTG' => 'Шелягова Тамара Григорьевна',
 		'LTV' => 'Левкович Татьяна Викторовна',
@@ -64,7 +85,7 @@ return[
 	],
 
 	'prices'=>[
-		'prices' => 'Наши цены',
+		'prices' => 'НАШИ ЦЕНЫ',
 		'IT' => 'IT-English',
 		'business' => 'Business English',
 		'express' => 'Express English',
@@ -80,9 +101,6 @@ return[
 	'footer'=>[
 		'adress' => '220013, г. Минск, ул. П. Бровки, 6, 309 ауд. Центр языковой подготовки',
 		'e-mail' => 'Адрес электронной почты ',
-	],
-	'message'=>[
-	'message'=>'Отправить сообщение',
 	],
 ];
 ?>
