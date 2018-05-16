@@ -53,6 +53,7 @@ return[
 	],
 	'center'=>[
 		'about center'=>'ABOUT CENTER',
+		'error'=>'Your browser does not support video',
 	],
 	'news'=>[
 		'puzzle english' => 'Learn English by watching movies',

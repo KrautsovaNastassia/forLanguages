@@ -25,7 +25,14 @@ class EmailController extends Controller
 	{
 		$to='kaffl1@bsuir.by';
 		$theme=$_POST['subject'];
-		$body=$_POST['message'];
+		$message=$_POST['message'];
+		$email=$_POST['email'];
+		$name=$_POST['name'];
+		$body="
+			email user: $email /n
+			name user: $name /n
+			message: $message
+		";
 		mail($to,$theme,$body);
 		return redirect('/messended');
 	}

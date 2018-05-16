@@ -14,6 +14,7 @@ class ViewComposer{
 				$lang='ru';
 			}
 		}
+		//dd($lang);
 			$view->with('lang', $lang);
 		
 	}

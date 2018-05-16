@@ -237,7 +237,7 @@
     <section id="aboutcenter" class="section-padding"  align="center">
       <div class="container">
 	  <h2 style="margin-bottom: 30px;">{{trans('client.center.about center')}}</h2>
-	  <iframe width="900" height="506" src="https://www.youtube.com/embed/rjT-dSHAvOY?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+	  <video width="900" height="506" src="{{asset('img/videoplayback.webm')}}" autoplay controls loop muted>{{trans('client.center.error')}}</video>
         </div>
       </div>
     </section>
