@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Auth;
 
+use App;
 use App\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
 
@@ -27,6 +28,8 @@ class LoginController extends Controller
      */
     public function __construct()
     {
+		$loc=$_COOKIE['lang'];
+		App::setLocale($loc);
         $this->redirectTo = config('quickadmin.route');
         $this->middleware('guest', ['except' => 'logout']);
     }

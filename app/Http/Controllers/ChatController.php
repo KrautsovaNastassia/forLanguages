@@ -5,17 +5,22 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Http\Controllers;
 use Auth;
+use App;
 use App\Room;
 use App\User;
 
 class ChatController extends Controller
 {
     public function getstart(){
+		$loc=$_COOKIE['lang'];
+		App::setLocale($loc);
 		$rooms=Room::all();
 		return view('start', compact('rooms'));
 	}
 	
 	public function gettalk(){
+		$loc=$_COOKIE['lang'];
+		App::setLocale($loc);
 		$rooms=Room::all();
 		$flag=true;
 		foreach($rooms as $one){

@@ -30,7 +30,6 @@ class HomeController extends Controller
 	
 	public function logoutuser()
 	{
-		//dd('asdf');
 		Auth::logout();
 		return Redirect::to('/');
 	}		

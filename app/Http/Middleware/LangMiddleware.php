@@ -32,7 +32,6 @@ class LangMiddleware
 			if(isset($_GET['lang'])){
 				return redirect('/');
 			}
-			
 		}
 		return $next($request);
     }

@@ -143,24 +143,11 @@
                             </li>
                         @endguest
 		  
-		  <li class="dropdown" align="right" aria-labelledby="myNavbar">
+		  <li align="right" aria-labelledby="myNavbar">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
 							<img id="imgNavSel" src={{asset('img/flag/'.$lang.'_40.jpg')}} alt="..." class="img-thumbnail1 icon-small">&nbsp;&nbsp;
-                            <span id="lanNavSel">{{$lang}}</span> <span class="caret"></span></a>
-                        <ul class="dropdown-menu mumu" role="menu">
-                            <li><a id="navEn" href="{{asset('/?lang=en')}}" class="language">
-                                    <img id="imgNavEn" src={{asset('img/flag/en_40.jpg')}} alt="English" class="img-thumbnail1 icon-small">&nbsp;
-                                    <span id="lanNavEn">English</span>&nbsp;
-                                </a></li>
-                            <li><a id="navBy" href="{{asset('/?lang=by')}}" class="language">
-                                    <img id="imgNavBy" src={{asset('img/flag/by_40.jpg')}} alt="Belarus" class="img-thumbnail1 icon-small">&nbsp;
-                                    <span id="lanNavBy">Беларуская</span>&nbsp;
-                                </a></li>
-                            <li><a id="navRus" href="{{asset('/?lang=ru')}}" class="language">
-                                    <img id="imgNavRus" src={{asset('img/flag/ru_40.jpg')}} alt="Russia" class="img-thumbnail1 icon-small">&nbsp;
-                                    <span id="lanNavRus">Русский</span>&nbsp;
-                                </a></li>
-                        </ul>
+                            <span id="lanNavSel">{{$lang}}</span> </a>
+                       
                </li>
 			</ul>
         </div>
