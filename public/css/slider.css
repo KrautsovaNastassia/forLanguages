@@ -10,7 +10,7 @@ body {
 }
 
 #viewport {
-	width: 65%;
+	width: 703px;
     position: relative;
     /* overflow: hidden; */
     -webkit-user-select: none;
@@ -68,16 +68,16 @@ body {
 }
 
 #next-btn {
-    right: -727px;
+    right: -630px;
 }
 
 #nav-btns {
     position: absolute;
     width: 100%;
-    bottom: -390px;
+    bottom: -360px;
     padding: 0;
     margin: -65px;
-    margin-left: 380px;
+    margin-left: 350px;
     text-align: center;
 }
 

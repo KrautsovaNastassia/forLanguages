@@ -23,12 +23,12 @@
 	<!--/Banner-->
 	<!--News-->
 <div class="container" style="margin-left:0px;
-	padding-left:0px;">
+	padding-left:0px; overflow:hidden;    width: 1350px;">
 	<div id="block-for-slider">
-        <div id="viewport">
-            <ul id="slidewrapper">
+        <div id="viewport" >
+            <ul id="slidewrapper" >
 			@foreach ($news as $key)
-<li class="slide"><img src="{{ asset('img/'.$key->img) }}" alt="{{$key->id}}" class="slide-img"></li> 
+<li class="slide" ><img src="{{ asset('img/'.$key->img) }}" alt="{{$key->id}}" class="slide-img"></li> 
 			@endforeach
             </ul>
 
